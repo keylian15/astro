@@ -2,224 +2,55 @@ from astropy.io import fits
 import matplotlib.pyplot as plt
 import numpy as np
 
-# ====== Variables Globales ======
-Halpha = "Tarantula_Nebula-halpha.fit"
-Oiii = "Tarantula_Nebula-oiii.fit"
-Sii = "Tarantula_Nebula-sii.fit"
-
-fichiers_fits = [Halpha, Oiii, Sii]
-# ====== Fin Variables Globales ======
+# ====== Recupération ======
+image1 = "Tarantula_Nebula-halpha.fit"
+image2 = "Tarantula_Nebula-oiii.fit"
+image3 = "Tarantula_Nebula-sii.fit"
 
 
-def afficher(fichiers=None):
-    """Affiche la somme des images FITS"""
-    
-    image_somme = None
-    for fichier in fichiers:
-        data = fits.getdata(fichier)
+# data1 = fits.getdata(image1)
+# data2 = fits.getdata(image2)
+# data3 = fits.getdata(image3)
+# ====== Fin Recupération ======
 
-        if image_somme is None:
-            image_somme = data
-        else:
-            image_somme += data
 
-    plt.imshow(image_somme, cmap="flag", origin="lower")  
+def normaliser(data):
+    """Fonction permettant de normaliser les données."""
+
+    # Percentile -> renvoi les 1er percentile et le 99e percentile des valeurs dans data.
+    # Pour les supprimé.
+    vmin, vmax = np.percentile(data, (1, 99))
+    data_norm = np.clip((data - vmin) / (vmax - vmin), 0, 1)
+
+    return data_norm
+
+
+def afficher(fichiers, multi_r=1.0, multi_g=1.0, multi_b=1.0):
+    """Fonction qui affiche une image combiné de 3 fichiers avec un coef de RGB possible."""
+    image1 = fichiers[0]
+    image2 = fichiers[1]
+    image3 = fichiers[2]
+
+    data1 = fits.getdata(image1)
+    data2 = fits.getdata(image2)
+    data3 = fits.getdata(image3)
+
+    red = normaliser(data1) * multi_r
+    green = normaliser(data2) * multi_g
+    blue = normaliser(data3) * multi_b
+
+    image = np.stack([red, green, blue], axis=-1)
+
+    plt.imshow(image, origin="lower")
     plt.colorbar()
     plt.show()
 
-afficher(fichiers_fits)
 
-
-def info(chemin: str) -> dict:
-
-    header = fits.getheader(chemin)
-
-    info = {
-    'object_name' : header.get("OBJECT", "Non spécifié"),
-    'image_type' : header.get("IMAGETYP", "Non spécifié"),
-    'ra' : header.get("RA", "Non spécifié"),
-    'dec' : header.get("DEC", "Non spécifié"),
-    'date_obs' : header.get("DATE-OBS", "Non spécifié"),
-    'observer' : header.get("OBSERVER", "Non spécifié"),
-    'observatory' : header.get("OBSERVAT", "Non spécifié"),
-    'latitude' : header.get("LAT-OBS", "Non spécifié"),
-    'longitude' : header.get("LONG-OBS", "Non spécifié"),
-    'altitude' : header.get("ALT-OBS", "Non spécifié"),
-    'telescope' : header.get("TELESCOP", "Non spécifié"),
-    'instrument' : header.get("INSTRUME", "Non spécifié"),
-    }
-    
-    return info
-
-typeCmap = [
-    "Accent",
-    "Accent_r",
-    "Blues",
-    "Blues_r",
-    "BrBG",
-    "BrBG_r",
-    "BuGn",
-    "BuGn_r",
-    "BuPu",
-    "BuPu_r",
-    "CMRmap",
-    "CMRmap_r",
-    "Dark2",
-    "Dark2_r",
-    "GnBu",
-    "GnBu_r",
-    "Grays",
-    "Greens",
-    "Greens_r",
-    "Greys",
-    "Greys_r",
-    "OrRd",
-    "OrRd_r",
-    "Oranges",
-    "Oranges_r",
-    "PRGn",
-    "PRGn_r",
-    "Paired",
-    "Paired_r",
-    "Pastel1",
-    "Pastel1_r",
-    "Pastel2",
-    "Pastel2_r",
-    "PiYG",
-    "PiYG_r",
-    "PuBu",
-    "PuBuGn",
-    "PuBuGn_r",
-    "PuBu_r",
-    "PuOr",
-    "PuOr_r",
-    "PuRd",
-    "PuRd_r",
-    "Purples",
-    "Purples_r",
-    "RdBu",
-    "RdBu_r",
-    "RdGy",
-    "RdGy_r",
-    "RdPu",
-    "RdPu_r",
-    "RdYlBu",
-    "RdYlBu_r",
-    "RdYlGn",
-    "RdYlGn_r",
-    "Reds",
-    "Reds_r",
-    "Set1",
-    "Set1_r",
-    "Set2",
-    "Set2_r",
-    "Set3",
-    "Set3_r",
-    "Spectral",
-    "Spectral_r",
-    "Wistia",
-    "Wistia_r",
-    "YlGn",
-    "YlGnBu",
-    "YlGnBu_r",
-    "YlGn_r",
-    "YlOrBr",
-    "YlOrBr_r",
-    "YlOrRd",
-    "YlOrRd_r",
-    "afmhot",
-    "afmhot_r",
-    "autumn",
-    "autumn_r",
-    "binary",
-    "binary_r",
-    "bone",
-    "bone_r",
-    "brg",
-    "brg_r",
-    "bwr",
-    "bwr_r",
-    "cividis",
-    "cividis_r",
-    "cool",
-    "cool_r",
-    "coolwarm",
-    "coolwarm_r",
-    "copper",
-    "copper_r",
-    "cubehelix",
-    "cubehelix_r",
-    "flag",
-    "flag_r",
-    "gist_earth",
-    "gist_earth_r",
-    "gist_gray",
-    "gist_gray_r",
-    "gist_grey",
-    "gist_heat",
-    "gist_heat_r",
-    "gist_ncar",
-    "gist_ncar_r",
-    "gist_rainbow",
-    "gist_rainbow_r",
-    "gist_stern",
-    "gist_stern_r",
-    "gist_yarg",
-    "gist_yarg_r",
-    "gist_yerg",
-    "gnuplot",
-    "gnuplot2",
-    "gnuplot2_r",
-    "gnuplot_r",
-    "gray",
-    "gray_r",
-    "grey",
-    "hot",
-    "hot_r",
-    "hsv",
-    "hsv_r",
-    "inferno",
-    "inferno_r",
-    "jet",
-    "jet_r",
-    "magma",
-    "magma_r",
-    "nipy_spectral",
-    "nipy_spectral_r",
-    "ocean",
-    "ocean_r",
-    "pink",
-    "pink_r",
-    "plasma",
-    "plasma_r",
-    "prism",
-    "prism_r",
-    "rainbow",
-    "rainbow_r",
-    "seismic",
-    "seismic_r",
-    "spring",
-    "spring_r",
-    "summer",
-    "summer_r",
-    "tab10",
-    "tab10_r",
-    "tab20",
-    "tab20_r",
-    "tab20b",
-    "tab20b_r",
-    "tab20c",
-    "tab20c_r",
-    "terrain",
-    "terrain_r",
-    "turbo",
-    "turbo_r",
-    "twilight",
-    "twilight_r",
-    "twilight_shifted",
-    "twilight_shifted_r",
-    "viridis",
-    "viridis_r",
-    "winter",
-    "winter_r",
-]
+# Normal
+afficher([image1, image2, image3], 1, 1, 1)
+# + de rouge
+afficher([image1, image2, image3], 1.5, 1, 1)
+# + de vert
+afficher([image1, image2, image3], 1, 1.5, 1)
+# + de bleu
+afficher([image1, image2, image3], 1, 1, 1.5)
