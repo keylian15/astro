@@ -12,7 +12,7 @@ def afficher(chemin : str ) :
     
     data = fits.getdata(chemin)
 
-    plt.imshow(data, cmap= 'gray')
+    plt.imshow(data, cmap= 'flag_r')
     plt.colorbar()
     plt.show()
     
