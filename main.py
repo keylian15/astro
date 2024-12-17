@@ -7,9 +7,9 @@ image1 = "Tarantula_Nebula-halpha.fit"
 image2 = "Tarantula_Nebula-oiii.fit"
 image3 = "Tarantula_Nebula-sii.fit"
 
-img4 = "./test/O2024120601-NRCA4_FULL-1.fits"
-img5 = "./test/R2024120602-NRCA4_FULL-1.fits"
-img6 = "./test/R2024120603-NRCA1_FP6-1.fits"
+img4 = "./test/red.fits"
+img5 = "./test/green.fits"
+img6 = "./test/blue.fits"
 # ====== Fin Recupération ======
 
 
@@ -52,13 +52,19 @@ def afficher(
     plt.show()
 
 
-# Normal
-afficher([image1, image2, image3], 1, 1, 1)
-# + de rouge
-afficher([image1, image2, image3], 1.5, 1, 1, "Image Combinée avec + de Red")
-# + de vert
-afficher([image1, image2, image3], 1, 1.5, 1, "Image Combinée avec + de Green")
-# + de bleu
-afficher([image1, image2, image3], 1, 1, 1.5, "Image Combinée avec + de Blue")
+# # Normal
+# afficher([image1, image2, image3], 1, 1, 1)
+# # + de rouge
+# afficher([image1, image2, image3], 1.5, 1, 1, "Image Combinée avec + de Red")
+# # + de vert
+# afficher([image1, image2, image3], 1, 1.5, 1, "Image Combinée avec + de Green")
+# # + de bleu
+# afficher([image1, image2, image3], 1, 1, 1.5, "Image Combinée avec + de Blue")
 
-# afficher([img4, img5, img6], 1, 1, 1)
+# afficher([img4, img5, img6], 1, 1, 1, "test dl")
+# Il va me dire qu'il y a un probleme de taille sauf que ca renvoie que des nan :
+# print(f"Affichage premiere matrice : \n{fits.getdata(img4)}")
+# print(f"Affichage deuxieme matrice : \n{fits.getdata(img5)}")
+# print(f"Affichage troisieme matrice : \n{fits.getdata(img6)}")
+# Ca ne change rien toujours des nan.
+# img4 = np.nan_to_num(img4)
