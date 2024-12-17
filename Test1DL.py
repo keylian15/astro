@@ -1,3 +1,9 @@
+"""
+Fichier de test n°1 : Pour les téléchargements.
+Résultat : Il renvoie la listes de tous les fichiers trouvés pour certaines filtres RGB (correct)
+"""
+
+
 from astroquery.mast import Observations
 
 # Paramètres de recherche
@@ -32,15 +38,19 @@ try:
             
             fits_files = Observations.filter_products(
                 products,
-                # productSubGroupDescription="SCIENCE",
+                # description = "HAP fits science image",
                 extension=["fits", "fit", "fz"]
             )
 
+            # fits_files = [product for product in fits_files if product['calib_level'] == 2]
+            
             # Télécharger les fichiers FITS si disponibles
+            print(f"len de fits_files : {len(fits_files)}")
+            
             if len(fits_files) > 0:
-                downloaded = Observations.download_products(fits_files)
-                fichiers_fits.append(downloaded['Local Path'][0])
-                # print(f"Fichier a télécharger !")
+                # downloaded = Observations.download_products(fits_files)
+                # fichiers_fits.append(downloaded['Local Path'][0])
+                print(f"Fichier a télécharger !\n{fits_files}") #{fits_files}
             else:
                 print(f"Aucun fichier FITS disponible pour le filtre {filtre}")
         else:
