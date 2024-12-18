@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import sys
 # ====== Recupération ======
-image1 = "Tarantula_Nebula-halpha.fit"
+image1 = sys.path[0] + "/Tarantula_Nebula-halpha.fit"
 image2 = "Tarantula_Nebula-oiii.fit"
 image3 = "Tarantula_Nebula-sii.fit"
 # ====== Fin Recupération ======
@@ -27,14 +27,25 @@ def afficher(
     image2 = fichiers[1]
     image3 = fichiers[2]
 
-    # data1 = fits.getdata(image1)
-    # data2 = fits.getdata(image2)
-    # data3 = fits.getdata(image3)
-
     data1 = extraire_image(image1)
     data2 = extraire_image(image2)
     data3 = extraire_image(image3)
     
+    # Récupérer les dimensions de chaque image
+    red_height, red_width = data1.shape
+    green_height, green_width = data2.shape
+    blue_height, blue_width = data3.shape
+
+    # Trouver la plus petite hauteur et largeur parmi les trois images
+    min_height = min(red_height, green_height, blue_height)
+    min_width = min(red_width, green_width, blue_width)
+    
+    # Recadrer les images à la taille la plus petite
+    data1 = data1[:min_height, :min_width]
+    data2 = data2[:min_height, :min_width]
+    data3 = data3[:min_height, :min_width]
+
+    # On normalise les données.
     red = normaliser(data1) * multi_r
     green = normaliser(data2) * multi_g
     blue = normaliser(data3) * multi_b
@@ -81,4 +92,9 @@ dossier_test = sys.path[0] + "/Donnees/HST_NGC_6362_0.01_deg/"
 t1 = dossier_test + "red.fits" 
 t2 = dossier_test + "green.fits" 
 t3 = dossier_test + "blue.fits" 
+
+# print(fits.info(t1))
+# print(fits.info(t2))
+# print(fits.info(t3))
+
 afficher([t1,t2,t3])

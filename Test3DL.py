@@ -7,7 +7,18 @@ from astroquery.mast import Observations
 import sys, os, shutil
 
 
-def download(objet: str, telescope: str, radius: str, filter):
+def download(objet: str, telescope: str, radius: str, filter) -> tuple:
+    """_summary_
+
+    Args:
+        objet (str): Le nom de l'objet celeste.
+        telescope (str): Le telescope.
+        radius (str): Le rayon d'observation.
+        filter (_type_): Les filtres utilisés par les fichiers fits.
+
+    Returns:
+        tuple: La liste des chemins dl et les erreurs possibles.
+    """
 
     # ====== Verification Données ======
     if not objet:
@@ -23,11 +34,13 @@ def download(objet: str, telescope: str, radius: str, filter):
         return "Les filtres doivent être valide."
     # ====== Fin Verification Données ======
 
+    if verif_files_dl(objet, telescope, radius):
+        pass
+    else:
+        pass
+
     try:
         errors = []
-
-        # Requête initiale pour récupérer toutes les observations autour de l'objet
-        # result = Observations.query_object(objet, radius=radius)
 
         # Filtrer les observations par des critères spécifiques si nécessaire
         result_filtered = Observations.query_criteria(
@@ -52,7 +65,9 @@ def download(objet: str, telescope: str, radius: str, filter):
                 )
 
                 if len(fits_files) > 0:
-                    print(fits_files)
+
+                    fits_files.sort("size", reverse=True)
+
                     # Télécharger les fichiers FITS
                     downloaded = Observations.download_products(
                         fits_files[:1], download_dir=sys.path[0], mrp_only=False
@@ -71,15 +86,27 @@ def download(objet: str, telescope: str, radius: str, filter):
                     "Pas d'observation trouvée pour le filtre {}".format(filtre)
                 )
                 # print(f"Pas d'observation trouvée pour le filtre {filtre}")
-        
+
         # On replace correctement les images
-        rename_and_replace(objet, radius, telescope, fichiers_fits)
+        rename_and_replace(objet, telescope, radius, fichiers_fits)
         return fichiers_fits, errors
 
     except Exception as e:
-        print("Erreur lors de la requête :", e)
+        errors.append(f"Erreur lors de la requête :{e}")
 
-def rename_and_replace(objet, radius, telescope: str, fichiers_fits: list):
+def rename_and_replace(objet: str, telescope: str, radius: str, fichiers_fits: list):
+    """Fonction permettant de remplacer le nom des fichiers par red/green/blue.fits
+    et de les mettres dans un répertoire sous la forme NOM TELESCOPE _ NOM OBJET _ RAYON
+
+    Args:
+        objet (str): Le nom de l'objet celeste.
+        telescope (str): Le telescope.
+        radius (str): Le rayon d'observation.
+        fichiers_fits (list): Les 3 chemins de fichiers télécharger.
+
+    Returns:
+        None: Effet de bord : Replacement et renamage des fichiers, suppressions de fichiers tempos.
+    """
     # ====== Verification Données ======
     if not telescope:
         return "Le nom de telescope doit être valide."
@@ -107,6 +134,36 @@ def rename_and_replace(objet, radius, telescope: str, fichiers_fits: list):
 
         shutil.rmtree(chemin + "/mastDownload/")
 
+
+def verif_files_dl(objet: str, telescope: str, radius: str) -> bool:
+    """Fonction permettant de verifier si des fichiers ont déja été telecharger et qu'ils sont tous la.
+
+    Args:
+        objet (str): Le nom de l'objet celeste.
+        telescope (str): Le telescope.
+        radius (str): Le rayon d'observation.
+
+    Returns:
+        Bool: Presence ou non.
+    """
+    dossier_nom = (
+        telescope.replace(" ", "_")
+        + "_"
+        + objet.replace(" ", "_")
+        + "_"
+        + radius.replace(" ", "_")
+    )
+    dossier_nom = sys.path[0] + "/Donnees/" + dossier_nom
+
+    if (
+        os.path.exists(dossier_nom)
+        and os.path.isdir(dossier_nom)
+        and len(os.listdir(dossier_nom)) == 3
+    ):
+        return True
+    return False
+
+
 # Paramètres de recherche
 objet = "NGC 6362"
 telescope = "HST"
@@ -115,5 +172,6 @@ filtres = ["F814W", "F658N", "F336W"]  # Filtres RGB à tester
 fichiers_fits = []
 errors = []
 
-fichier_fits, errors = download(objet, telescope, radius, filtres)
-
+# fichier_fits, errors = download(objet, telescope, radius, filtres)
+# download(objet, telescope, radius, filtres)
+print(verif_files_dl(objet, telescope, radius))
