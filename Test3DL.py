@@ -34,65 +34,64 @@ def download(objet: str, telescope: str, radius: str, filter) -> tuple:
         return "Les filtres doivent être valide."
     # ====== Fin Verification Données ======
 
-    if verif_files_dl(objet, telescope, radius):
-        pass
-    else:
-        pass
+    if not verif_files_dl(objet, telescope, radius):
 
-    try:
-        errors = []
+        try:
+            errors = []
 
-        # Filtrer les observations par des critères spécifiques si nécessaire
-        result_filtered = Observations.query_criteria(
-            objectname=objet,
-            radius=radius,
-            obs_collection=telescope,
-            dataRights="PUBLIC",
-        )
+            # Filtrer les observations par des critères spécifiques si nécessaire
+            result_filtered = Observations.query_criteria(
+                objectname=objet,
+                radius=radius,
+                obs_collection=telescope,
+                dataRights="PUBLIC",
+            )
 
-        for filtre in filtres:
-            filtered_result = result_filtered[result_filtered["filters"] == filtre]
+            for filtre in filtres:
+                filtered_result = result_filtered[result_filtered["filters"] == filtre]
 
-            if len(filtered_result) > 0:
-                obs_id = filtered_result[0]["obsid"]
+                if len(filtered_result) > 0:
+                    obs_id = filtered_result[0]["obsid"]
 
-                # Récupérer les produits associés à l'observation
-                products = Observations.get_product_list(obs_id)
+                    # Récupérer les produits associés à l'observation
+                    products = Observations.get_product_list(obs_id)
 
-                # Filtrer pour ne garder que les fichiers FITS
-                fits_files = Observations.filter_products(
-                    products, extension=["fits", "fit", "fz"], mrp_only=False
-                )
-
-                if len(fits_files) > 0:
-
-                    fits_files.sort("size", reverse=True)
-
-                    # Télécharger les fichiers FITS
-                    downloaded = Observations.download_products(
-                        fits_files[:1], download_dir=sys.path[0], mrp_only=False
+                    # Filtrer pour ne garder que les fichiers FITS
+                    fits_files = Observations.filter_products(
+                        products, extension=["fits", "fit", "fz"], mrp_only=False
                     )
 
-                    # Ajouter les chemins locaux des fichiers téléchargés à la liste
-                    fichiers_fits.extend(downloaded["Local Path"])
+                    if len(fits_files) > 0:
 
+                        fits_files.sort("size", reverse=True)
+
+                        # Télécharger les fichiers FITS
+                        downloaded = Observations.download_products(
+                            fits_files[:1], download_dir=sys.path[0], mrp_only=False
+                        )
+
+                        # Ajouter les chemins locaux des fichiers téléchargés à la liste
+                        fichiers_fits.extend(downloaded["Local Path"])
+
+                    else:
+                        errors.append(
+                            "Aucun fichier FITS disponible pour le filtre {}".format(filtre)
+                        )
+                        # print(f"Aucun fichier FITS disponible pour le filtre {filtre}")
                 else:
                     errors.append(
-                        "Aucun fichier FITS disponible pour le filtre {}".format(filtre)
+                        "Pas d'observation trouvée pour le filtre {}".format(filtre)
                     )
-                    # print(f"Aucun fichier FITS disponible pour le filtre {filtre}")
-            else:
-                errors.append(
-                    "Pas d'observation trouvée pour le filtre {}".format(filtre)
-                )
-                # print(f"Pas d'observation trouvée pour le filtre {filtre}")
+                    # print(f"Pas d'observation trouvée pour le filtre {filtre}")
 
-        # On replace correctement les images
-        rename_and_replace(objet, telescope, radius, fichiers_fits)
-        return fichiers_fits, errors
+            # On replace correctement les images
+            rename_and_replace(objet, telescope, radius, fichiers_fits)
+            return fichiers_fits, errors
 
-    except Exception as e:
-        errors.append(f"Erreur lors de la requête :{e}")
+        except Exception as e:
+            errors.append(f"Erreur lors de la requête :{e}")
+    else : 
+        print(f"Fichier deja tous dl")
 
 def rename_and_replace(objet: str, telescope: str, radius: str, fichiers_fits: list):
     """Fonction permettant de remplacer le nom des fichiers par red/green/blue.fits
@@ -134,7 +133,6 @@ def rename_and_replace(objet: str, telescope: str, radius: str, fichiers_fits: l
 
         shutil.rmtree(chemin + "/mastDownload/")
 
-
 def verif_files_dl(objet: str, telescope: str, radius: str) -> bool:
     """Fonction permettant de verifier si des fichiers ont déja été telecharger et qu'ils sont tous la.
 
@@ -162,7 +160,6 @@ def verif_files_dl(objet: str, telescope: str, radius: str) -> bool:
     ):
         return True
     return False
-
 
 # Paramètres de recherche
 objet = "NGC 6362"
