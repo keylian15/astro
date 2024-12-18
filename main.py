@@ -265,9 +265,9 @@ def verif_files_dl(objet: str, telescope: str, radius: str) -> bool:
 if __name__ == "__main__":
     # ====== Recupération ======
     # Exemple fourni
-    image1 = sys.path[0] + "/Tarantula_Nebula-halpha.fit"
-    image2 = sys.path[0] + "/Tarantula_Nebula-oiii.fit"
-    image3 = sys.path[0] + "/Tarantula_Nebula-sii.fit"
+    image1 = sys.path[0] + "/Donnees/Exemple/Tarantula_Nebula-halpha.fit"
+    image2 = sys.path[0] + "/Donnees/Exemple/Tarantula_Nebula-oiii.fit"
+    image3 = sys.path[0] + "/Donnees/Exemple/Tarantula_Nebula-sii.fit"
 
     # Exemple telecharger
     # dossier_test = sys.path[0] + "/Donnees/HST_NGC_6362_0.01_deg/"
@@ -286,7 +286,6 @@ if __name__ == "__main__":
     # # + de bleu
     # afficher([image1, image2, image3], 1, 1, 1.5, "Image Combinée avec + de Blue")
 
-    # afficher([t1, t2, t3])
     # ====== Fin Test Affichage ======
 
     # ====== Test Telechargement ======
@@ -294,8 +293,8 @@ if __name__ == "__main__":
     objet = "NGC 6362"
     telescope = "HST"
     radius = "0.01 deg"
-    # filtres = ["F814W", "F658N", "F336W"] # Filtre sans probleme.
-    filtres = ["F814X", "F658N", "F336W"] # Filtre avec.
+    filtres = ["F814W", "F658N", "F336W"] # Filtre sans probleme.
+    # filtres = ["F814X", "F658N", "F336W"] # Filtre avec.
     fichiers_fits = []
     errors = []
 
