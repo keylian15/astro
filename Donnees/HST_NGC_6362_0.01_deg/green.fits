@@ -1,868 +1,0 @@
-SIMPLE  =                    T / conforms to FITS standard                      BITPIX  =                    8 / array data type                                NAXIS   =                    0 / number of array dimensions                     EXTEND  =                    T                                                  DESTIM  = 'jbdj02ygq'          / Destination observation root name              HDRNAME = 'jbdj02ygq_flc_IDC_4bb1536cj-FIT_REL_GAIAeDR3-hlet.fits' / Headerlet nDATE    = '2024-01-17T18:59:37' / Date FITS file was generated                  WCSNAME = 'IDC_4bb1536cj-FIT_REL_GAIAeDR3' / Coordinate system title            DISTNAME= 'jbdj02ygq_4bb1536cj-4bb15373j-4bb15371j' / Distortion model name     SIPNAME = 'jbdj02ygq_4bb1536cj' / origin of SIP polynomial distortion model     NPOLFILE= 'jref$4bb15373j_npl.fits' / origin of non-polynmial distortion model  D2IMFILE= 'jref$4bb15371j_d2i.fits' / origin of detector to image correction    IDCTAB  = 'jref$4bb1536cj_idc.fits' / origin of Polynomial Distortion           AUTHOR  = '' / headerlet created by this user                                   DESCRIP = '' / Short description of headerlet solution                          RMS_RA  =   7.3404884812302065 / RMS in RA of WCS fit(mas)                      RMS_DEC =    8.158610448299875 / RMS in Dec of WCS fit(mas)                     NMATCH  =                  561 / Number of sources used for headerlet solution  CATALOG = 'GAIAeDR3'           / Astrometric catalog used for headerlet solutionUPWCSVER= '1.7.2   '           / Version of STWCS used to update the WCS        PYWCSVER= '5.3.3   '           / Version of PYWCS used to update the WCS        FITMETH = 'relative'                                                            FIT_RMS =    8.009324621789393 / RMS (mas) of the 2D fit of the headerlet solutiHISTORY ~~~~~ FIT PARAMETERS ~~~~~                                              HISTORY      platescale :    0.0493 "/pixels                                    HISTORY         x_shift :   -2.0774 pixels                                      HISTORY         y_shift :    1.5536 pixels                                      HISTORY        rotation :   -0.0027 degrees                                     HISTORY           scale :    1.0001                                             HISTORY            skew :    0.0000                                             END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             XTENSION= 'IMAGE   '           / Image extension                                BITPIX  =                    8 / array data type                                NAXIS   =                    0 / number of array dimensions                     PCOUNT  =                    0 / number of parameters                           GCOUNT  =                    1 / number of groups                               WCSAXES =                    2 / Number of coordinate axes                      CRPIX1  =               2048.0 / Pixel coordinate of reference point            CRPIX2  =               1024.0 / Pixel coordinate of reference point            CUNIT1  = 'deg'                / Units of coordinate increment and value        CUNIT2  = 'deg'                / Units of coordinate increment and value        CTYPE1  = 'RA---TAN-SIP'       / TAN (gnomonic) projection + SIP distortions    CTYPE2  = 'DEC--TAN-SIP'       / TAN (gnomonic) projection + SIP distortions    CRVAL1  =      263.02353643954 / [deg] Coordinate value at reference point      CRVAL2  =     -67.050491140364 / [deg] Coordinate value at reference point      CRDER1  =  2.0390245781195E-06 / [deg] Random error in coordinate               CRDER2  =  2.2662806800833E-06 / [deg] Random error in coordinate               WCSNAME = 'IDC_4bb1536cj-FIT_REL_GAIAeDR3' / Coordinate system title            MJDREF  =                  0.0 / [d] MJD of fiducial time                       RADESYS = 'ICRS'               / Equatorial coordinate system                   A_ORDER =                    5 / SIP polynomial order, axis 0, detector to sky  A_0_2   = 2.16203527830964E-06 / SIP distortion coefficient                     A_0_3   =  1.6076579966973E-12 / SIP distortion coefficient                     A_0_4   = 2.02238799871835E-14 / SIP distortion coefficient                     A_0_5   = -5.9062435775801E-19 / SIP distortion coefficient                     A_1_1   = -5.2057364199991E-06 / SIP distortion coefficient                     A_1_2   = -5.4037628684583E-10 / SIP distortion coefficient                     A_1_3   = -1.7403679167604E-14 / SIP distortion coefficient                     A_1_4   = -6.4085556184169E-18 / SIP distortion coefficient                     A_2_0   = 8.55953028780119E-06 / SIP distortion coefficient                     A_2_1   = -2.6446368580302E-11 / SIP distortion coefficient                     A_2_2   = 3.60379257113992E-14 / SIP distortion coefficient                     A_2_3   = 3.28305225264831E-18 / SIP distortion coefficient                     A_3_0   = -4.9598858261886E-10 / SIP distortion coefficient                     A_3_1   = 4.32509392151411E-15 / SIP distortion coefficient                     A_3_2   = 1.14615569596223E-17 / SIP distortion coefficient                     A_4_0   = 2.42658447747918E-14 / SIP distortion coefficient                     A_4_1   = -3.4588190800478E-18 / SIP distortion coefficient                     A_5_0   = 3.49419136709646E-18 / SIP distortion coefficient                     B_ORDER =                    5 / SIP polynomial order, axis 1, detector to sky  B_0_2   = -7.2073785642199E-06 / SIP distortion coefficient                     B_0_3   = -4.6100510927646E-10 / SIP distortion coefficient                     B_0_4   = -7.0007995615976E-15 / SIP distortion coefficient                     B_0_5   =  2.2219063582979E-17 / SIP distortion coefficient                     B_1_1   = 6.19744687326605E-06 / SIP distortion coefficient                     B_1_2   = -8.1671237240216E-11 / SIP distortion coefficient                     B_1_3   = 7.81686481134185E-15 / SIP distortion coefficient                     B_1_4   = 2.24633048427028E-17 / SIP distortion coefficient                     B_2_0   =  -1.739988963685E-06 / SIP distortion coefficient                     B_2_1   = -5.3287834908629E-10 / SIP distortion coefficient                     B_2_2   = -4.0105054843003E-14 / SIP distortion coefficient                     B_2_3   = 9.54535804867961E-18 / SIP distortion coefficient                     B_3_0   = 9.98559936206135E-11 / SIP distortion coefficient                     B_3_1   = -3.7997822666362E-15 / SIP distortion coefficient                     B_3_2   = 2.25479864489866E-19 / SIP distortion coefficient                     B_4_0   = -1.8449543974516E-14 / SIP distortion coefficient                     B_4_1   = 4.48253363489665E-18 / SIP distortion coefficient                     B_5_0   = -3.0024551095135E-18 / SIP distortion coefficient                     D2IMDIS1= 'LOOKUP  '           / Detector to image correction type              D2IM1   = 'EXTVER: 1' / Version number of WCSDVARR extension                    D2IM1   = 'NAXES: 2' / Number of independent variables in D2IM function         D2IM1   = 'AXIS.1: 1' / Axis number of the 1st variable in a D2IM function      D2IM1   = 'AXIS.2: 2' / Axis number of the 2nd variable in a D2IM function      D2IMDIS2= 'LOOKUP  '           / Detector to image correction type              D2IM2   = 'EXTVER: 2' / Version number of WCSDVARR extension                    D2IM2   = 'NAXES: 2' / Number of independent variables in D2IM function         D2IM2   = 'AXIS.1: 1' / Axis number of the 1st variable in a D2IM function      D2IM2   = 'AXIS.2: 2' / Axis number of the 2nd variable in a D2IM function      CPDIS1  = 'LOOKUP  '           / Prior distortion function type                 DP1     = 'EXTVER: 1' / Version number of WCSDVARR extension                    DP1     = 'NAXES: 2' / Number of independent variables in CPDIS function        DP1     = 'AXIS.1: 1' / Axis number of the 1st variable in a CPDIS function     DP1     = 'AXIS.2: 2' / Axis number of the 2nd variable in a CPDIS function     CPDIS2  = 'LOOKUP  '           / Prior distortion function type                 DP2     = 'EXTVER: 2' / Version number of WCSDVARR extension                    DP2     = 'NAXES: 2' / Number of independent variables in CPDIS function        DP2     = 'AXIS.1: 1' / Axis number of the 1st variable in a CPDIS function     DP2     = 'AXIS.2: 2' / Axis number of the 2nd variable in a CPDIS function     ORIENTAT=   -79.11653428617039 / positions angle of image y axis (deg. e of n)  TG_ENAME= 'SCI     '           / Target science data extname                    TG_EVER =                    1 / Target science data extver                     CD1_1   = -3.5462332570348E-06 / partial of first axis coordinate w.r.t. x      CD1_2   =  -1.372303113924E-05 / partial of first axis coordinate w.r.t. y      CD2_1   = -1.3383936301097E-05 / partial of second axis coordinate w.r.t. x     CD2_2   =  2.6385324786443E-06 / partial of second axis coordinate w.r.t. y     OCX10   =          0.001966045 / original linear term from IDCTAB               OCX11   =  0.04981580673997982 / original linear term from IDCTAB               OCY10   =          0.050263001 / original linear term from IDCTAB               OCY11   = 0.001493021882275738 / original linear term from IDCTAB               IDCSCALE=                 0.05 / pixel scale from the IDCTAB reference file     D2IMEXT = 'jref$4bb15371j_d2i.fits'                                             D2IMERR1=                0.041 / Maximum error of D2IM correction for axis 1    D2IMERR2=                0.062 / Maximum error of D2IM correction for axis 2    CPERR1  =          0.027839145 / Maximum error of NPOL correction for axis 1    CPERR2  =          0.029120909 / Maximum error of NPOL correction for axis 2    NPOLEXT = 'jref$4bb15373j_npl.fits'                                             EXTNAME = 'SIPWCS  '           / extension name                                 EXTVER  =                    1 / extension value                                END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             XTENSION= 'IMAGE   '           / Image extension                                BITPIX  =                  -32 / array data type                                NAXIS   =                    2 / number of array dimensions                     NAXIS1  =                   64                                                  NAXIS2  =                   32                                                  PCOUNT  =                    0 / number of parameters                           GCOUNT  =                    1 / number of groups                               EXTNAME = 'WCSDVARR'           / extension name                                 CRPIX1  =                  0.0 / Coordinate system reference pixel              CRPIX2  =                  0.0 / Coordinate system reference pixel              CRVAL1  =                  0.0 / Coordinate system value at reference pixel     CRVAL2  =                  0.0 / Coordinate system value at reference pixel     CDELT1  =                 64.0 / Coordinate increment along axis                CDELT2  =                 64.0 / Coordinate increment along axis                EXTVER  =                    1 / extension value                                END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             º"¥Ùº∂ª∆⁄ƒ∫˜˜h;Oﬁ—;È˛;ÇlO;·W™;Â4‘;»$|;•ÌB;MK_ªEë;p\:éŒªIy;}J;·W™;k1;+Œù:Iôo∫ùxvªp\∫ﬁ4˙∫Ì©¢;æ"9No9§‹Z∫˜˜hªöU√ª¡≥·ª¢ª¬˝öªúÈ5:à‹Î;ÏÔ(;œﬁ—;å∫; ∑Ó;à‹Î;∂∏§‹Z∫à‹Î∏§‹Zª‹ÎªÑˇ¡ª"óªJ∑ÓªÑˇ¡ªIyªÇlO:hÇøªEë∫}Jª;CE:à‹Îª¿j(8˜JÜ∫hÇø;"ó8$‹Z;H$|:*∞∫÷$5º∂ªáì2ªOﬁ—:à‹Î∫r–Ö;"ó<3+µ<BXΩ;Ω÷∑:Ì©¢ª"óª∂ªÏÔ(ºò	Úºóeº—§ª£Y–πwJÜ;‘vs;≠V:∫$∆πwJÜ∫˝Jπê@Œ:ËÇøπwJÜ:É∂:r–Ö∫òQìª≠ßñº&íº,»ª"ó;É∂9§‹Zªr–Ö;áì2<%He<%ÌB;†∆_;@j(:^4˙∫òQìªp\ª∂∫É∂ª∂;Oﬁ—;´$<∂;‚°c:r–Ö:ËÇø∫¨ÌªQì∫ì*∞;Eë∫}Jª±º9No;´$; ∑Ó;•ÌB:*∞ª∆⁄ƒªOﬁ—∫¢üY:éŒªB˝ö∏$‹Z<Rœ~<s#;›zÄª*∞ªÉ∂ª‹Îº)%èº¬*º∞ºº5Jº2ÜŸ:4˝„<
-Éﬂ;´Œù∫/*:*∞9No∫¨Ì;+Œù∫∑:‰;‹Î;3àÒ:SÁ4ªêó?ºG†º]8$‹Z;É∂∫ﬁ4˙ªp=; ∑Ó<DÏ/<§ù;@j(:ËÇø;8Ø‘ªó?πNo∫˝J:É∂:}J;´$;ÏÔ(<5ø&<2ÜŸ;@j(;ÿSùππw‰:4˝„ªÈ˛<ôW8$‹Zª†∆_9‚Æ˙<'6˙;ÏÔ(;Ó8·:ËÇøª≈ë∫˜˜h∫˝J:∑:‰∫^4˙∫Ì©¢;≈ë<«s<Oû;=÷∑;Ó8·8$‹Zª"üYº1Ñ¿º^f˝:4˝„;˙äŸ:Ø◊ ª4ßr;∆KÑ9õËYºcF?ºPª;CE9No9Œo<û˚ô<z“w;Û_ƒª∂ªΩ÷∑ºBXΩªø p:É∂:À÷oªï.·∫øK©<*oH<eŸ±;¢∫à‹Î∫hÇø;‹Îªk1ª‚°cªB˝ö∏$‹Z∫4˝„∫…ôo;p\;˙äŸ;∂cπwJÜº'€◊ª‹Îºb°cªƒGRª=÷∑:„[‹:hÇø;›zÄ;û2Ó;£Y–ªß6˙ª ∑Ó:Û	;,Ì;vÇu;ãp\;ƒGR<3–ë;‹0«;⁄Á<P‡È<ˇ¡;Œ;†∆_;ºå˛;ñxô<a¸á<a¸á;¥“™:†bX∫$‹Zªœﬁ—ºÄ+Lº)ÇÃº˙†;*Y≠;⁄,ñ<©%è<n›æ<?hª¿j(ºrtºáÛº=1⁄:ùxv;q[ìπ<+m;~< <ÅFf<‹Î;Eëª ∑Ó:éŒªw˜h∫ƒråª•ÌB:˜˜hπNo∫Ú–Öª3àÒ∫Ì©¢:Ì©¢:hÇø;6cº3+µº }∫ª¥“™8˜JÜª·W™9Ÿ∫˘;∂c9≈mª∞;ªì*∞8˜JÜª»$|:Û	;∫àÕ;èMÜ;Eë<∂;Ê~ç;$I;hÇø;}Jª£Y–ª£Y–;∆⁄ƒ;áì2;•ÌB<|0<f~ç;ü|¶;k1ªp\º•HeºªπÉºa¸áºR*¢ª·W™:à‹Î<vÅ<V¨®<*oHº«sº`ÚºNMxª∆É;aÊÍ;’≥;¥1<PÉ≠<â/Y<Ö§ù<ôW;r–Ö<8;ä&£∫…ôoªEë;¬˝ö: bX∫hÇøª@j(∫ﬁ4˙9No8˜JÜ∏˜JÜª¡≥·ª‚°cª‹0«∫éŒπ§‹Zºì2ªdz\ªú.Ωº  }ºO9Ù;.bªü|¶∫SÁ4;ó?ªÉ∂ªÜIy:}J;=÷∑;†∆_;õü|∫¢üYªÉ∂∫à‹Î;ÇlO;»$|;¬˝ö<Ö˜<i∂€<i˛;…n5ªúÈ5º≤ŸGº≥+µª˝Jª∆⁄ƒªJ∑Ó;ƒGR<i∂€<g#i<‹Î9wJÜº2ÜŸªÇlOªõü|:}J:Ú–Ö;r–Ö∫É∂<Z‰<5ø&<™¬<!k;<Ub;Oﬁ—∫y∫Œ¿Q<5J;£Y–;≠ßñª6c;J∑Ó;Iy;p\;‡Ú:^4˙;ó¬Rª© l;$IªÕK_ªß6˙ºZ‰ª€vOºÅFfº.ÒOº2Œyª±º∫hÇø∫hÇøªÜIyªJ∑Ó8˜JÜ;Å"ó<!k;;·W™:Iôo∫≤ª Áª'∆<;∏Ø‘:ËÇø<F⁄ƒ<vıM<x?; ∑Ó∫Œ¿QºÜ Öº—ÿ4º"ªÑˇ¡∫SÁ4ªñxô<{wS<[”ã;’≥ª˛h∫à‹Î∫∑:‰∫ß∆<: bXª"üYª~< ºzéª±Ñ¿;§£â<sºˇ<BXΩ<3+µ<#˛≠;Z,ñªñxô<L¶É<) l;ıÛ5∫*∞;ä&£<,»<&í<§ù;MK_<	ﬂ∫–˝Rº+$º5ø&ªãp\ªà‹Îª◊ô%ºuNYº!≤€º,]›ª¢;_Sy;¥1ª6c∫ì*∞<„<A≥·<Â;‡Ú;6cª¥1ª¯ÜßªsÔºŒºS´∏$‹Z;±º;Ñˇ¡;œﬁ—ªYıºüœº†sÒªÍ[∑πNo:à‹Î;aÊÍ;ä&£;≠ßñ;—(âªÕK_ºlJLª‹¿;ê˛;∞ıÄªRrBª'∆<ª≤Œy:„[‹:hÇø<3+µ<1·¸<#Y–ªWô%ª§£âª@j(<p'v<oÇö<0’;“rB;Î•p<vÅ<8<H…Y;J∑Ó;¡≥·:?K©ª\¿ªèMÜ;}J;¡≥·ª,Ìºb˛º#°pªdz\∫ËÇø;ì*∞;⁄,ñ;≠ßñ;ÜIy<«s<|¶;∏Ø‘:”Á4ªß6˙ª_Syª∞;ªÙ©}º6dºeŸ±º™¬ªucˆ:ß∆<;Âª`»kº∞E’ºú∫∫¨Ì∫ùxvª≈ë:éŒ;‹Î∫?K©;ó?ºì2ºOﬁ—ªq[ì<_i<!k;;•ÌB;öU√:4˝„:SÁ4<#Y–<@j(;˝J:éŒªŒïºvıM∫Ú–Ö;—(â;Z,ñ:¡à©;ì*∞;U≥;„Î;•ÌB:ùxv∫ bX:ì*∞º„ªÓ8·∫¨Ì;…n5<$£â;c[‹ª»≥ΩªﬂSyº2Œy9wJÜ;¥1;◊ô%;Z,ñ;Wô%<e:r–Ö∏§‹Z:Ÿ∫∑:‰ππw‰:Iôo:„[‹ª´$º@j(ªYı;ó⁄;QìªhÇøªeÔNº? pºhm";w˜h;zäŸ:éŒ;å∫<|0;¨]›:É∂ªáì2ª"üY;’¿,;’¿,<ôW;J∑Ó:Ú–Öª≠ßñ:ﬁ4˙;ƒGR;ucˆªw˜hª∆⁄ƒº	Úº5ø&ªp=;ß6˙;ÇlO∫Ú–Ö∫4˝„9No:}Jª»$|ªß6˙ºTæ∫éŒº/Ûgº1·¸ºãLåª∂8$‹Z9Ÿ∫˘ºjª˝≠âºzé:ì*∞;¨]›;œﬁ—:¨Ì;xv;∑ı[;ÜIyªIy;ucˆ;.b;öU√;´$<∂∫òQìª≤?9∫¥˝„;Â;∂ª†∆_ªß6˙ªß6˙ªOﬁ—:ËÇø;∂9Noª0ıÄ;≠ßñ;Âªä&£ª≠ßñ:?K©:ﬁ4˙;Œÿ;⁄ÁªÅ"óªÑˇ¡ª∞;ªèMÜ;∂∫ß∆<º4unªÁ»F∫ß∆<ªêó?ª@j(<«s;◊	Â:Iôo∫hÇø9Œo<%He;±ºªxvªÃ¶<«sª∏Ø‘ºA≥·ºu∏º !Éº3+µªÔÇöº.ÒOº/ñ+∫€K;Œ;Î•p<]9No∫4˝„;ì*∞<'€◊∏$‹Z;≤?9:ìππw‰∫Ì©¢∏˜JÜºÓVº2Ó∫…ôoªΩ÷∑πNoªáì2∫¨Ìππw‰;ü|¶:ŸªOﬁ—ª@j(ª3àÒ∫˝J9$‹Z;É∂;!Ä◊ªaÊÍ∫¡à©;ÒÜÃ:øK©ªucˆª6c;p\;‹Î;®Ä≥∫ì*∞π$‹Z∫ùxv;c[‹∫–˝Rπ‚Æ˙:ﬁ4˙;);,ªŒïªÅ"ó:ß∆<<
-ÀÄ;áì2<ôW<*ÃÑ<vPq;“rB;MK_:„[‹∫òQìª…n5ªıÛ5ªú.ΩºŒ:ì:É∂;áì2;Ã¶;ÔÇö;éŒ;¨]›;´$<>3<vªdz\º¯áª·W™ªÊ~çª¬˝öº/ÛgºÕóª‡Ú;0ıÄ∫òQì∫à‹Î:^4˙;ucˆπê@Œº4unºV¨®º5ø&ª…n5ª8Ø‘;p=;&ß∫9∞É·∫Û	;àM™ªÂ∫˜˜h:≤9No;RrB;§£â∫ì*∞ª¨]›;;CE;˙äŸªU≥ªJ∑ÓªÜIyªÃ¶º9úP:Ú–Öª±ºª}J;U≥<Ub;˝J;‚°c;ıÛ5; ∑Ó;π˘ç;ıcˆπ‚Æ˙ªµaÍªπ?ªxvª±Ñ¿ª‹Î;áì2;ãp\;ÆÒO;Ú<ÆŒ<F⁄ƒ<Â;‘vsππw‰º9úPºåC÷ªÑˇ¡∫r–ÖºPª^4˙;…n5;;CE:r–Ö;•ÌB;;CEπ$‹Z;π˘çªä&£º(Ä≥ªÊ~ç:É∂8§‹Z;p=;˚‘í;úÈ5:˜˜h9Ÿ∫˘ªèMÜªzäŸ:ºa«;áì2:^4˙ªJ∑Óº"óªø p;áì2;à‹Î:¢üYªõü|ª‡Úª•ÌBªRrBª© lºz“wªÂ4‘ª&ß∫;ä&£ªIy∫ﬁ4˙ª•^;îti<,;œOëªÚªl4∞∫ß∆<;8Ø‘ªRrB:}J8§‹Z∫^4˙;≈ë<vÅ;ß6˙<2ÜŸ;"ó;®Ä≥ªr–ÖºÅ"óºÄ}∫ª3àÒª+Œùª∞ıÄªúÈ5:éŒ:É∂ªIyªó?:^4˙∏˜JÜπ$‹ZπNoπ$‹Zº—§ºEëª§£â∫ì*∞:?K©∏§‹Zª±ºªéŒªU≥ªÉ∂:r–Ö<L^„;’¿,∫¡à©ªÙ©}ªÜIy;¨]›<9úP:¨ÌªñxôªúÈ5∏$‹Zª§£âª®Ä≥ºj[∑ªÏÔ(:ß∆<<ˇ¡;ÇlO∫ìºõo:ÄÃ&<-ßñ;p\ºV¨®ªÎ•p;ÇlO;ÇlOª_Sy;Eë∫à‹Î∫}J;‡Ú<"¥Ù;õü|:SÁ4∫É∂∫Ì©¢º+qaºo:˘ªíõoª6cª∂c;Â;…n5:r–Ö;±º;†∆_:˝J∏$‹Zª"óªŒ∫ùxvª∂º$£âº5ø&ª≠ßñ;¢πwJÜª ∑Óππw‰;öU√ª\¿ªÏÔ(;≥àÒ<gÄ•<¶µ∫$‹Z:∫$∆;ºå˛<&í<Xõ=;éŒ∫hÇøªÎ•pº#Y–ºBXΩº'€◊º\xgºcÎ8˜JÜ<]<BXΩ;Z,ñ;Ç˚è;¶|É<Q(â;éŒª•ÌBºZâ“<∂;}J∫r–Ö;H$|;áì2;ä&£<«s;˝J;úÈ5ªÈ˛ºF⁄ƒºvÅªê˛ª˙äŸª3àÒª¢9No;úÈ5;ø p;úÈ5<Ùz;Á»F9Œoª6c∫…ôoª≈ëª§£âº'6˙º7ﬂº+π∫≤;c[‹∫¡à©ªµaÍ9ÓVÑ;œOëπ§‹Zª´$;∂c<.·;ÓÛ[ª*Y≠∫¨Ì:^4˙<¿9<8;Z,ñ:˜˜h;úÈ5πê@Œªä&£;.b: bXº8;© l<vPq∫r–Ö∫r–Ö<=y{;Ù©};%2 <ˇ¡ªãp\ºn8·∫¨Ìπê@Œ8§‹Z;•ÌB;»$|<e;Â4‘<Wˆa;‚°c∏˜JÜº&íº }∫ª);,9$‹ZªƒGRº—§∫òQì;Ù>;Ú–Ö;∂c:à‹Î9wJÜ:¢üYª0ıÄ∫ bX<ˇ¡;ˇ±º:hÇø:„[‹;ˆ≠Ø<+qa;⁄Á∫∆Øåπ‚Æ˙;úÈ5<>3<];éŒ<lO<,ª<éªä&£ºZ‰ªÅ"ó;ó?;Â∫„[‹:hÇø;öU√;∑fªå∫ª´$ªéŒªÇlOª∑fª¿j(ºDÏ/ª·W™∏§‹Z;‡Ú<—§;†∆_ª±Ñ¿ª‹¿:?K©ªU≥;ƒGR<Iy;•ÌB;MK_<Oû<ôW;£Y–ª∂ª‚°cªˇ±ºπŸ∫˘∫„[‹ªß6˙ªÍ[∑ªáì2;∑f<'î7ª"óº˙†ªœOëªï.·ªó¬R;Ó8·<VÃ<DÏ/<Eë<∂<Rœ~<_i<—§º„ª†∆_8$‹Z;˜<Ó;¬C!;ùxv; ∑Ó<™¬<0òDªÙ©}ºàä}ºIn5º∂ªÃ¶ªß6˙ª@j(:*∞;.bªÓ8·º'6˙ºˇ¡ªúÈ5ª˛hº3+µº8Ròª∞;ªxv;0ıÄ< !É;õü|π§‹Zº'€◊ªOﬁ—∫ì*∞<|¶;ß6˙;Â4‘<∂;);,;Ê~ç∫˝Jº,ºB˝öªúÈ5:–˝R;éŒ;Wô%∫˝J;p\<5J;§£âªw˜hºDXºﬂº3+µπê@Œ;˙äŸ<QÖ∆<oﬂ’;‚°c<8<ó∑Ñ<ta‹<'€◊∫”Á4ªŸùV∫SÁ4;˜<Ó:Íø¿ª»ﬁı;i°?<DGR;∏Ø‘º8˜tºn›æº:Ê	º[”ãºmîºÑ≠Sº4unº‹Îºg»FºDÏ/ºz-õºEëº/ÛgªÇlOº'6˙ºH…Yº8˜t∫˝J8$‹Z9$‹Z;‹Î;∆⁄ƒªÜIy;±º;ü|¶<2Ó;Ñˇ¡<,<áÏ:Ú–ÖªEëª¿j(ºP‡Èº£Y–ºwö);MK_<vÅ;•ÌB∫ËÇø;éŒ<	Ú:òQìªúÈ5∫Ÿª·W™ªJ∑Ó:∆Õ<◊ ;¥“™:”Á4ª…n59ê@Œ<H…Y<k ì;å∫ªõü|∫Ì©¢:¢üY;ó?:9w‰ºÿªñxô;B˝ö<lOªä&£º8ª´$ªÆÒOºK\ ºñ¿9º≠÷4º5ø&º8ª© lªà‹Î∫É∂ªß6˙∏$‹Z;∂cª´$ª‚°c;Iy;ŒªÿSù:ì*∞;Â4‘;‡Ú<.“<QÖ∆;=÷∑;B˝ö;¡≥·;¡≥·;=÷∑ª3àÒª·W™ºDGRºdè¯ºvÅ∫òQì;˝J<áÏ∫˝Jª6c;Œ;∆⁄ƒª8Ø‘ª0ıÄ∫ËÇø<>3;w˜h<?≈L</Nã;.bª…n5:éŒ<Y@<lJL;xvª0ıÄ<	Ú<§ù;æ";ïæ"π∞É·ºlOªÉ∂;¡≥·;„Î;£Y–;ß6˙;Ñˇ¡;ÇlOº;äÂº∏ *ºåË≥:éŒ;û2Ó;8Ø‘ªÜIyºOûª‹Î:ƒråªaÊÍºáÏª≈ë∫˜˜hª}Jª≈ë:É∂<BXΩ<¢bÜ<a¸á<'€◊;‹Î;6c;.b∏˜JÜª∆⁄ƒºÙzªõü|ºA≥·ºg»F∫É∂;¢∫éŒª•ÌBªƒGR∫r–Ö;ß6˙:¡à©:–˝R;i°?<:Ê	<F⁄ƒ<T7<Ùz;˛h∏§‹Z∫Ì©¢<p\<<‘û;"üY9˜JÜ;≠ßñ;ÜIy;áì2∫^4˙ª†∆_º5ø&ªÆÒO∫ºa«;˝J<,»<∞º<èŒí<%ÌB:„[‹º5ø&ºj[∑∫ì*∞<>{ì:ìªÃ¶ªÊ~ç∫òQìπê@Œ;ºå˛ªaÊÍªÇlO∫}J    ª‚°c∫*∞<Y@<î,»<Eë<T7∫r–Ö;zäŸ;Ω÷∑ª»$|º$£âºOûº◊ ºnñº=1⁄∫ﬁ4˙;æ"∫4˝„ªü|¶ªOﬁ—∫É∂ª;CE9No;dz\ªYı;êó?;„Î∫¢üYªÊ~çª…n5º0òDº.©Ø;∑ı[<
-ÀÄ∫„[‹:¢üY;û2Ó:„[‹∫@Œ:ËÇøª ∑ÓºZ‰ªÂªxv∫ì*∞;È˛<êsn<PÉ≠;ä&£ªèMÜºi∂€ºù±·ºS´;π˘ç∫∆ØåºÆŒº%He;Â;§£â8$‹Zª¢;à‹Î;‚°c∫˝J8˜JÜ;≠ßñ<åñD<	Ú<i˛;¬˝ö∫É∂;∂;É∂ªÇlOº"¥Ùª„ÎºÙzº±ºº.“ª+Œù;ë‡¯9Œo∫^4˙ª‹Î;úÈ5;Å"ó;„Î<ÓV<∂;ä&£;B˝öªà‹ÎºÓVºA≥·º/Nã∫Iôo<5ø&<É∂<>{ì<Â;œOë:õ;vªD;w˜h∫ì*∞ª© lºì2ªŒªó?;‹Î;¥1;ó⁄;èMÜªÕK_º˘Zºóeºk•pª“rBª÷Olº)%èºÇæΩ∫4˝„<ì29Noªü|¶<«s<«s;É∂;‹0«<1·¸<î,»<ç;!<WQÖ;Œ8§‹Z;H$|;•ÌB8§‹ZªÈ˛º'6˙ªÏÔ(ºcÎªÅ"ó;∂;ÇlOª£Y–ªMK_∫¢üY:Iôo<„<C¢v<|¶;‹0«;‚°c∏§‹ZªJ∑ÓªIy∫˝J9§‹Z<F5Á<≤4j<ß∏<È5;˙äŸ;Ãº;xæª∞;    :^4˙:^4˙ªOﬁ—º9ª¥1∫ì*∞;RrB:ºa«<	Ú:?K©º-∫º^Òª≤ŒyªaÊÍº
-&£º*oHºâ]˜9ê@Œ:É∂∫éŒº%ÌBππw‰<2Óªó?º0’∫≤<ö'%<5J<3+µ<Ö˜:ì*∞;≈ë;Ê~ç:òQìªß6˙º9úPª“rBª»$|:^4˙;›zÄ<rtªŒïª—(â∫≤:˜˜h;£Y–;˘A <Â;k1∫¢üYªQì8$‹Z;Ñˇ¡<H…Y<û©+<∂ï<‚Û—<°Ω©;Á»F;Z,ñ;É∂;ì*∞;sÔ<  }<K\ <In5;ucˆªª“Öª˚ª±Ñ¿;B˝ö<ì2<:A-<"ó;û2Ó9ÓVÑ9≈mª%2 º(Ä≥º]º5ø&ª≈ë∫ß∆<;p=º0’ªîti:…ôoªdz\º[”ãπ$‹Z<£b<¥un<eŸ±;Wô%;J∑Ó;Î•p<§ù;\¿ª∂ª„Îº%Heº,»;û2Ó;ü|¶πŒoºÆŒªÆÒOªãp\:éŒ:É∂;0ıÄ;›zÄ:„[‹º‹Îº)%è∫SÁ4;p\<5ø&<é◊H<∏Rò<ö'%;·W™ºPºCZ÷º∏ ªq≤;’îÛ<¥1<œåb<Ÿ@<4unªÍ[∑ºJºNïº(Ä≥ªÇlO<	Ú;Ê~ç;§£â:Ì©¢π˜JÜªQìº¿9º8Ròº)%è:˝J: bXª,Ì∫Û	<M®õ;∑fªÔÇöª© l;£Y–<ï$<H…Y<Wˆaª±º:É∂<9úP<L¶;ÕK_;æ"9§‹Zª;CEª‚°c<,»<áÏ;Ω÷∑πNo;;CE;¢<3–ë;Ñˇ¡<™¬<Tæ<R*¢:}J:˝J9wJÜ;‚°c;˝J<cF?<ì5}<Å"ó:IôoºTæº«	aº≈Ãª¥Cj;·,r<•=ó<Ÿ{<‰Î;”ª˚º.“ºÉcöº∞7ºØrZºY‰ˆ;ü|¶;© l<¯á;¢:^4˙ªÅ"óªp\º’±ºèŒíª© lªp\ªµaÍº+π;ﬁƒ9;§£âªH$|º&í;J∑Ó<|0;œﬁ—;Wô%;áì2:Ú–Ö;Î•p<ÆŒ<S´;*∞ª8Ø‘ª;CE∫hÇø;Ñˇ¡;ƒGR;}J:^4˙;@j(;‚°c;È˛;£Y–;›zÄ<ôW<%He;£Y–∏$‹Z:É∂:˜˜h;ﬁƒ9<cÎ<í„<éªë‡¯ºâ∞eºß*ºù‡ºŸ„:\€5<aÊÍ<∆¨%<”ò*<B@º!k;ºãLåºù±·º|¡ªœﬁ—;¿j(<∂;®Ä≥; ∑Ó;£Y–∏˜JÜªÃ¶ªÃSºì2ªÆÒOª\¿ªWô%ªáì2;;CE;¿j(∏$‹ZªÑˇ¡:éŒ<:A-9ê@Œ;ãp\;ä&£ª\¿:Ú–Ö;@j(;J∑Ó;_Sy;≈ë∫SÁ4;≈ë;"ó;ü|¶;ÇlO<`Ú;}J;Ñˇ¡;ºå˛<|¶<8˜t<«s;.b;ÇlO<Iyª*∞;±º<]< }∫∫No∫}Jª&ß∫ªÎ•pºVÃª€°àªô∆É;†Á<E3œ<JˇéªQS√;±Ñ¿;œﬁ—º'6˙ºY@ªß6˙ªó?º¿9;J∑Ó<DGR;Â4‘8˜JÜ∏˜JÜ:?K©º,ªQìº8ªÈ˛ªÑˇ¡;c[‹ªß6˙º5ø&π§‹Z<DÏ/<ÓVºIn5ºj[∑;ä&£;© l                                                                                                                                                                                                                                                                                                                                                                                                                                                                XTENSION= 'IMAGE   '           / Image extension                                BITPIX  =                  -32 / array data type                                NAXIS   =                    2 / number of array dimensions                     NAXIS1  =                   64                                                  NAXIS2  =                   32                                                  PCOUNT  =                    0 / number of parameters                           GCOUNT  =                    1 / number of groups                               EXTNAME = 'WCSDVARR'           / extension name                                 CRPIX1  =                  0.0 / Coordinate system reference pixel              CRPIX2  =                  0.0 / Coordinate system reference pixel              CRVAL1  =                  0.0 / Coordinate system value at reference pixel     CRVAL2  =                  0.0 / Coordinate system value at reference pixel     CDELT1  =                 64.0 / Coordinate increment along axis                CDELT2  =                 64.0 / Coordinate increment along axis                EXTVER  =                    2 / extension value                                END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ª0?89zdG:öpª?Â}ªÖy6ª;Ö:e«ä;wbó:NN$ªFΩ∫ñﬂªI≠h8ªÀ5ªG∏üª~“:ä],;}@Ò;wbó<1â<!¥ı;¬‘™;§&;G∏üºè•ª°7√ªÊfYª£,ãºä
-ª?Â}º ª8[∫ÒÑ>∫Ìö≠ªæÎ∫Üsõª™Iºy6ªË["ªàhcªÜsõ∏zdG;ä
-:Üsõ;ä
-;sõ:í0N∫umœ;hc:í0N:ä],∫e«ä;A⁄E8ªÀ5∫}@Òª5∫∫ÜsõªyW`ªCœªA⁄E:umœ∫Çä
-∫éFΩ<^<Ç»£9zdG;K¢0;Öy6∫Üsõª ïA:umœ;.Jp;óoÿ;Ω¥;°7√∫umœ8zdG;™I<Lúî<+˙:•¿#∫]Ùh;√œ<a2<ôåT<s»m;√œ∫˝@Ò;‰që;¡⁄E;√œ∑˙dG; ïA;ÉÑn;ÈUÜ;W^„9åÿg∫umœ∏˙dGºä
-º ïAªK¢0∫©©µªﬂ;:#:˘W`;Åè•;ÉÑn;G∏ü8zdG7˙dG8zdGªÖy6ª®ÅπzdG;6í; ïA;¡⁄E<<<Ñn;E√÷∏ªÀ5∫}@Òª;˚Ïª£,ãª®Åªàhc∫ñﬂ<^:öp;Öy6;ƒ…rª~“∫mö≠:Çä
-;ñut;µ#.;›ò”;≈√÷8˙dG;sõ;Ó9{<Ä)<N+9¨$Òªoèu<◊<p\<°¥ı<ä≤™<^ª£,ã<<<!¥ı<#©Ωªsõ;·Çd;¢2'<%!T;[Hu;Uj∫Çä
-∏˙dGºè•ºÊÅªàhc:'.yªSuR:˘W`;¡⁄E;†=^;•!T;£,ã∫˝@Ò∑˙dG:}@Òª®Åª™I∫≠ìF;oèu:˘W`<0n<€J<◊;;Ö;sy∫Çä
-ª:#º3}ÕªåQÙª™Iª ßÃ;¡⁄E9;À5ª?Â}∫˝@Òº#©ΩªÅè•ª°7√π;À5;4(…;ªá;=¥ª ßÃ∫Çä
-<D…r<•ûÜ<Z{€<◊<B˙<ä5x<õÅ< A<íú±ªï{º/	ª5∫ª£,ãº#,ãº‘¬ª“zÓº&òÍ8zdGªΩ¥ªóoÿªùN2∑˙dGºdÓ√ºA]ºcw,ºø?:à4:ÒÑ>:ÜsõªA⁄Eªsõº1âª6í∫mö≠:Çä
-º◊ºB‘™ªG∏ü<B˙<@ﬂ·;√œ;¨Ùv;sõª∂í∫V!Fª=¥;‚|»;A⁄E;›ò”;ûHñ:]Ùh;QÙ;àhcºT OºÉ<ºõø∂ª«∏ü:V!F:⁄
-◊;˛;U<nÎ;¯\¸ª0NªÑ~“;:#;ﬁì7<1“;÷¿;÷¿<Q1"<¢ØY<Çä
-<y6º+™™ºê*∂ºoﬁ‹ºuΩ5ºÑ†ºn9{ºZ˘ºÖ:ùªyW`º?hKºlr}ºNAˆª§&ºãnuº´ìº¥9òºñÜBºsõ∏ªÀ5;àhcª~“ªøÂ}ºS%Î:ñﬂ;?Â};£,ãªÄïAª·Çdª°7√;°7√;A⁄E;¿ﬂ·ª.JpªõYiºQ1"ªCœªwbó<tEü<@ﬂ·<ÇKq<ME<E√÷ªCœ;FΩºT OºãÎ®º–∏ªÀ5πzdGπ[æ<R®π<A⁄E;}@Ò∫]Ùh∫]Ùh∫öpªK¢0∫ñﬂº	ﬂ˙π€æ;{L(<1â;G∏ü;)©µªå≠âª÷¿ª∑ˆªwbó∫Üsõª%∫µfhºø?ª4(…ºSÕº=sÇºâˆﬂº4ıcºFæ;ºFA	ºç°◊ºéú;ª”uR;sy< ïAªÏD≥ªßºB‘™8ªÀ5:Ìö≠<"ØYªA⁄E∫˘W`ºè•ª£,ãªCœ;Cœª8[ª6íª˛;U;~“<ä
-;À¢0<EF§<õ˛O<§‚ª<z°+<c¥ª{L(ª¢2'ª•!T8˙dG;
-],:}@Ò;=¥;:#;ﬂçõ;ƒ…r8˙dG:Üsõ:e«äªFΩ:Ìö≠ªÙ’ª∞ﬁªê;ÖªOã¡ªæÎªŒÏÚªÆJpª˝@Ò:öp;hc:V!Fª∞ﬁ∫πO˘ºsõª√œªoèu∫e«äªﬂçõ:}@Ò;ÄïA< ïA7˙dG∫°÷í∫≠ìF;€§
-;ôd°:[VªÖy6ºS£º2Éhπ¨$Ò:]ÙhªÈUÜª¿ﬂ·ªhc∫ä],ªG∏ü;úSÕ;Åè•< ∫ë;ámˇ<R®π;…≠h;QÙ:°÷í<å*A<ñÜB<Ñ¸<µÔ«ª;˚ÏªA⁄EªA⁄E;
-],;hcªCœ:ımœ;ôd°;wbó;¬‘™<X|<4x1<ekı< =^;¡⁄EªpπÍæª· ªàhcº2Éhº|√øºGi8ªqÑ>:í0Nª¢2'º1“ªÛqº6÷ºFæ;ª‹ûn:Üsõ<#©Ω;Âkı<"ØY<D…r<¥9ò<ÑΩk<%ûÜπ~¨;îÄ´;óoÿ;.Jp:6‘Ωº†º1“º9\&ºmˇºG;mº^ªßπåÿgªW^„ªSuRªI≠h<ÄV®<u@<(Å:≠ìF;«∏ü;Üsõ<g`Ω<øÃ<≠àé<H≥∫ÒÑ>º$§"ºFA	ª¿ﬂ·;E√÷:·›˘;∏[;¸Fç;úSÕ;¿ﬂ·<FA	<g›<ìó<Ñ~“<Õ:Çä
-;;˚Ï∫í0Nºy6ºÅŒ>ºj˙ÊºJXe;QÄä;£,ã∫Üsõº4ıcªßªÈUÜº w;…≠h<¥<îR‡<ÅQ<Ås;¶∏<ekı<5Ô«;‚|»;A⁄E;.Jp;òj<:›Ùh;Á`Ω9~¨∫˘W`º{õèºkJOºhÿTº&∏ªâb»ª%ªÏD≥ªÆÈ?ªhc;8[;„w,<R‡<–;}@Ò;8[<É<<Óé˘<∆p<EF§ª¡⁄EºE√÷ºÑ†ªÈUÜª
-],;4(…;˚L(< =^<"2';QÙ<$§"<ME<6Í,;®∫à4ª€§
-ª‡áˇªÂkıº’ÆºrŒºj Çπ‡—<<;§&9;À5ª~“ªsõª„w,ª•!T;À¢0<Öy6<ãnu<,•;ôd°∫ñﬂ< <◊;¢2':›Ùh;˘W`;˝@Òª~“;ÍOÍ9ÍæªÄïAº wº†ºDL@ºE√÷ª∆æ;:È±∫ñﬂª§&º"ØYªE√÷∫·›˘; ßÃ<<ªOã¡πú~¨<b|»<Â™é<§§"<µÔ«ª√œºFA	ºg`Ωº†ªÁ`Ωª´˙; ïA;ä
-<‡Ê<#©Ω<€J;¬‘™;‚|»;®Åª˘W`ºÅŒ>ºv∑ôºÑnºA⁄EºR+áºN2;_2;øÂ};üB˙ª~“ªË["º	ﬂ˙ª»≥∑˙dG;K¢0<D…r<P≥<P≥;syªhc;ÄïA;ÈUÜ<è•:V!F;‡áˇªøÂ}:öp;Ãúî:≠ìFºÊÅªQÙ:e«äªÄïAº◊ª£,ã:}@Ò;FΩ;QÙ∫“7µ;~“ª˙Qƒªòj<∫¬ëp8zdG∫Çä
-<tEü<åÊ<îëy<ÑΩkªE√÷ª»≥ºy6º<º$&ºw4Ãª
-],:ä],;‡áˇ<c¥< ª®ÅπzdG;ÉÑnºq”§ºÇ◊º’Æ∏zdGª:#;QÙ;QÙ;Öy6;¡⁄E∏zdGª£,ãºsªÈUÜº’Æ;ß;ÈUÜ;„w,<è•<ôMª<nÎ∫ımœ:í0N<ME<–∏zdG;Âkı∫/õ:ùÌ;Âkı<%!T∫˘W`;4(…<@bØ;¬‘™ªA⁄Eº#,ã∫©©µ;;˚Ï<$&;©
-Â;4(…º =^ª∏[ª&wNª⁄©¶ª.Jp;ÎJO<Ñ¸<ç$•<äÒCªÑ~“ªâb»ªUjª£,ãº◊ºE√÷ª¨Ùv:Çä
-<q”§<3 ö<€Jª°7√;Cœ;™ˇ≠ºHñºB‘™ªΩ¥;£,ã;K¢0<<<€J;{L(<‡Ê;Öy6∫˘W`ª·Çd∫˝@ÒªÇä
-∏˙dG<b˘˙<4ıc<DL@<àΩ‚<cw,ª‡áˇª¿ﬂ·ªG∏üªsõªMñ˘;E√÷;Çä
-;§&<b|»<u@<3}Õ<è•<26;ÍOÍ∫ımœªÂkıº7g^ªK¢0;sy<≤Ï:µº&∏ªI≠h;‚|»;ÉÑn;Oã¡<G;m<õ˛O<Ñ~“<3 ö∑˙dGªK¢0ª©
-ÂªÎJOº~“ª»≥ª®Å;24<®„1<EF§<Bªwbó9[æ∫Ìö≠ª˙QƒºOπåªúSÕ<s;ÉÑn:Üsõ;Åè•;‡áˇ;‰që∫/õ:µfh:≠ìF;Oã¡ª†=^<ÊÅ<BWx<ät<T O<≤Dœ<’Æª?Â}ºX|ª£,ãª¶∏π~¨;E√÷;»≥;5∫<B˙;∆æ;;hc;
-],;©
-Â;Ô3‡;ÄïAª;˚Ïª}@Òª∆æ;:[V;˝@Ò;6íºG;mªàhc<Ï<`áˇ<3}Õ<VíJ<É√<$&<%ûÜ;sõªK¢0ª«∏üº¸ºG©ªÌ?ªp;¸Fç<a2<€J;Ô3‡:≈≠:í0Nª ïAº/	ºÅè•ªOã¡;5∫; ïA∫ñﬂ;5∫;Çä
-<Ï;ß;Õñ˘9[æ∑˙dGªä
-<ÊÅ<Òπ;æÎ;?Â}<tEü<–ªüB˙º3˙ˇªK¢0;Åè•;hcªumœªùN2ªK¢0ªÜsõªƒ…rªﬂçõªúSÕ:ñﬂ;¶∏;ámˇ;“zÓ∫NN$ºBWxªß:ä],ºè•º ÄºV:F{<ë%<G©<v:g;Âkı;†=^;¶∏:}@Òªä
-ªÅè•π;À5ª%ªQÙ;oèu:umœªMñ˘º ïAªımœºYiª·Çdº!¥ıºÅsªæÎª~“∑˙dG:ä],;•!T;Åè•;Cœ;Çä
-;£,ã;Çä
-:•¿#9ªÀ59~¨;E√÷;„w,;ä
-ª;˚Ï<~“;∆æ;8˙dG; ïA<ngE<P≥<DL@<6Í,;
-],ª»≥ªÔ3‡º<º1“ªæÎ:Çä
-9~¨;Mñ˘;—Ää;™IªÂkıª0N:e«äº3 öº·ˇñºÀ˜ØºiUÜªG∏ü:µfh;âb»:e«ä:e«ä<$§"∏ªÀ5:Üsõ∫}@Ò;úSÕ;0?8;ﬂçõ;¢2'7˙dGª°7√ºoa©º<yºaˇñª¿ﬂ·º@ﬂ·º’ÆªOã¡; ïA;;˚Ï;:#:˝@Ò:Çä
-∫umœ;Ñ~“;§&8zdG9ú~¨:≠ìF;ÈUÜ:ÒÑ>;√œ;àhc<€J< <R‡;™I<aÇd<¿$<©! <Çä
-<s»m;ﬁì7ªW^„ªèA!º~“ªA⁄E;âb»∫›Ùhªóoÿ;¨Ùv<)àªi±ªCœªUj;óoÿº†ºÃ≥zº›CTºï wº~“:ñﬂ;Ò(®πzdG;}@Òª ïA∫éFΩªK¢0ªß;4(…;˝@Ò;æÎ;;Ö;p;%ºÅQºB˙ª·Çd∫ÒÑ>ª£,ã;æÎ;ùN2;æÎ;ö_∫ùÌº#,ãª¿ﬂ·ºB‘™9;À59~¨;åQÙ;YS¨<8a¬<X|<b|»<DL@<VíJ<cÙ^<ë%<ä
-;®Å<@ﬂ·<¡]<ô"<uΩ5<<;Åè•ªãWêªÏD≥º†;?Â};æÎ;‰që;ß<c¥<"ØY;ÏD≥ªámˇ:µª ïAª ïAºYÅwº6Í,ºU¥ª0N;«∏ü<JßÃ<<;‰qëªä
-∫ñﬂªFΩª´˙:NN$ª]==;6í;Cœ;W^„ªõYiº26ªÇä
-∫V!F:•¿#;ÉÑn<pŸ@<ÄïA<@ﬂ·∫Üsõª√œªƒ…rºsº"ØYª0N;ª˚Ï;A⁄E;‚|»<P6æ<oa©<nÎ<TùÅ<3}Õ;æÎ;24ªUjº~“:Â«ä<Nø(<.ô◊;ß:°÷í∫ımœª•!Tº’Æª‚|»;A⁄E< <0é†;Ë[";®Å<~“∫e«äº0é†ªyW`∫'.yªwbó;ä
-;úSÕ∫•¿#;:#<%ûÜ<îR‡;„w,;∆æ;:V!Fªä],∫ñﬂªI≠h;ªá;sy:]Ùh8zdGª6íªª˚ÏºtEüª‚|»;QÙ;QÄä;K¢0<0é†<®§ò∫umœºoﬁ‹ºë%ºA]º ∫ëª ßÃπÀqz:'.yπªÀ5πzdG;ñut<,•∫•¿#∫·›˘ª:#∫Çä
-ºWåÆººﬂkº§&ªàhc;€§
-;ŸØB<6Í,<|ïÛ;œã¡9zdG;©
-Â;QÙ∫˘W`<^<c¥; ßÃ;åQÙ;0NªæÎª‹ûnª.Jp;≠Ó⁄<ME<$&<s;⁄©¶;ﬂçõ<ä
-;¨Ùv;Öy6;E√÷;˚L(ªQÙ:NN$πzdG<26π[æ∫˝@Ò∫F{ªmö≠ªæÎºu@º~“ªÁ`Ω∫˝@ÒªG∏üπ¨$Òπ~¨ªøÂ}ºO<ZºLM-ª.Jp;‰që<B˙;◊∫y<,'›;6íªÏD≥º<KS;gºSª¨Ùvº"2'º¿,ª¢2'ºWåÆº£k$ºπ>ºeÈ':÷!F< =^;Œë]<Z˘<<q<6÷<:Vã;có∫/õ<sõ;Ì∫'.y;±ÿk9ªÀ5ª˙Qƒ∫e«ä;åQÙ;ÆÈ?;Œë]∫˝@Ò∫Çä
-ªÇä
-ªsõ∫öp;
-],;;˚Ï;{L(<Hñ∫í0N:F{:>ß‡;ÄïA8ªÀ5ªyW`ª¯\¸ª]Ùh:Ω9äªI≠hª%∫ñﬂª¡⁄Eº~“ªÃúîªÉÑnªæÎº‡Êªwbó;hc<CQ‹<˜U<Q1"<"2';Oã¡ª‰qëªÆÈ?ªÚ#ªË["ªﬂçõª°7√ªƒ…rª•!Tºí€Jº±Jkº1“:mö≠:Â«ä;ß;ÏD≥;®Å<¸<π§<Wê;l„Å:≠ìF;ÏD≥;ámˇ;Üsõ7˙dG;QÙ:Çä
-<@ﬂ·;®Åª6í∫ä],ªÑ~“º0nªE√÷:NN$;úSÕ<.•;◊∫y;=¥:mö≠;8[;8[;=¥ª·Çdªwbó∫÷!Fª(l;%;ÉÑn;˝@Ò:>ß‡∫˝@Òª¿ﬂ·ªÑ~“∫öpª†=^ºsª¡⁄E;24;øÂ}<¸<z"<c¥;Oã¡ª~“ªØ„£º¥º$&ºsªÃúîªSuRªÊfYºffYºät∫Â«ä8˙dG;8[:È±:]ÙhªQÙ∫í0N:e«ä<(ç≥<ùô;e_ª~“;ûHñ;†=^;
-],ªªá;sõ<S%Î<4ıc∫>ß‡9;À5ª?Â}ª}@Ò9;À5∑˙dG;óoÿ;–·ª;÷¿ª¨Ùvªsõ;¿ﬂ·<c¥;Cœ:öpªö_ªﬂçõª∏[;Ì7˙dG:ÒÑ>;~“:ñﬂ∫V!Fª ïAªQÙºDL@ºu@ºeÈ'º<qªp;*`ﬂ;ö_;‹ûn;ä
-ª°7√ºG∏üºI05ºD…rºCœªÈUÜª
-],ªK¢0ªÅè•ª:#:≠ìF<¸<3˙ˇ;˝@ÒπåÿgºN+ºLbªﬂ;‚|»:≠ìF;—Ää;E√÷<-üs<3 ö;©
-Â9[æ;ÉÑn;‰që;ﬁì7<4ıc∫e«ä∫}@Ò    ª6íº^ªØ„£∫ÿgπªÀ5;*`ﬂª ïA;üB˙;Ω¥;FΩ9ú~¨ªªáº˜UºL _ºNAˆºè•ªÊfYº◊ª{L(;Öy67˙dGª5∫ª£,ãºEF§ºÅŒ>º%!T:È±;ƒ…r9[æ;Oã¡ªŸØBºÀdºw4Ãº7g^ª‚|»ªƒ…r;ûHñ;‚|»<dqë;¡⁄E;àhc:°÷í<’Æ<$&;E√÷ª;Öºl¡Âºç°◊ªß<–;∞ﬁ;ï{<Õ<Ï<TùÅ;Ì?:©©µº’Æπ~¨∫Çä
-∫ÒÑ>ªÜsõ;6í∫˝@ÒªCœªÈUÜª#À[ªÃúîªê;Ö:Ìö≠7˙dG∏zdG∏˙dG∫e«äª0?8∫È±ªö_º;˚Ïº.•º!¥ıº5rïº#,ãªÅè•;sõ;æÎ:ımœ:È±ª™ˇ≠πzdGªß:mö≠;Üsõ;™ˇ≠ª∏[ºz"ª¬‘™∫≠ìFπ˙dG<-üs;¸Fç<ë%<™◊˙<Ãt·;øÂ};E√÷;ámˇ;À¢0;Ñ~“;•!TªsõºFA	ºv∑ôº–;…≠h<k«Å<+˙<	b»<&∏<W|;Ó9{ª$ÇÖº◊ªÀ¢0ª£,ãª{L(;4(…;4(…∏˙dG;˛;U;òj<∫ÿgªì*≤ª¯9ªÑ~“ªä
-∫éFΩ∫ñﬂªä
-;;Ö;åQÙ;™Iªi±∫ımœ∏zdG:e«ä∫]Ùh;I≠h;ƒ…r;¬‘™:·›˘;,Uß;˚L(;˛;U;6í;ä
-;hc:ä],∫˝@Òºä
-∫±|◊<˚<zŒˆ<>Î<B˙<°v\<™ôa<ME    ;Åè•;Åè•;Öy6<X	‡<FA	;E√÷ª¶∏º3˙ˇªÃúî;„w,<YE<x¨b<5Ô«<4ıc<'<ø?ªÙsjª‰që∑˙dG;~“;ﬂ<€J<Hñ;•!T<hÿT<X|;—‹π¨$Ò;.JpªÙ’ªE√÷π;À5π[æªÉÑn;QÙ;Ô3‡<&∏;FΩ;Åè•;›ò”<?hK;ÍOÍ< w<X|;?Â}:]Ùh</î;;¸Fç<1â;ƒ…r<Ñn∫Çä
-∫í0NªÆÈ?ª˜ªnÿJ<%ÃQ<	_∫ùÌº†∏˙dGºE√÷ºìóº§‚ªºπ§ªœã¡;‡áˇ<îG<Ñ@9<%ûÜ:mö≠ªÀ¢0ºÎ1;umœ;ûHñ<cÙ^<ÇKq<U¥;Õñ˘;Uj:≠ìF9;À5;Âkı<ÊÅ<hÿT<V<B‘™<EF§<6÷;Çä
-;èú∂:Øõ:à4ªÁ`Ωªhcªâb»ªSuRºR‡8zdG∫È±:©©µ9åÿg;ûHñ;{L(<#,ã;Ì?<¸;«∏üª~“∑˙dG<s;›ò”;‚|»<sõ;Ó9{ª¢2'ªG∏ü∫≠ìFº+ûº-Ó⁄;—‹;wbóº/	ºÈljº¡õ¨Ω
-,Ω†iΩFA	ΩdÊº/„£:/õ;QÄä;.D<jOÍ;Õñ˘∫e«äªÃúîπ[æπ~¨;°7√<Cœ<Ñn;ãWê;≠Ó⁄;Ó9{:˝@Ò<"ØY<É<<T O<Mƒ√<0é†;ÎJO;ámˇ:]Ùhªg(ªÆÈ?ª]==ª;˚Ï∑˙dGªÔ3‡º)
-Âª…≠hªÊfYºä
-ª5∫ª6íπåÿg:>ß‡;Ω¥;£,ã;5∫:ÒÑ>:⁄
-◊∫í0N;€§
-:“7µ;∑ˆ:}@Ò:˝@Òª√œ;6í;˝@Ò;ï{; òÙ;ımœ;¬‘™∫“7µº•89º÷+˝Ω=$Ω@W<ΩZhΩ’sºôuoº6l˘º.•∫·<-q®<œ&;–Ü&;{L(ªámˇºB:ÒÑ>;Åè•∫ımœ;G∏ü<y)î<Lb;ámˇ;G∏ü<VíJ<8a¬;ºˆPπ~¨:éFΩ;W^„ªhcº	ﬂ˙ºy6ªÁ`ΩªK¢0;ÄïAªâb»ªÌ?ºÕª≈√÷ª†=^ª5∫ªA⁄E∫í0N:V!F;}@Ò;Åè•:˘W`;6íª;Ö:]Ùh;›ò”;sy∫©©µ:]Ùh:Çä
-∑˙dG;?Â};ºˆP;i±;a›˘<.ô◊<5rïª”–Ëºç∏ºº¶q7ΩFΩ?õqΩ4ıcºÚ9Òºò¯=º7‰êªôd°∫¬ëp;ï{<1:<y6;yW`πzdGªMñ˘ªàhc:]Ùh;Cœ;©
-Â<ˆi;À¢0<¸<R‡;Á`Ω;K¢0;5∫;yW`:Çä
-:í0Nª~“ºÎ1ª‰qëª«∏üªß<R‡;ÄïA:˘W`ªhcº$§"π;À5ª¢2'π;À5:umœ;{L(:e«ä<SÕ;}@Ò∫í0N;ﬁì7;˚L(ªŒë];4(…<c¥:e«äªä],;≈√÷;;˚ÏªUj;õYi<£,ã∫}@ÒºBWx;âb»9ÀqzΩ	∏FΩ	ˆﬂº¥x1ºŒ®BΩ
-Ùº™Z»º%ûÜºy6;åQÙ;Ø„£;QÙ;•!T;ãWêªhc:÷!F:NN$ªCœ;Cœ;„w,∫F{<Ñn;ÏD≥;;Ö:í0N<b|»;QÙ:≠ìF<ä
-:'.yª™ˇ≠;œã¡;—Ääªßªámˇ                                                                                                                                                                                                                                                                                                                                                                                                                                                                XTENSION= 'IMAGE   '           / Image extension                                BITPIX  =                  -32 / array data type                                NAXIS   =                    2 / number of array dimensions                     NAXIS1  =                   64                                                  NAXIS2  =                   32                                                  PCOUNT  =                    0 / number of parameters                           GCOUNT  =                    1 / number of groups                               EXTNAME = 'D2IMARR '           / extension name                                 CRPIX1  =                  0.0 / Coordinate system reference pixel              CRPIX2  =                  0.0 / Coordinate system reference pixel              CRVAL1  =                  0.0 / Coordinate system value at reference pixel     CRVAL2  =                  0.0 / Coordinate system value at reference pixel     CDELT1  =                 64.0 / Coordinate increment along axis                CDELT2  =                 64.0 / Coordinate increment along axis                EXTVER  =                    1 / extension value                                END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;£◊
-;ƒõ¶;ƒõ¶<u¬è<¨1<¨1<ìtº<T˝Ù;Â`B:ÉoªÉoºtººT˝ÙºÉoºãCñº£◊
-º¨1º¥9Xº¥9Xº¥9Xº£◊
-ºãCñºe`Bº49XªÂ`BªÉo∫Éo;Dõ¶;ƒõ¶<o<Dõ¶<e`B<e`B<e`B<ãCñ<Éo<u¬è<Éo<Éo<u¬è<u¬è<T˝Ù<Dõ¶<#◊
-<o;Éo:Éoªoªƒõ¶ºtºº49Xº49XºDõ¶º#◊
-ºtºªƒõ¶ªÉoªo∫Éo∫ÉoªÉoºoºtºº49X;ƒõ¶<o<tº<õ•„<¥9X<¨1<ãCñ<49X;Dõ¶ªoºoºDõ¶ºe`BºãCñº£◊
-º¨1º¥9Xººjººjº¥9Xº¨1ºõ•„ºu¬èºDõ¶ºoª£◊
-ªo:Éo;ƒõ¶<tº<49X<T˝Ù<ãCñ<ìtº<Éo<u¬è<Éo<Éo<Éo<Éo<u¬è<e`B<T˝Ù<Dõ¶<#◊
-;Â`B;Dõ¶ªoªƒõ¶ºtººDõ¶ºT˝Ùº49XºtºªÂ`Bªƒõ¶ªDõ¶    ;Dõ¶;o∫Éoªƒõ¶ªÂ`Bºtº;ƒõ¶<tº<#◊
-<£◊
-<¥9X<¨1<ãCñ<#◊
-;oªÉoºtººT˝Ùºu¬èºìtºº£◊
-º¨1º¥9Xºƒõ¶ºƒõ¶ººjº¥9Xº£◊
-ºÉoºDõ¶ºoª£◊
-ªo:Éo;ƒõ¶<#◊
-<#◊
-<e`B<ìtº<£◊
-<u¬è<u¬è<u¬è<ãCñ<Éo<ãCñ<u¬è<u¬è<e`B<T˝Ù<#◊
-<o;Dõ¶ªoª£◊
-ºtººDõ¶ºT˝Ùº49XºtºªÂ`Bªƒõ¶ªDõ¶:Éo;Éo;Dõ¶Ä   ª£◊
-ªƒõ¶ºtº<o<49X<Dõ¶<£◊
-<õ•„<ãCñ<49X;oªƒõ¶ºDõ¶ºãCñº¨1ººjºÃÃÕºÂ`BºÌëhºÌëhºÌëhºÂ`BºÃÃÕººjº£◊
-ºÉoºDõ¶ºoªÉo∫Éo:Éo;ƒõ¶<49X<T˝Ù<Éo<£◊
-<¥9X<ìtº<ìtº<ìtº<õ•„<ìtº<ìtº<u¬è<u¬è<e`B<T˝Ù<#◊
-;Â`B;Dõ¶∫Éoª£◊
-ªÂ`Bº#◊
-ºDõ¶º49XºtºªÂ`Bª£◊
-∫Éo;Éo<tº<tº;Â`B;Éo;o;o<#◊
-<e`B<u¬è<£◊
-<£◊
-<ãCñ<#◊
-Ä   º#◊
-ºÉoº¥9XºÃÃÕº›/ºÌëhº˝Û∂Ω+ΩCñΩCñº˝Û∂ºÂ`Bºƒõ¶º¨1ºu¬èº#◊
-ª£◊
-ªo:Éo;o;Â`B<Dõ¶<e`B<ìtº<¥9X<ƒõ¶<¨1<¨1<¨1<¨1<õ•„<ìtº<Éo<e`B<T˝Ù<Dõ¶<o;ÉoÄ   ªDõ¶ª£◊
-ªƒõ¶ºtºº49Xº49XºtºªÂ`Bªƒõ¶Ä   ;ƒõ¶<49X<T˝Ù<T˝Ù<Dõ¶<#◊
-<o<Dõ¶<ãCñ<ìtº<ºj<¥9X<ìtº<49X;oºtººãCñººjº›/ºÌëhºı¬èΩoΩ+ΩCñΩ+º˝Û∂ºÌëhºÃÃÕº£◊
-ºe`BºtºªDõ¶    ;o;Éo<o<T˝Ù<e`B<ìtº<ºj<ÃÃÕ<¥9X<¥9X<ºj<ºj<¨1<õ•„<Éo<u¬è<T˝Ù<49X;ƒõ¶:ÉoªDõ¶ªƒõ¶ªÂ`BªÂ`Bºoº#◊
-º#◊
-ºtºªÂ`Bª£◊
-Ä   ;£◊
-<49X<e`B<ãCñ<ãCñ<u¬è<Dõ¶<e`B<ìtº<£◊
-<ƒõ¶<ºj<õ•„<T˝Ù;ÉoªÂ`BºÉoººjº‘˝ÙºÂ`BºÌëhºı¬èº˝Û∂Ωoº˝Û∂ºı¬èºÌëhº‘˝Ùº¨1ºu¬èºtºªÉo∫Éo;Dõ¶;£◊
-<o<49X<T˝Ù<ìtº<¥9X<ƒõ¶<¥9X<¥9X<¥9X<ºj<¨1<£◊
-<ìtº<ãCñ<e`B<#◊
-;£◊
-ªoªƒõ¶ºoº#◊
-º49Xº49Xº49Xº49Xº#◊
-ªÂ`Bª£◊
-Ä   ;£◊
-<#◊
-<e`B<ìtº<õ•„<õ•„<u¬è<u¬è<õ•„<£◊
-<ºj<ºj<¨1<u¬è;Â`BªDõ¶ºT˝Ùºõ•„º¥9Xºƒõ¶ºÃÃÕº‘˝Ùº‘˝Ùº›/ºÂ`BºÂ`BºÂ`Bº‘˝Ùº¨1ºÉoº49Xªƒõ¶∫Éo;Dõ¶;£◊
-<o<#◊
-<Dõ¶<u¬è<ìtº<¨1<õ•„<õ•„<õ•„<¨1<õ•„<ìtº<ìtº<Éo<T˝Ù<#◊
-;ÉoªDõ¶ºoº49Xºe`BºÉoºãCñºÉoºu¬èºe`Bº#◊
-ªÂ`B    ;£◊
-<tº<Dõ¶<ãCñ<õ•„<õ•„<õ•„<u¬è<ìtº<õ•„<¥9X<ƒõ¶<ºj<õ•„<49X:ÉoªÂ`BºT˝ÙºÉoºìtººìtººõ•„ºõ•„º¨1ººjºƒõ¶ºÃÃÕººjºõ•„ºu¬èºDõ¶ªƒõ¶∫Éo;Dõ¶;ƒõ¶<tº<#◊
-<#◊
-<Dõ¶<u¬è<õ•„<ãCñ<Éo<Éo<ìtº<ãCñ<u¬è<e`B<e`B<49X<o;Dõ¶ªÉoºtººT˝Ùºìtºº¨1º¥9Xº¨1º¨1ºìtººu¬èºtºªo;Éo<o<Dõ¶<ãCñ<¨1<£◊
-<£◊
-<u¬è<Éo<ãCñ<ºj<‘˝Ù<ÃÃÕ<¥9X<Éo<o    ªƒõ¶ºtºº49XºDõ¶ºDõ¶ºT˝Ùºu¬èºãCñº£◊
-º¨1º£◊
-ºãCñºu¬èº49Xª£◊
-∫Éo;Dõ¶;ƒõ¶<o<o;Â`B<tº<Dõ¶<u¬è<e`B<T˝Ù<T˝Ù<u¬è<e`B<T˝Ù<Dõ¶<49X<tº;ƒõ¶:Éoª£◊
-º#◊
-ºe`Bºõ•„ººjºÃÃÕºƒõ¶ºƒõ¶º¥9Xºõ•„ºT˝Ùª£◊
-;o<o<T˝Ù<ìtº<¨1<¨1<£◊
-<e`B<u¬è<u¬è<¥9X<‘˝Ù<‘˝Ù<ƒõ¶<£◊
-<e`B;Â`B;o∫Éoª£◊
-ªÂ`BºoºtººDõ¶ºT˝ÙºÉoºõ•„ºìtººÉoºe`Bº#◊
-ªÉo∫Éo;Dõ¶;ƒõ¶;Â`B;ƒõ¶;£◊
-;ƒõ¶<tº<Dõ¶<49X<49X<49X<Dõ¶<Dõ¶<#◊
-<#◊
-<#◊
-<o;Éo:Éoª£◊
-º#◊
-ºu¬èºõ•„ºƒõ¶º‘˝ÙºÂ`Bº›/ºÃÃÕº¥9XºÉoªÂ`B;o<tº<u¬è<£◊
-<¥9X<¥9X<¥9X<49X<T˝Ù<e`B<£◊
-<ÃÃÕ<‘˝Ù<ÃÃÕ<¥9X<ãCñ<T˝Ù<#◊
-;ƒõ¶:Éoªoª£◊
-ªÂ`Bºtºº49Xºe`BºãCñºÉoºT˝Ùº49XºtºªÉo    ;Dõ¶;£◊
-;ƒõ¶;£◊
-;Éo;ƒõ¶;Â`B<tº<o<o<o<tº<tº<o<o<o;ƒõ¶;Dõ¶∫Éoªƒõ¶º49Xºu¬èº£◊
-ºƒõ¶ºÂ`BºÌëhºÌëhºÂ`BºÃÃÕºõ•„º#◊
-∫Éo<o<Éo<¨1<ºj<ºj<ƒõ¶;ƒõ¶<tº<#◊
-<ãCñ<¥9X<ºj<ºj<¥9X<õ•„<ãCñ<Éo<Dõ¶;Â`B;Dõ¶ªoª£◊
-ªÂ`BºtººDõ¶ºT˝ÙºDõ¶ºtººoª£◊
-∫Éo;o;Éo;ƒõ¶;ƒõ¶;£◊
-;Éo;£◊
-;ƒõ¶;Â`B;ƒõ¶;£◊
-;Éo;£◊
-;£◊
-;£◊
-;ƒõ¶;£◊
-;Éo:ÉoªDõ¶ªƒõ¶º49XºÉoº£◊
-ºƒõ¶ºÂ`Bºı¬èºı¬èºÌëhº›/º¥9Xºu¬èªÉo;Â`B<ãCñ<ƒõ¶<‘˝Ù<ÃÃÕ<ƒõ¶;o;Dõ¶;Dõ¶<49X<u¬è<ãCñ<¨1<¨1<¨1<¨1<¥9X<ìtº<T˝Ù<o;oªoª£◊
-ªƒõ¶ºoºtºªÂ`Bª£◊
-ªÉo∫Éo;o;Éo;ƒõ¶;ƒõ¶;£◊
-;Éo;o;Dõ¶;£◊
-;ƒõ¶;Éo;o;o:Éo;o;o;o;o:Éoªoªƒõ¶ºoºDõ¶ºÉoº£◊
-ººjº›/ºÌëhºÌëhºÂ`Bº›/ºƒõ¶ºãCñªÂ`B;£◊
-<ãCñ<ºj<›/<‘˝Ù<ÃÃÕª£◊
-ª£◊
-ªÉo:Éo;Â`B<Dõ¶<ìtº<¨1<ºj<ƒõ¶<ÃÃÕ<¥9X<ãCñ<49X;£◊
-Ä   ªDõ¶ªDõ¶ª£◊
-ªÉoªoÄ       ;o;£◊
-;Â`B<o;Â`B;ƒõ¶;Éo;o;Dõ¶;ƒõ¶;ƒõ¶;Dõ¶;o:Éo∫ÉoÄ   ∫Éo∫Éo∫Éoªoªƒõ¶ºtºº#◊
-ºe`BºãCñº¨1ººjº‘˝Ùº›/º›/º‘˝Ùº‘˝Ùºƒõ¶ºìtººo;£◊
-<ãCñ<ƒõ¶<Â`B<›/<›/ºDõ¶ºT˝ÙºT˝Ùºoªo;ƒõ¶<e`B<¨1<ÃÃÕ<‘˝Ù<‘˝Ù<ƒõ¶<õ•„<Dõ¶;ƒõ¶:Éo∫Éoªoªoªo:Éo;Dõ¶;£◊
-;ƒõ¶<o<#◊
-<#◊
-<tº;Â`B;Éo;o;Éo;Â`B;ƒõ¶;o:Éo    ªoªo∫Éo∫ÉoªoªÉoªƒõ¶º#◊
-ºT˝Ùºu¬èºìtºº¨1ººjºƒõ¶ºÃÃÕºƒõ¶ºƒõ¶ººjººjºãCñºo;£◊
-<Éo<ƒõ¶<Â`B<›/<›/ºõ•„º¥9Xººjºìtºº#◊
-Ä   <#◊
-<£◊
-<ÃÃÕ<‘˝Ù<ƒõ¶<¨1<ãCñ<49X;£◊
-;oÄ   ªoªo∫Éo;o;Éo;£◊
-;Â`B<#◊
-<49X<#◊
-<tº;Â`B;Éo:Éo;Dõ¶;Â`B;ƒõ¶:Éo∫Éo∫Éoªoªo∫ÉoÄ   ∫ÉoªÉoªƒõ¶º#◊
-ºDõ¶ºÉoºõ•„º¨1º¨1º¥9Xººjº¨1º¨1º¨1º£◊
-ºÉoºo;Éo<u¬è<ƒõ¶<Ìëh<Â`B<Â`Bº‘˝ÙºÌëhºı¬èºÃÃÕºãCñªƒõ¶<o<ìtº<ºj<ºj<¨1<ìtº<T˝Ù<tº;£◊
-;o    ∫Éo∫Éo:Éo;o;Éo;ƒõ¶;Â`B<tº<#◊
-<#◊
-<tº;Â`B;Éo:Éo;o;£◊
-;£◊
-:Éo∫Éo∫ÉoÄ   Ä       Ä   Ä   ªoªÉoºoº#◊
-ºu¬èºõ•„º¨1º¥9Xº¥9Xº¥9Xºõ•„ºìtººãCñºÉoºT˝Ùªƒõ¶;Éo<u¬è<ƒõ¶<Ìëh<Â`B<‘˝ÙΩ+Ω\)ΩtºΩoº¥9Xºtº;Éo<e`B<õ•„<£◊
-<ãCñ<u¬è<49X<tº;£◊
-;Éo;o:Éo:Éo;o;o;Dõ¶;£◊
-;Â`B;Â`B<o<tº<tº<o;ƒõ¶;Dõ¶;Dõ¶;ƒõ¶;ƒõ¶:Éo:Éo;o;Dõ¶:Éo    ∫Éo∫ÉoªoªDõ¶ªÂ`Bºtººe`Bº£◊
-ººjººjººjº¨1ºÉoºT˝Ùº49Xºtºªƒõ¶ªo;ƒõ¶<u¬è<ºj<Â`B<›/<ƒõ¶Ω•„Ω,1Ω0 ≈ΩtººÃÃÕº#◊
-;o<Dõ¶<Éo<ãCñ<u¬è<T˝Ù<Dõ¶<#◊
-<o;ƒõ¶;ƒõ¶;Éo;Dõ¶:Éo:Éo:Éo;Dõ¶;£◊
-;ƒõ¶;Â`B<tº<tº<tº;Â`B;£◊
-;ƒõ¶;Â`B;Â`B;Dõ¶;Dõ¶;Éo;£◊
-;o:Éo∫ÉoÄ   ªoªoªÉoªƒõ¶ºT˝Ùºõ•„ººjºƒõ¶º¥9Xº£◊
-ºu¬èº#◊
-ª£◊
-ªo:Éo;Éo<tº<u¬è<¥9X<‘˝Ù<ƒõ¶<¥9XΩ,1ΩDõ¶ΩLÃÕΩ#◊
-º›/ºDõ¶∫Éo<o<Dõ¶<e`B<e`B<T˝Ù<Dõ¶<T˝Ù<49X<#◊
-<tº;Â`B;Dõ¶∫ÉoªDõ¶ªDõ¶∫Éo;o;£◊
-<o<#◊
-<#◊
-<tº<o;Â`B<o<o<#◊
-;Â`B;Â`B;ƒõ¶;Â`B;Éo:Éo∫Éo∫Éoªo∫ÉoªoªÉoº49Xºìtºº¥9Xºƒõ¶º¥9Xºõ•„ºe`Bºo∫Éo;Dõ¶;ƒõ¶<o<49X<u¬è<£◊
-<¥9X<£◊
-<ìtºΩ8QÏΩPÂ`Ω]/Ω,1ºÂ`Bºe`BªDõ¶;Éo<tº<T˝Ù<e`B<e`B<e`B<e`B<e`B<T˝Ù<49X<o;Dõ¶ªDõ¶ªƒõ¶ªƒõ¶ªÉo    ;£◊
-;Â`B<tº<tº;Â`B;Â`B;ƒõ¶;Â`B<o<49X<49X<Dõ¶<#◊
-<#◊
-;ƒõ¶;Dõ¶:Éo    Ä   ;o:ÉoªDõ¶ºtººu¬èº£◊
-ººjº¨1ºõ•„ºe`Bºo    ;ƒõ¶<tº<#◊
-<Dõ¶<T˝Ù<Éo<Éo<u¬è<T˝ÙΩ<jΩT˝ÙΩ]/Ω'Ôûº›/ºe`Bª£◊
-;o;Â`B<T˝Ù<u¬è<Éo<Éo<ãCñ<Éo<e`B<49X;ƒõ¶    ª£◊
-ªÂ`BªÂ`Bª£◊
-∫Éo;Éo;£◊
-;Â`B;ƒõ¶;£◊
-;£◊
-;Éo;£◊
-;Â`B<Dõ¶<e`B<Éo<u¬è<u¬è<49X;Â`B;Éo;Dõ¶;o;Dõ¶;oÄ   ªƒõ¶º49XºÉoº£◊
-º£◊
-ºìtººT˝Ùºo:Éo<tº<Dõ¶<T˝Ù<T˝Ù<T˝Ù<Dõ¶<#◊
-<#◊
-<oΩ0 ≈ΩH¥9ΩPÂ`Ω•„ººjº49Xªo;ƒõ¶<#◊
-<u¬è<ìtº<ãCñ<ãCñ<ìtº<ãCñ<e`B<#◊
-;ÉoªDõ¶ºoºtººtºªƒõ¶ªÉoÄ   :Éo:Éo    ∫ÉoÄ       ;o;Éo<#◊
-<e`B<ãCñ<ìtº<ìtº<Éo<T˝Ù<tº;ƒõ¶;Éo;Éo;Dõ¶;oªDõ¶ªÂ`BºDõ¶ºãCñºìtººÉoºT˝ÙªÂ`B;o<#◊
-<e`B<Éo<u¬è<Dõ¶<tº;£◊
-;Éo;Dõ¶ΩæwΩ49XΩ<jΩoºãCñª£◊
-;Dõ¶<#◊
-<e`B<ìtº<£◊
-<£◊
-<õ•„<£◊
-<ìtº<e`B<tº:Éoªƒõ¶º#◊
-º49XºtººoºoªÂ`Bªƒõ¶ªÂ`Bºtººtºª£◊
-ªÉo∫Éo;o<tº<T˝Ù<ãCñ<õ•„<¨1<¨1<õ•„<u¬è<#◊
-;Â`B;£◊
-;Éo;Dõ¶:Éoªoºoºe`BºÉoºu¬èºDõ¶ªƒõ¶;Éo<Dõ¶<Éo<ãCñ<Éo<49X;£◊
-∫ÉoªoªÉoΩoΩçPΩ•„ºƒõ¶ºtº;o<#◊
-<Éo<£◊
-<ºj<ºj<ºj<ºj<¨1<õ•„<e`B;ƒõ¶ªDõ¶ºtºº49Xº49Xº#◊
-º49Xºe`BºÉoºãCñºìtººìtººÉoº49XºtºªÉo:Éo;Â`B<#◊
-<e`B<ìtº<ºj<ÃÃÕ<ÃÃÕ<¨1<ãCñ<Dõ¶<tº;Â`B;ƒõ¶;Éo:ÉoªÉoº#◊
-ºe`BºT˝ÙºtºªÉo;Éo<T˝Ù<Éo<Éo<e`B<tº    ºtººtººDõ¶ºÃÃÕº›/ºÂ`Bºe`BÄ   <#◊
-<Éo<¥9X<ÃÃÕ<Â`B<›/<›/<‘˝Ù<ºj<õ•„<Dõ¶;Éoª£◊
-º49Xºe`BºT˝Ùºe`Bºìtººƒõ¶ºÂ`Bº˝Û∂º˝Û∂º›/º¥9XºãCñºe`BºtºªÉoÄ   :Éo;ƒõ¶<T˝Ù<¨1<Â`B<ı¬è<‘˝Ù<¥9X<ãCñ<Dõ¶<tº<tº;Â`B;ÉoÄ   ªƒõ¶º#◊
-ºtºª£◊
-∫Éo;Â`B<e`B<ãCñ<Éo<T˝Ù;£◊
-ªƒõ¶ºãCñºìtººìtººìtººìtººìtºªDõ¶<tº<ìtº<ƒõ¶<Ìëh=o=o=o<ı¬è<Â`B<ƒõ¶<ìtº<49X;Dõ¶ª£◊
-º49Xºu¬èºãCñº£◊
-º‘˝ÙΩtºΩ,1Ω49XΩ,1Ω\)ºÂ`Bº¥9Xº£◊
-ºÉoºT˝ÙºT˝ÙºT˝Ùºo:Éo<T˝Ù<‘˝Ù<˝Û∂<Ìëh<ÃÃÕ<¨1<Éo<Dõ¶<Dõ¶<#◊
-<o;£◊
-    ª£◊
-ªÉo∫Éo;Éo<#◊
-<ãCñ<ìtº<u¬è<#◊
-    ºT˝Ùº‘˝Ùº›/º‘˝Ùº49Xº#◊
-ºtº;ƒõ¶<ìtº<ÃÃÕ<ı¬è=Cñ=çP=tº=\)=+<˝Û∂<ÃÃÕ<ãCñ<#◊
-;Dõ¶ªÉoº#◊
-ºe`Bºõ•„ºÃÃÕΩ\)Ω@ÉΩ]/ΩaGÆΩPÂ`Ω0 ≈Ω+º‘˝ÙºÃÃÕººjººjº‘˝ÙºÌëhºƒõ¶ºDõ¶;Dõ¶<¨1<˝Û∂=+<Ìëh<ÃÃÕ<£◊
-<Éo<u¬è<u¬è<e`B<Dõ¶<tº;Éo;Dõ¶;ƒõ¶<#◊
-<u¬è<£◊
-<õ•„<T˝Ù;ƒõ¶ª£◊
-ºõ•„ΩtºΩ\)Ωtººoª£◊
-ªÉo<Dõ¶<ƒõ¶<˝Û∂=\)=•„='Ôû='Ôû=æw=•„=\)<›/<ãCñ<tº:ÉoªÉoºtººT˝Ùº¥9Xº˝Û∂Ω49XΩix’ΩÉoΩÉoΩe`BΩ<jΩ\)ºÂ`BºÌëhºı¬èº˝Û∂ΩçPΩ0 ≈Ω•„ºÃÃÕªƒõ¶<Éo=o=•„=çP=o<›/<ºj<ºj<¨1<¨1<¨1<ìtº<T˝Ù<Dõ¶<e`B<ãCñ<õ•„<¥9X<õ•„<T˝Ù;Dõ¶º#◊
-º›/Ω49XΩ49XΩ49Xªƒõ¶ª£◊
-ª£◊
-<#◊
-<¥9X<ı¬è=Cñ=çP=#◊
-='Ôû=æw=•„=Cñ<›/<ãCñ<tº;oªDõ¶ºtººu¬èº¥9XΩoΩ49XΩaGÆΩy€#Ωy€#ΩaGÆΩ8QÏΩ\)ºı¬èºı¬èºı¬èº˝Û∂ΩtºΩæwΩ\)º¥9Xª£◊
-<e`B<Ìëh=\)=tº=+<Â`B<ƒõ¶<¥9X<¥9X<¥9X<¨1<ìtº<e`B<e`B<u¬è<Éo<õ•„<¨1<ìtº<49X:Éoº49Xº›/Ω49XΩ49XΩ49Xªƒõ¶ªƒõ¶ª£◊
-;ƒõ¶<u¬è<ÃÃÕ=Cñ=çP=çP=•„=#◊
-=tº<Ìëh<ºj<õ•„<Dõ¶;Dõ¶ªÉoºtººÉoº‘˝ÙΩ\)Ω,1ΩH¥9ΩYáΩYáΩH¥9Ω8QÏΩ,1ΩtººÌëhº˝Û∂ΩtºΩCñºÌëhº‘˝ÙºÉoªo<o<ìtº<Â`B=o<ı¬è<ı¬è<Â`B<ƒõ¶<ºj<¨1<ãCñ<ãCñ<õ•„<Éo<e`B<õ•„<ìtº<u¬è<T˝Ù<tºªoºu¬èºÂ`BΩ0 ≈Ω49XΩ49X                                                                                                                                                                                                                                                                                                                                                                                                                                                                XTENSION= 'IMAGE   '           / Image extension                                BITPIX  =                  -32 / array data type                                NAXIS   =                    2 / number of array dimensions                     NAXIS1  =                   64                                                  NAXIS2  =                   32                                                  PCOUNT  =                    0 / number of parameters                           GCOUNT  =                    1 / number of groups                               EXTNAME = 'D2IMARR '           / extension name                                 CRPIX1  =                  0.0 / Coordinate system reference pixel              CRPIX2  =                  0.0 / Coordinate system reference pixel              CRVAL1  =                  0.0 / Coordinate system value at reference pixel     CRVAL2  =                  0.0 / Coordinate system value at reference pixel     CDELT1  =                 64.0 / Coordinate increment along axis                CDELT2  =                 64.0 / Coordinate increment along axis                EXTVER  =                    2 / extension value                                END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;Â`B<tº<tº∫Éoºtººu¬èºõ•„º£◊
-ºìtººu¬èºDõ¶ºoªDõ¶;o;£◊
-<tº<49X<Dõ¶<49X<49X<49X<Dõ¶<Dõ¶<Dõ¶<Dõ¶<49X<o;£◊
-;Éo:Éo∫Éo∫ÉoªDõ¶ªÉoª£◊
-ªƒõ¶ºoºtºº#◊
-º49XºDõ¶ºDõ¶ºDõ¶º49XºtºªÂ`Bª£◊
-ªDõ¶∫Éo;o;Éo;ƒõ¶<o<tº<tº<#◊
-<tº<o;Â`B;ƒõ¶;ƒõ¶;ƒõ¶;ƒõ¶;ƒõ¶<tº<49X<Dõ¶    ºtººu¬èºìtººõ•„ºãCñºe`BºoªÉoÄ   ;Éo<tº<T˝Ù<e`B<e`B<T˝Ù<49X<#◊
-<49X<T˝Ù<e`B<Dõ¶<49X<tº;Â`B;Dõ¶    ∫ÉoªoªoªDõ¶ªÉoª£◊
-ªÂ`Bºoº#◊
-ºDõ¶ºT˝Ùºe`Bºu¬èºe`BºDõ¶º#◊
-ªÂ`Bª£◊
-ªoÄ   ;o;£◊
-<o<tº<tº<tº<o;Â`B;ƒõ¶;Éo;Éo;Éo;£◊
-;ƒõ¶<tº<Dõ¶<T˝Ù:ÉoºtººÉoºìtººõ•„ºãCñºT˝ÙªÂ`BªÉo    ;£◊
-<#◊
-<e`B<Éo<u¬è<e`B<49X<#◊
-<49X<T˝Ù<e`B<Dõ¶<#◊
-<tº;Â`B;Dõ¶    ∫ÉoªoªoªoªÉoª£◊
-ªƒõ¶ºoº49XºDõ¶ºe`Bºu¬èºÉoºu¬èºe`Bº49Xºoª£◊
-ªDõ¶∫Éo;o;£◊
-<o<o<tº<tº<o;Â`B;ƒõ¶;Éo;Dõ¶;Éo;£◊
-;ƒõ¶<T˝Ù<e`B<u¬è;oªÂ`BºT˝Ùºe`BºT˝ÙºtºªÉo;o;ƒõ¶<o<#◊
-<e`B<Éo<ìtº<ìtº<ãCñ<e`B<T˝Ù<e`B<ãCñ<ìtº<ãCñ<u¬è<u¬è<T˝Ù<#◊
-;ƒõ¶;Éo;o    ªoª£◊
-ªƒõ¶ªÂ`Bºtººtºº49Xº49XºT˝ÙºT˝Ùºe`BºDõ¶º#◊
-ºoªƒõ¶ª£◊
-ªÉo∫Éo;Dõ¶;ƒõ¶;ƒõ¶;ƒõ¶;ƒõ¶;ƒõ¶;Éo:ÉoªDõ¶ª£◊
-ªƒõ¶ª£◊
-ªDõ¶<e`B<T˝Ù<T˝Ù:ÉoªÂ`BºDõ¶ºT˝Ùº#◊
-ª£◊
-    ;ƒõ¶<#◊
-<Dõ¶<T˝Ù<u¬è<Éo<ãCñ<ìtº<õ•„<ãCñ<u¬è<Éo<õ•„<£◊
-<ìtº<Éo<Éo<e`B<49X;Â`B;Éo:ÉoªoªÉoªÂ`Bº#◊
-ºDõ¶ºDõ¶º49XºDõ¶º49XºtººtººtºªÂ`Bªƒõ¶ªƒõ¶ªƒõ¶ª£◊
-ªÉo∫Éo;o;Éo;£◊
-;ƒõ¶;£◊
-;£◊
-;ÉoªoºoºDõ¶ºT˝ÙºT˝Ùºtº<Dõ¶<49X<#◊
-Ä   ªÂ`BºDõ¶ºDõ¶ºtºªDõ¶;Dõ¶<o<Dõ¶<u¬è<u¬è<u¬è<Éo<ãCñ<ìtº<õ•„<¨1<õ•„<ìtº<õ•„<¨1<ìtº<u¬è<T˝Ù<T˝Ù<tº;£◊
-    ªDõ¶ªÂ`Bº#◊
-ºDõ¶ºu¬èºãCñºãCñºãCñºu¬èºe`Bº49XºoªÂ`Bªƒõ¶ªÉoªoªoªoªo    ;Dõ¶;Éo;Éo;£◊
-;£◊
-;£◊
-;Dõ¶ªDõ¶ºtººe`BºìtººãCñºe`B<o;Â`B;Â`BªDõ¶ºtººT˝ÙºT˝Ùº#◊
-ªÉoÄ   ;£◊
-<#◊
-<e`B<u¬è<u¬è<ãCñ<õ•„<¨1<ƒõ¶<ÃÃÕ<ƒõ¶<ºj<¥9X<¨1<Éo<Dõ¶<#◊
-<tº;£◊
-:ÉoªÉoºoºDõ¶ºe`BºãCñºìtºº£◊
-º¨1º¨1º£◊
-ºõ•„ºu¬èºT˝Ùº49XªÂ`BªÉo∫Éo;o;Éo;Éo;Éo;£◊
-;ƒõ¶;£◊
-;£◊
-;£◊
-;£◊
-;Dõ¶ªoºtººu¬èº£◊
-ºõ•„ºÉo;ƒõ¶;o:ÉoªÂ`BºDõ¶ºÉoºÉoºe`Bº#◊
-ªƒõ¶∫Éo;Dõ¶;Â`B<49X<e`B<ãCñ<õ•„<¥9X<ÃÃÕ<›/<›/<ÃÃÕ<ºj<¨1<Éo<49X<o;ƒõ¶;oªDõ¶ªÂ`Bº#◊
-ºT˝ÙºãCñºõ•„º£◊
-º¨1ººjºƒõ¶ºƒõ¶º¥9Xº£◊
-ºãCñºu¬èº#◊
-ªÉo;o;Â`B<#◊
-<#◊
-<#◊
-<tº<tº<tº<o;Â`B;ƒõ¶;ÉoªoºoºT˝Ùºõ•„ºõ•„ºãCñ;Dõ¶ªoªDõ¶ºDõ¶ºÉoº£◊
-º¨1º£◊
-ºÉoºT˝ÙºtºªÉo:Éo;ƒõ¶<49X<u¬è<ìtº<£◊
-<ºj<‘˝Ù<‘˝Ù<ƒõ¶<£◊
-<ìtº<e`B<#◊
-;ƒõ¶;ÉoÄ   ªDõ¶ª£◊
-ºoºDõ¶ºu¬èºãCñºõ•„º¨1ººjºÃÃÕºƒõ¶ººjº¨1ºìtººÉoº49XªÉo;Dõ¶<tº<T˝Ù<e`B<u¬è<e`B<T˝Ù<Dõ¶<Dõ¶<#◊
-<tº;£◊
-∫ÉoªÂ`Bº49XºÉoºãCñºãCñ    ªDõ¶ª£◊
-ºe`Bºìtºº¥9Xºƒõ¶ººjº¨1ºãCñºT˝ÙºoªDõ¶;Dõ¶<tº<e`B<Éo<ìtº<£◊
-<ºj<ƒõ¶<£◊
-<Éo<e`B<49X<tº;ƒõ¶;£◊
-:Éo∫ÉoªDõ¶ªÉoªƒõ¶º#◊
-ºT˝Ùºe`BºãCñº£◊
-º¥9Xº¥9Xººjº¨1ºõ•„ºãCñºT˝Ùª£◊
-;o<o<T˝Ù<u¬è<ãCñ<ãCñ<ãCñ<Éo<Éo<e`B<T˝Ù<o;oªÉoºoºu¬èºu¬èºìtºÄ   ªÉoªÉoºe`Bº£◊
-ºƒõ¶º‘˝Ùº‘˝Ùºƒõ¶º¨1ºÉoº49Xª£◊
-;o;Â`B<49X<Dõ¶<e`B<Éo<õ•„<õ•„<ãCñ<e`B<49X<tº<o;ƒõ¶;£◊
-:Éo∫Éo∫Éo∫Éoªoª£◊
-ªÂ`Bºoº49XºÉoºõ•„º£◊
-º¨1º¨1º¨1ºìtººT˝Ùªƒõ¶:Éo;Â`B<49X<u¬è<ìtº<õ•„<£◊
-<£◊
-<£◊
-<õ•„<Éo<Dõ¶;ƒõ¶∫ÉoªÂ`Bºu¬èºu¬èºìtºÄ   ªÉoªÉoºu¬èº£◊
-º‘˝ÙºÌëhºı¬èºÂ`BºÃÃÕº£◊
-ºe`BªÂ`BÄ   ;£◊
-<o<tº<tº<#◊
-<T˝Ù<u¬è<T˝Ù<49X<#◊
-<#◊
-<o;Â`B;£◊
-:ÉoªDõ¶∫Éo    ;o    Ä   ∫Éoª£◊
-ºDõ¶ºu¬èºãCñºìtºº£◊
-ºõ•„ºÉoºDõ¶ª£◊
-:Éo;£◊
-<o<T˝Ù<ìtº<£◊
-<¥9X<ƒõ¶<ƒõ¶<¥9X<£◊
-<e`B;Â`B    ºoºãCñºãCñºãCñÄ   ªDõ¶ªÉoºe`Bº¨1ºÂ`BΩoΩ+º˝Û∂ºÂ`Bº¥9Xºu¬èºtºªÉo:Éo;Éo;Éo;Dõ¶;Éo;Â`B<tº<#◊
-<tº<tº<#◊
-<#◊
-<tº;Â`B;Dõ¶:Éo;o;Éo;£◊
-;£◊
-;£◊
-;Dõ¶∫ÉoªÂ`Bº49XºDõ¶ºe`BºãCñºÉoºT˝Ùº#◊
-ª£◊
-∫Éo;o;Â`B<49X<Éo<£◊
-<ƒõ¶<‘˝Ù<‘˝Ù<ÃÃÕ<¥9X<Éo;Â`Bªoº#◊
-ºõ•„ºõ•„ºãCñÄ   ªoªoºT˝Ùº¨1ºÌëhΩoΩ+Ω+ºÌëhºƒõ¶º£◊
-ºe`BºoªDõ¶∫Éo∫Éo∫ÉoÄ   ;Dõ¶;£◊
-;£◊
-;Â`B<#◊
-<#◊
-<#◊
-<#◊
-<tº;Â`B;£◊
-;£◊
-;£◊
-;ƒõ¶;ƒõ¶;£◊
-;o∫Éoª£◊
-ªÂ`Bºtºº49XºT˝ÙºT˝Ùº49XºoªÉoªo:Éo;£◊
-<#◊
-<Éo<õ•„<ºj<‘˝Ù<Â`B<›/<ºj<Éo;Â`Bªoº49Xº£◊
-º£◊
-ºõ•„:Éo∫Éo∫Éoº49Xº¨1ºÂ`Bº˝Û∂ΩoΩoºı¬èº›/ºƒõ¶ºõ•„ºe`Bº#◊
-ªÂ`Bªƒõ¶ª£◊
-ªÉo∫Éo:Éo;Éo;Â`B<#◊
-<#◊
-<#◊
-<#◊
-<49X<tº;Â`B;ƒõ¶;Éo;Dõ¶;o:Éo∫ÉoªDõ¶ªƒõ¶ªÂ`Bºtºº#◊
-º49Xº#◊
-ºoª£◊
-ªo    ;o;Éo<tº<u¬è<õ•„<¥9X<ÃÃÕ<Â`B<Â`B<ÃÃÕ<ãCñ<oªoºDõ¶º¨1º£◊
-º£◊
-;o    ∫Éoº#◊
-ºìtºº‘˝ÙºÌëhºı¬èºÌëhºÌëhº›/º›/ººjºõ•„ºe`Bº#◊
-ªÂ`Bª£◊
-ªo:Éo;Dõ¶;£◊
-;Â`B<#◊
-<tº<o<tº<#◊
-<tº;Â`B;£◊
-;Dõ¶    ªoªDõ¶ªDõ¶ª£◊
-ªÂ`Bºoºtºº#◊
-º49Xºtºªƒõ¶ªDõ¶:Éo;o;Dõ¶;£◊
-<#◊
-<e`B<ãCñ<£◊
-<¥9X<‘˝Ù<Â`B<‘˝Ù<ìtº<oªoºDõ¶º£◊
-º£◊
-ºõ•„;ƒõ¶;Dõ¶;oª£◊
-ºDõ¶ºìtºº¥9Xºƒõ¶ºƒõ¶ºÃÃÕº‘˝Ùº‘˝ÙºÃÃÕº¨1ºu¬èºtºªƒõ¶ªDõ¶:Éo;£◊
-;ƒõ¶;Â`B<o<o;ƒõ¶;£◊
-;Â`B<tº<tº<o;ƒõ¶;o∫ÉoªoªDõ¶ªoªÉoªƒõ¶ªÂ`Bºoº#◊
-º49Xºtºª£◊
-∫Éo;Dõ¶;Éo;£◊
-<o<Dõ¶<e`B<Éo<ìtº<¥9X<ÃÃÕ<Â`B<Â`B<¥9X<49X    ºtººõ•„ºõ•„ºõ•„<#◊
-<o<o;oªDõ¶ºtººDõ¶ºu¬èºìtºº¨1ººjºÃÃÕººjºõ•„ºT˝ÙªÂ`Bªo    ;Éo;Â`B<tº<tº;Â`B;Â`B;Éo;o;Dõ¶;Â`B<tº<o;ƒõ¶;Dõ¶Ä   Ä   Ä   ∫ÉoªÉoªÂ`Bºoºtºº#◊
-º49Xºtºª£◊
-∫Éo;Éo;ƒõ¶<tº<49X<T˝Ù<Éo<ìtº<£◊
-<¨1<‘˝Ù<Ìëh<›/<£◊
-<Dõ¶;Dõ¶ªÂ`BºãCñºìtºº£◊
-<u¬è<u¬è<u¬è<Dõ¶;Â`B:ÉoªDõ¶ªƒõ¶º49XºÉoºõ•„º£◊
-ºõ•„ºu¬èº#◊
-ªÉoÄ   ;Dõ¶;£◊
-<o<tº<tº;ƒõ¶;£◊
-;Dõ¶;o;Dõ¶<o<#◊
-<#◊
-<o;ƒõ¶;Éo;Éo;Dõ¶:ÉoªDõ¶ªÂ`Bºoºtºº#◊
-º49Xºoªƒõ¶ªDõ¶;Éo<o<49X<Dõ¶<u¬è<ãCñ<õ•„<£◊
-<£◊
-<ºj<‘˝Ù<ºj<Éo<tº:Éoºoºìtººìtººõ•„<¨1<¥9X<¥9X<õ•„<u¬è<tº;Dõ¶ªoºoºe`BºãCñºìtººãCñºe`BºtºªÉo    ;Dõ¶;Â`B<o<o;Â`B;£◊
-;Éo;o;Éo;ƒõ¶<49X<T˝Ù<Dõ¶<49X<#◊
-<o;Â`B;ƒõ¶;ÉoªoªÂ`Bºtººtººtºº#◊
-º49Xº49Xªƒõ¶:Éo;ƒõ¶<tº<Dõ¶<e`B<Éo<ãCñ<ãCñ<ìtº<£◊
-<¥9X<õ•„<e`B;Â`B∫Éoºtººõ•„ºìtººãCñ<›/<‘˝Ù<›/<ÃÃÕ<¥9X<Éo<tº;oªƒõ¶ºT˝ÙºãCñºìtººÉoºT˝Ùº#◊
-ªÉoÄ   ;Dõ¶;ƒõ¶<o<tº;Â`B;£◊
-;ƒõ¶;Â`B<o<#◊
-<e`B<e`B<Dõ¶<#◊
-<o;ƒõ¶;£◊
-;Dõ¶;oªDõ¶ªÂ`Bºoºtºº#◊
-º49XºT˝Ùºe`Bºtºªo;Dõ¶<o<49X<e`B<Éo<ãCñ<ãCñ<ãCñ<ìtº<£◊
-<ìtº<T˝Ù;Â`BÄ   ºtººìtººìtººãCñ<˝Û∂<˝Û∂<˝Û∂<˝Û∂<ı¬è<ƒõ¶<Éo;ƒõ¶ªDõ¶ºDõ¶ºÉoºãCñºÉoºT˝ÙªÂ`BªÉo∫Éo;o;£◊
-<o<#◊
-<#◊
-<o<49X<Dõ¶<T˝Ù<T˝Ù<u¬è<T˝Ù<tº;£◊
-;oªoªÉoªÂ`Bºoº49XºT˝ÙºT˝ÙºDõ¶ºe`Bºe`Bºu¬èºÉoºT˝Ùª£◊
-    ;£◊
-<tº<Dõ¶<e`B<ìtº<ìtº<ãCñ<ìtº<£◊
-<ãCñ<Dõ¶;Â`BÄ   ºoºÉoºÉoºÉo=+=Cñ=\)=tº=\)<Â`B<£◊
-<49X:ÉoºoºT˝Ùºe`Bºe`Bº49XªÂ`BªDõ¶∫Éo;o;£◊
-<tº<49X<T˝Ù<T˝Ù<e`B<e`B<T˝Ù<Dõ¶<Dõ¶<o;oªDõ¶ªÂ`Bº49Xºe`Bºìtººõ•„º¨1º¨1º£◊
-ºìtººãCñºÉoºÉoºãCñºe`BªÂ`Bªo;o;ƒõ¶<#◊
-<e`B<ãCñ<ìtº<ìtº<ìtº<ìtº<u¬è<tº;Dõ¶ªDõ¶ºtººu¬èºe`Bºu¬è=Cñ=tº=tº=çP=\)<Â`B<£◊
-<49X;oªÂ`BºDõ¶ºe`BºT˝Ùº#◊
-ªƒõ¶ªo:Éo;Éo;Â`B<49X<u¬è<Éo<u¬è<u¬è<Dõ¶<tº;ƒõ¶;Éo∫ÉoºoºT˝Ùºu¬èºìtºº¨1ºÃÃÕº›/ºÌëhºÌëhºÂ`BºÃÃÕº¨1ºõ•„ºìtººìtººu¬èºtºªDõ¶:Éo;ƒõ¶<49X<u¬è<ãCñ<ãCñ<ìtº<ãCñ<u¬è<Dõ¶;£◊
-∫Éoª£◊
-ºtººT˝ÙºT˝ÙºT˝Ù=+=tº=çP=tº=o<ƒõ¶<Éo;Â`BªDõ¶ºtººT˝ÙºÉoºu¬èºDõ¶ªÂ`BªDõ¶:Éo;£◊
-<o<Dõ¶<ãCñ<õ•„<ãCñ<Éo<49X;Éo∫ÉoªDõ¶ºtººu¬èºõ•„º£◊
-º¨1ººjº›/ºı¬èΩCñΩtºΩ\)º˝Û∂º‘˝Ùº¥9Xº£◊
-ºõ•„ºÉoº49Xªƒõ¶∫Éo;£◊
-<49X<Éo<ìtº<õ•„<ìtº<ãCñ<e`B<tº;oªÉoªÂ`BºtººDõ¶º49Xº49X<Â`B=Cñ=tº=o<‘˝Ù<ãCñ<tºÄ   ºoºe`BºÉoºìtººìtººe`BºoªÉo:Éo;ƒõ¶<tº<T˝Ù<ìtº<¨1<£◊
-<Éo<tº;oªÉoªÂ`Bº#◊
-ºDõ¶ºT˝Ùºe`Bºu¬èºãCñººjºÌëhΩçPΩ,1Ω0 ≈Ω•„ΩCñºÂ`Bºƒõ¶º¨1ºìtººDõ¶ªÂ`B∫Éo;Éo<#◊
-<u¬è<ìtº<õ•„<õ•„<ãCñ<T˝Ù<o    ªƒõ¶ºtººoº#◊
-ºtºªÂ`B<ºj<›/<›/<¥9X<Éo<o    ªÂ`Bºe`Bºõ•„º¨1º¥9Xº¥9XºìtººDõ¶ªƒõ¶∫Éo;£◊
-<#◊
-<u¬è<£◊
-<ºj<¥9X<ãCñ<#◊
-;Dõ¶ªoªDõ¶ªoÄ   :Éo;o;oªoºtººìtººÌëhΩæwΩ8QÏΩ0 ≈Ω•„ΩCñºÌëhºÃÃÕº£◊
-ºT˝ÙªÂ`BªDõ¶;o;Â`B<T˝Ù<u¬è<ìtº<ìtº<Éo<Dõ¶;Â`B∫Éoªƒõ¶ºoªÂ`Bªƒõ¶ª£◊
-ªDõ¶<ìtº<Éo<Éo<#◊
-;oª£◊
-º#◊
-ºu¬èº¥9Xº‘˝Ùº›/ºÂ`BºÃÃÕº¨1ºe`Bºo∫Éo;ƒõ¶<Dõ¶<ãCñ<ºj<ÃÃÕ<ºj<£◊
-<e`B;Â`B;£◊
-<o<Dõ¶<Éo<¨1<ÃÃÕ<ƒõ¶<õ•„<#◊
-    ºT˝ÙºÂ`BΩæwΩ'ÔûΩæwΩ\)º˝Û∂º›/º¥9Xºu¬èºtºª£◊
-∫Éo;Éo<o<49X<e`B<u¬è<e`B<49X;Â`B    ª£◊
-ªƒõ¶ªDõ¶Ä       Ä   <49X<o;Â`B∫Éoºtººe`BºìtºººjºÌëhΩoΩoº˝Û∂ºÂ`Bº¥9Xºe`Bºtºªo;£◊
-<T˝Ù<õ•„<ÃÃÕ<‘˝Ù<‘˝Ù<ºj<õ•„<e`B<u¬è<¨1<Â`B=tº=0 ≈=@É=49X=æw<ı¬è<õ•„;Dõ¶ºT˝Ùº›/ΩCñΩtºΩ\)ΩoºÂ`BºÃÃÕº£◊
-ºe`Bº#◊
-ªƒõ¶ªo;Dõ¶;£◊
-<o<tº<49X<tº;ƒõ¶:ÉoªDõ¶ªÉo    ;£◊
-;ƒõ¶;ƒõ¶;Â`B;Dõ¶;oºoºÉoººjºÂ`Bºı¬èΩCñΩçPΩçPΩCñºı¬èººjºu¬èºtºªDõ¶;Éo<Dõ¶<ìtº<ºj<ƒõ¶<‘˝Ù<‘˝Ù<ƒõ¶<¥9X<‘˝Ù=Cñ=0 ≈=T˝Ù=q©¸=}Û∂=q©¸=T˝Ù=0 ≈=+<ãCñÄ   ºÉoº‘˝ÙΩ+Ω\)ΩCñº˝Û∂ºı¬èº‘˝Ùº¨1ºÉoº49XªÂ`BªDõ¶∫Éo;o;£◊
-;ƒõ¶;£◊
-;£◊
-;oÄ   ∫Éo;Éo<Dõ¶<Dõ¶<e`B;ƒõ¶;Éo;Dõ¶ªƒõ¶ºu¬èº¥9Xº‘˝ÙºÌëhΩCñΩtºΩtºΩ+ºÌëhººjºÉoº#◊
-ªÉo;Éo<49X<ãCñ<¥9X<ƒõ¶<ÃÃÕ<ÃÃÕ<ƒõ¶<ºj<‘˝Ù=Cñ=,1=LÃÕ=e`B=q©¸=aGÆ=H¥9=#◊
-<Ìëh<u¬èÄ   ºu¬èº‘˝ÙΩ+ΩCñΩ+º˝Û∂ºÌëhºÃÃÕº¨1ºãCñºDõ¶ªÂ`BªÉo∫Éo;o;Dõ¶;£◊
-;ƒõ¶;Éo;o:Éo:Éo;£◊
-<Dõ¶<Dõ¶<T˝Ù<o;ƒõ¶;ƒõ¶ªƒõ¶ºT˝ÙºìtººÃÃÕΩoΩoΩ+ΩCñΩ+º›/ººjºìtºº#◊
-ªo;Éo<tº<u¬è<ìtº<ºj<ºj<ºj<ÃÃÕ<ı¬è=o=Cñ='Ôû=@É=LÃÕ=LÃÕ=LÃÕ=8QÏ=çP<ÃÃÕ<Dõ¶    º#◊
-º¨1º›/ºı¬èΩ+º˝Û∂ºÂ`BºÃÃÕº¨1ºÉoºDõ¶ºoª£◊
-∫Éo:Éo;Éo;Éo;Éo;Dõ¶;Éo;Dõ¶;ƒõ¶<#◊
-<T˝Ù<T˝Ù<T˝Ù                                                                                                                                                                                                                                                                                                                                                                                                                                                                XTENSION= 'IMAGE   '           / Image extension                                BITPIX  =                    8 / array data type                                NAXIS   =                    0 / number of array dimensions                     PCOUNT  =                    0 / number of parameters                           GCOUNT  =                    1 / number of groups                               WCSAXES =                    2 / Number of coordinate axes                      CRPIX1  =               2048.0 / Pixel coordinate of reference point            CRPIX2  =               1024.0 / Pixel coordinate of reference point            CUNIT1  = 'deg'                / Units of coordinate increment and value        CUNIT2  = 'deg'                / Units of coordinate increment and value        CTYPE1  = 'RA---TAN-SIP'       / TAN (gnomonic) projection + SIP distortions    CTYPE2  = 'DEC--TAN-SIP'       / TAN (gnomonic) projection + SIP distortions    CRVAL1  =      262.95078648265 / [deg] Coordinate value at reference point      CRVAL2  =     -67.045080389987 / [deg] Coordinate value at reference point      CRDER1  =  2.0390245781195E-06 / [deg] Random error in coordinate               CRDER2  =  2.2662806800833E-06 / [deg] Random error in coordinate               WCSNAME = 'IDC_4bb1536cj-FIT_REL_GAIAeDR3' / Coordinate system title            MJDREF  =                  0.0 / [d] MJD of fiducial time                       RADESYS = 'ICRS'               / Equatorial coordinate system                   A_ORDER =                    5 / SIP polynomial order, axis 0, detector to sky  A_0_2   = 2.26094407640934E-06 / SIP distortion coefficient                     A_0_3   = 7.79610717132251E-11 / SIP distortion coefficient                     A_0_4   = 1.37699627725582E-13 / SIP distortion coefficient                     A_0_5   =  -1.066064945384E-17 / SIP distortion coefficient                     A_1_1   = -7.5466930350789E-06 / SIP distortion coefficient                     A_1_2   = -5.3275855676557E-10 / SIP distortion coefficient                     A_1_3   = -4.5049413497786E-15 / SIP distortion coefficient                     A_1_4   = 1.03593542370715E-17 / SIP distortion coefficient                     A_2_0   = 8.52120597882146E-06 / SIP distortion coefficient                     A_2_1   =  -1.180199866109E-10 / SIP distortion coefficient                     A_2_2   = 9.67537994635379E-14 / SIP distortion coefficient                     A_2_3   = -2.2434848187216E-18 / SIP distortion coefficient                     A_3_0   = -4.9758199192052E-10 / SIP distortion coefficient                     A_3_1   = 4.03792458694601E-14 / SIP distortion coefficient                     A_3_2   = 7.61249191764763E-19 / SIP distortion coefficient                     A_4_0   = 2.04851918952621E-14 / SIP distortion coefficient                     A_4_1   = 3.33118939258592E-18 / SIP distortion coefficient                     A_5_0   = 5.40827820879379E-18 / SIP distortion coefficient                     B_ORDER =                    5 / SIP polynomial order, axis 1, detector to sky  B_0_2   = -9.7917655867145E-06 / SIP distortion coefficient                     B_0_3   = -4.4851226763823E-10 / SIP distortion coefficient                     B_0_4   = -1.6152773156449E-13 / SIP distortion coefficient                     B_0_5   = 2.76886915049277E-17 / SIP distortion coefficient                     B_1_1   = 6.45115939543555E-06 / SIP distortion coefficient                     B_1_2   = -3.9056789330739E-11 / SIP distortion coefficient                     B_1_3   = 1.51495393214007E-14 / SIP distortion coefficient                     B_1_4   = -1.0733820437174E-17 / SIP distortion coefficient                     B_2_0   = -2.9528943174808E-06 / SIP distortion coefficient                     B_2_1   = -4.2921643427047E-10 / SIP distortion coefficient                     B_2_2   = -1.0918970935469E-13 / SIP distortion coefficient                     B_2_3   = 2.98268074040822E-18 / SIP distortion coefficient                     B_3_0   = 1.10333652682213E-10 / SIP distortion coefficient                     B_3_1   = -4.2829550020671E-14 / SIP distortion coefficient                     B_3_2   = 3.82252747998728E-18 / SIP distortion coefficient                     B_4_0   = -2.0511900793034E-14 / SIP distortion coefficient                     B_4_1   = -4.2784959594581E-18 / SIP distortion coefficient                     B_5_0   =  -5.190806049098E-18 / SIP distortion coefficient                     D2IMDIS1= 'LOOKUP  '           / Detector to image correction type              D2IM1   = 'EXTVER: 3.0' / Version number of WCSDVARR extension                  D2IM1   = 'NAXES: 2' / Number of independent variables in D2IM function         D2IM1   = 'AXIS.1: 1' / Axis number of the 1st variable in a D2IM function      D2IM1   = 'AXIS.2: 2' / Axis number of the 2nd variable in a D2IM function      D2IMDIS2= 'LOOKUP  '           / Detector to image correction type              D2IM2   = 'EXTVER: 4.0' / Version number of WCSDVARR extension                  D2IM2   = 'NAXES: 2' / Number of independent variables in D2IM function         D2IM2   = 'AXIS.1: 1' / Axis number of the 1st variable in a D2IM function      D2IM2   = 'AXIS.2: 2' / Axis number of the 2nd variable in a D2IM function      CPDIS1  = 'LOOKUP  '           / Prior distortion function type                 DP1     = 'EXTVER: 3.0' / Version number of WCSDVARR extension                  DP1     = 'NAXES: 2' / Number of independent variables in CPDIS function        DP1     = 'AXIS.1: 1' / Axis number of the 1st variable in a CPDIS function     DP1     = 'AXIS.2: 2' / Axis number of the 2nd variable in a CPDIS function     CPDIS2  = 'LOOKUP  '           / Prior distortion function type                 DP2     = 'EXTVER: 4.0' / Version number of WCSDVARR extension                  DP2     = 'NAXES: 2' / Number of independent variables in CPDIS function        DP2     = 'AXIS.1: 1' / Axis number of the 1st variable in a CPDIS function     DP2     = 'AXIS.2: 2' / Axis number of the 2nd variable in a CPDIS function     ORIENTAT=   -79.48622119047343 / positions angle of image y axis (deg. e of n)  TG_ENAME= 'SCI     '           / Target science data extname                    TG_EVER =                    2 / Target science data extver                     CD1_1   = -3.6971666819561E-06 / partial of first axis coordinate w.r.t. x      CD1_2   = -1.3281700114726E-05 / partial of first axis coordinate w.r.t. y      CD2_1   = -1.3175082337295E-05 / partial of second axis coordinate w.r.t. x     CD2_2   =  2.4649215368557E-06 / partial of second axis coordinate w.r.t. y     OCX10   =           0.00227074 / original linear term from IDCTAB               OCX11   = 0.049209556286359306 / original linear term from IDCTAB               OCY10   =          0.048571401 / original linear term from IDCTAB               OCY11   = 0.002135286255279573 / original linear term from IDCTAB               IDCSCALE=                 0.05 / pixel scale from the IDCTAB reference file     D2IMERR1=                0.107 / Maximum error of D2IM correction for axis 1    D2IMERR2=                0.119 / Maximum error of D2IM correction for axis 2    CPERR1  =           0.04017252 / Maximum error of NPOL correction for axis 1    CPERR2  =           0.06408963 / Maximum error of NPOL correction for axis 2    EXTNAME = 'SIPWCS  '           / extension name                                 EXTVER  =                    2 / extension value                                END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             XTENSION= 'IMAGE   '           / Image extension                                BITPIX  =                  -32 / array data type                                NAXIS   =                    2 / number of array dimensions                     NAXIS1  =                   64                                                  NAXIS2  =                   32                                                  PCOUNT  =                    0 / number of parameters                           GCOUNT  =                    1 / number of groups                               EXTNAME = 'WCSDVARR'           / extension name                                 CRPIX1  =                  0.0 / Coordinate system reference pixel              CRPIX2  =                  0.0 / Coordinate system reference pixel              CRVAL1  =                  0.0 / Coordinate system value at reference pixel     CRVAL2  =                  0.0 / Coordinate system value at reference pixel     CDELT1  =                 64.0 / Coordinate increment along axis                CDELT2  =                 64.0 / Coordinate increment along axis                EXTVER  =                    3 / extension value                                END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ∫Ör∑∫Ör∑∫Ör∑∫ãØ◊;EÇ;H,;Ni2;H,;´}<;∞+;—á¬<ëG<	XÎ;ˆˇ;◊ƒ‚;$§X∫∆Eª∑˘º †ºt¡ôºDEﬁºdCºaºWºT•ª∏ìBº¸º2?ºXƒº†kRº∆uÿº¬·ºB—∫Äîë<K¬<≤ˆ‘<◊’‰<¢Ö^<Ë±9ªª;±“ª‡-ª;±“;´}<;»,:§§X;*·x;. : :G§;1ò;¥ÿÏ<
- è;Ú‰o;‘¶R;ê]Ø;Ú‰o;≠Ñ;Qá¬;;±“;õ‰lπG§ªê]Øº?ºs¨∫Ör∑ªr∑ªH,:ëÏ˜;KJ¢:Âv≠;hï=;¡ÓÚ;ÃŸÍ<<Û7<ñâ<
-Ë3;ÏßO<∞U<µ;∆ªÁ`ºçºdCºdCºÅ(±ºA'Nº íDº¸ºU$ªâ-ªÌCºâ„Æº⁄i∞Ωë&Ω·üº€´ªπﬁÑ<°ß =≈]=∏W< F;¡ÓÚº ƒﬂº2?∫ò*;>–b    :±ò;ÒU';Ni2ªu}ªèj+:;)≈;1ò;. : ;Ú‰o<;cÔ<%—:√’˘:ëÏ˜<åÉ<4_+<#∞‘<};Ó6óπyçº?∫Ör∑ªH,ªÖr∑;≠Ñ;®^¨:Âv≠9—`R<s5<)&P<,D‡<ñâ<Ø◊<:[<!<0+<]0ª™@º»ºe¢ãºd⁄Áºëcº¸º„Ìº.ÈØº'GªLÇ,ª®˙qºôféºÚßéΩ;Ω8ÀºÌËµºj<é>µ= ◊¶=$ãÒ<‚É˚;qÌºB∂ñºPF\∫ûg8;ùs¥;H,∫ô+;Ó6ó;É„oª†íDºO·:ÔÅ€;. :"5E:	@ƒ;Ú‰o<lßO<>Ç∫¿Ï;®^¨<2œ„<WK <"È0<cKü<-‘(;Äƒﬂª‘¶RªNi2∫ev≠:§§X;áº7}ªºŒÂªj|CªT¶RªT';Ni2;ä è;H,<2œ„<E’&<ñâ<A°<C˜˚ªAÓÚº#∞‘º≈]º)t3ºe¢ãºäGÄº¨∫]⁄í;Y´Í8†≤◊ª\˝ªÓ6óºGﬁ/ºîßµº/èP;^ä<öB<–mM<≥Z¶;öU$ª‰⁄ÁºöíºõΩzºw˘∫„öª©ÌÙª÷—^ª,ª√~:º>–bºkeÈªíàª;ëÏ˜∫“øL9G§;…ªZ<Ë±;πÜ≈:±òªÇT';AÓÚ<~‰Ì<E’&;É„o;àëG;É„o∫§§XªKJ¢:ëÏ˜;Ni2ªKJ¢ºYiª…ªZª´}<ª‰⁄Áª›ª~k.ªNi2∏«§<:Ÿ< ƒﬂ;¶œd;ŸT+<ŒÂ;KJ¢ªùs¥ºs¥ºKòÑºës5º?òª%€·;üˆÄ<$Ú9<%π›<Ø◊<(^¨;˛k.ªM1©ªø(!;fÆ5<~π<Cwª'¬Ë∫Î≥Õº‰lºñ´–º„Küª~k.ªëGª‡-º>–b∫†÷Jºp¡º≥óáº¢!åªùs¥;ÃŸÍ;Ï˜9ª;Ø◊<´;◊ƒ‚∫Î≥Õ∫~k.;8ìB<'ó;T';†íD:~k.;T';ÃŸÍªT';Ô≈ﬂ;Ó6ó;ä èª*∫ëÏ˜ªAÓÚ9‡òÜ∫Î≥ÕªÄƒﬂª∆ú :~k.πG§;‡-;Ï˜πÍT”;Œg;Èàø;≥I§∫¿ÏºM'Ãºôºº0x˜∫LÇ,;˘!è<ant<Åø<èY*<á…£<*µò;r∑;bX9ÍT”9ÜÇŒªd?#º:[ª_9çª®˙qºHyÙºê´ë:§§X<A∫ﬂ9çº †ºRùHºîë≈º·1îº∑·çº	XÎ;,;8ìBª£∞‘ª‡-9ïª:	@ƒ∫ÒÌ;H,:ÒÌ;Èàø;>–b∫™·xªQá¬;H,;n“]∫X¸l<^-<^O‰;Ùs∑ªŒg;>–b<E’&;Ú‰o9ªªNi2ªÏ˜πª<}<„oª2V!ª€7;ïá<(^¨<X⁄h<&œd:	@ƒºd⁄Áºç>ªØ◊;◊ƒ‚;ˆˇ<2Ç <Ä:<C0W;˝œh;Ñ÷Ú:±ò9‡òÜª>–bº2?ºoLªÕuÆªa•ªª"ΩQ<´<7}ª<Ø◊º„ÌºÉùº|éºÜû-ºÜû-ªÆõÃ;≥Âi;Ä1ªÒU'º}ª‰⁄Áªæ–bª‡-;AÓÚ;2V!<´;ò≈‹:ßkπ˘ç;~k.ª±∫\9ª<"õM<ÑÑ!:ªº !;AÓÚ<À;T'ªQá¬ªWƒ‚º?∫§§X<Uªÿ<9ª£∞‘º3óá;pπc<ˇ<£∞‘<ä´R<Ø◊ºYiºLŸÍª—á¬;^<C0W<!”©<P¿<Ä:<"õM:ïª;¶3†<”+;ùªèj+ªÒÌª–î>ªΩA;ÇT';Èàø< ƒﬂ;èj+:˛k.º2?ºe¢ãªŸT+ªãØ◊ªT¶R;¿_™<çÄ∫ÈD∫ºDªÒU'º[¯¯º"È0∫Ör∑∏G§;u};Ör∑9ÜÇŒªÉG™∫ª∫ΩòŸª. ;H®;¸@ ;ˇ^∞ªùs¥ª~k.:ëÏ˜;EÇ:¯.πªπªªˆˇ;>–b<Gdn<ç…‚;;±“ºTÙ4º0x˜<∞U<§‹J<§¶<∞UªÉ„oº
- èªj|C;EÇ<ŒÂ<ñ<∞U<5Ós;Ó6ó;4=(;ûg8<á<C„;£ª≥Âi∏G§;u};u}π‡òÜ<*;◊π‡òÜº#∞‘ºã$ª≥Âiªõ‰l;H,;ÇT'<LŸÍ< !:Íºµº*µòº[¯¯ºYi∫™·xπ‡òÜ:§™∫"5Eª≤≠‡º,æ¢ªôπ`ªæ4ù:¯.9˘ç<ŒÂ<Ni2∫X¸lºË±ª£∞‘:X¸l:ev≠∏«§:qÌπª;EÇ;†íD<cKü:Âv≠º7}ªºxßÕ;ÇT'<ã÷»<Ø&è<ëGª;±“ºË±ªëÏ˜;†íD;Ùs∑;πÜ≈<3óá<SdÏ<'ó∫ô+;ê]Ø;pπc;ø√Â9‡òÜ:ﬂ9ç:ßk;öU$:Í∫.ØÜ:“øLª£∞‘ºÉ„oºq£	º˝πªEÇª^:ﬂ9ç;©ÌÙ;Ör∑ª©ÌÙº|éºT,êª‰⁄ÁªKJ¢:'kª$§X;"ΩQ;ç⁄„ª“{Eº™é¶ºT¶Rªﬁªê]Ø;!Ö»<>Ç<O0÷;$§Xº7}ªºKJ¢ªNi2ªç?;¡ÓÚ;Î;ä èπïª<}<´ë∫±òº:úKº(^¨πG§<ç<RùH;∞+ªò≈‹ªÒU'º
-Ë3ªEÇ:±ò;!Ö»;É„o<:Ÿ<ë≈;ﬁ∫ÒÌ:ãØ◊;Qá¬;≈Ç;ê˘s;«8é8Óï:∫ΩòŸ:~k.ªÏ˜ºZi∞º;Xº8ìBº(¨èªKJ¢∫–P9:≥ç´;©ÌÙ;Qá¬ªáº-ÑºåÉª;±“:Âv≠<´ë;¸€Ê<¨;∏ìB9)3üºÜw;ª‹rªªç?ºŒg;éŒg<S
-<SﬁÆ;g8ºë≈º[¯¯ºmnÛº0Ú∏;n“];H,ªÉ„oª±∫\:ÿ¸lª*ªT¶RªT¶Rª”
-;%€·<≈‹<˙v<…£∫ÒÌº<+ìº6∂ºåÉªˇ˙vªùs¥8G§;æ–b<#∞‘;ÒU';ëG;/7ë;n“];ïßK;Ø7ë;œˆªú◊ª—á¬ªx.ªü¸ºáe—º;Xª’Bªõ‰l∫ÈD∫:≠Pã∫â@ƒ:3ç´ªëGªÊj/ºZi∞ºåÉªü¸;r∑;Êj/;›<TÙ4;É„oª”
-ºSﬁÆªãØ◊ª®^¨ª¥ÿÏ;ê]Ø<A°<s¨∫X¸lº(^¨º&œdº+}<º]Øπ‡òÜ∫Ör∑ªT'∫ûg8∫ΩòŸπïª:ﬂ9ç;x.;qÌ;–î><˛8<≥˚Y<{∆];Ú‰o:±ò;$§Xª,∫Î≥Õ∫¯.ª*ªd?#;ùs¥;;±“ª!Ö»:“øL;˛k.;–î>;Ó“];≠®IªëÏ˜º!º$xxª≈Çº2?ª˘ΩU∫3ç´<…£:X¸lπ˘çªªª…ªZª·ºWºt¡ôºç>º6∂ª£∞‘∫ãØ◊;˛k.;˚Lû<À;•@ª˘!èºqU'º&¿ªÏßOª¿_™;ê]Ø<ñâ<_àªr∑ªÎªÎº%—ºu;[º_àº}U•º:[ªÏßOªëÏ˜ªg8∫	@ƒ;ò≈‹;"ΩQ∫ÔÅ€:†÷J<VÉ|<9‘ß;ŸT+;œ¯z;˝œh<|Ω<P¿;É„o:Í:ÃÇ,;ÇT'ªNi2πÆØÜ;¿_™<H,<}<.ÈØ<¸:ëÏ˜º}ºH,ª†íDªΩAª5t±;á;®^¨∫ãØ◊º8E_ºE’&ºã$º_ekºÄaºXƒºr∑ªáˇªd?#;U›‹<O·;”≤Œªê]ØºqU'ºîªÃŸÍª…ªZ∫qÌ;Œi2;ãØ◊;Ï˜:ëÏ˜ª∞+ºA°º>ÇºxYÎºC˜˚ºÅøª≈Çπïª;Èàø:X¸lª$§X:Íªê]Øª∂h4º=∫€ª≠ÑªëG;H®;Qá¬<O¯z<Ìu<n6ó< !;≈ÇªWƒ‚∫ëÏ˜9yç:~k.;Ô≈ﬂ<0+<Bh≥<'ó<óLÉ;´}<ºIª‡-∫Î≥Õª®^¨9«§;ïá9yç;Œg9˘çª≥Âiº;Xºçªﬁù«ªAÓÚªKJ¢ªÚ‰o∫.ØÜ<+{<*;◊9ÜÇŒº Daª”
-ª˙∞ÿ;…ªZ∫ev≠;Œg;´}<;Ni2:ëÏ˜:X¸lª∑˜}ºDºáºÉº}ºÉº}ºM°éªÎ∫~k.;AÓÚ∫§§XªH®:3ç´ªÆõÃª¢!åº[¯¯ºNi2º-Ñª”
-º?:~k.;áˇ;ÇT';EÇ;Œgª≈Ç9yç:™·x∫ﬂ9ç∫ÃÇ,;Í|C<)†;ˇ^∞<V˝>π)3üªO†ºªÿ`¶:ªªÄƒﬂ:√’˘;Z„s;T¶R;Ô≈ﬂ<ROf;◊ƒ‚9ïª∫3ç´ª,ª¡ÓÚªa ì:3ç´;€7<SdÏ<-Zgªg8ª±∫\ªQá¬;£∞‘;áˇ;ÃŸÍªÉ„o;≠Ñ;©ÌÙ;©ÌÙ∫§§Xª'¬ËªÂŒkº2Ç ºÄùÌº*µòºLŸÍº
-Ë3ª´}<:3ç´π˘ç:≠Pã:Âv≠;†íD;KJ¢ªÆõÃªÀJ¢ªˆˇªÆõÃª∑˜};~k.∫Ör∑;r∑∫§§X∫~k.ªõ‰l;7[π:.ØÜª∑˘∫π À;Yæ;áıÇ;…ï;∆ªã∞ªÜ{∫öô+;*·x9˘ç;H®;'¬Ë;”
-;‘¶R<IªZ;ÃŸÍ;H,∫˛k.ª—á¬ª*·x;ßk);\˝;æ–b<2œ„<Iº8E_ªÓ6óªÉ„o<kﬂ´;≠Ñ<:[;$§X;éŒg;ÒU'<	XÎ;Î;AÓÚª$§XºØ◊ºg1”º5Ósº|éºqU'ºò€Àº√∫–P9;®˙q< íD<H,<ëG;•@:ò*;ëG∫¯.:Ör∑8G§:Ör∑∫qÌ∫ëÏ˜ªAÓÚ∫Âv≠;æ4ù;ƒqΩªÄ1;ïá;˝œh<6h4;*·x<Œg∫∆Eª_9ç:™·x;ÒU';Ó6ó;±∫\;ê]Ø∫≥ç´ª%€·9ª;EÇª≈Çº'óª‹rª;ÇÔÎ;„Áe;ı}<$xx<:Ÿ;¿_™ªŒi2ªàëG;ä è<[¯¯<!;ÀJ¢;Z„s;ç?<%—<?J#<w{:ãØ◊ªH®ªÖr∑∫LÇ,ªŒgºw{ºLŸÍª”
-ªì|?ªg8;µt±<E’&<@«<4H<=∫€;ŸT+:√’˘∫Í:±ò∫LÇ,ªÈàøªÃŸÍº…£ªKJ¢ªŒg;ÆõÃ;ŸT+;^;Ô≈ﬂ<Ìu< Da;±∫\<^-9˘ç∫Í;´}<< !:X¸l∫ev≠;g]≥ªïßKª‰⁄ÁªNi2ªÏ˜ªWƒ‚ªÆõÃ∫‹ z:†÷J;a°ªÏ˜;Œg∫@Ïª¢!åªÒU';öU$<X⁄h<~‰Ì;Ùs∑;Œi2ªk≥Õ;ãØ◊;÷5ö;⁄„s;Ni2ªàëGªd?#ªT¶RªÉ„oª©ÌÙªa ìªÚ‰oºw˘ª¥ÿÏ:ﬂ9ç< ƒﬂ<+}<<√<6h4<!”©;ﬁª(˙qº„Ìª…ªZªT'ªä èº<Û7ªÔ≈ﬂºYiª≥I§    :∑[π∫ô+;Œg;Wƒ‚;˜íG;ì|?;ñö–;∑˜};ŸT+∫Î≥Õ8G§ªEÇº"!åº„Ìª˚LûºYi:ô+;,;ü¸:Âv≠ª'¬Ëªs◊Û∫÷çZªÉ„oª‡-∫ÃÇ,ªT';»,<õY®<¶œd<pçÉ;}3§∫“øL∫LÇ,:∑[π;´}<;Î∫ò*ªa ìªò*ªê]ØªÈàøªÖr∑ªŒi2ªÚ‰oºNi2ªd?#∫∑[π;x.;áˇ;≠Ñ;ª:"5E;'¬ËªEÇª∆ú ª®^¨:ëÏ˜πÆØÜºØ◊ºw{º:úKª‘¶RªÏ˜;Œg:	@ƒ∫ÃÇ,:ΩòŸ;*·x;ú◊;ú◊:	@ƒªbX∫≠Pãª∑˘ºdCºT•º ƒﬂºGdnª˘!è<≈]<Ö;”≤Œ∫G§:†÷J;$Ä;bXºŒgª¶œdª„Küªr∑ªWƒ‚<cKü<'ó<.õÃªó6îªev≠πÜÇŒ:±ò;Œg;H,πÆØÜªZ„s:3ç´πÆØÜªÆõÃªç?ªÆõÃº
- èº;cÔº
-Ë3ªœ¯zªa ìπG§ªH,ªùs¥∫˛k.∫ÒÌ∏G§ª‘¶R;Ni2;Œg;{Lûº/cpª‘¶Rº
-Ë3ª◊ƒ‚:@Ï<A;ôπ`π)3ü;}3§<%S:∑[π:ΩòŸ∫§™ªev≠ª5t±∫ÿ¸lª"ΩQª"ΩQ∫LÇ,ªEÇ:Âv≠;›<T•πÆØÜªûg8∫m«;åKõªñö–ªø√Â:3ç´∫ò*ª‰⁄Áª•@;´}<<%—;ÉG™ªØ7ëªC9ª9yç9ª9ª∫ëÏ˜;Ni2<„o<åÉ;æ–b;¿_™:ÒÌªKJ¢ª>–bº	XÎº-‘(º	XÎªÓ6óº?ùº[1TªÈàøª•@º'óª≥I§;EÇ;mö”ªn“]ªÆõÃª±∫\∫~k.:'k;¡ÓÚ<?<hs8<ÕË<ïå;◊ƒ‚<7}ª;≠Ñª%€·ª∏ìB9yç;‰⁄Á;©ÌÙ;Z„s;»,<»<s¥<4_+;†íD:¿Ïªpπc9)3ü9[õ∫˚¸ª}3§:ô+ªÏ˜ªŒi2ªÄƒﬂª5t±∫ÿ¸l;º•U;üˆÄ:.ØÜ;¥ÿÏ;Ni2∫~k.ª¢!å:~k.;d?#;ãØ◊;>–b;õ‰l;H,;r∑;Qá¬∫˛k.ª∞+ªò*ª”
-ªŒi2ª≥I§ª—á¬ºjPcºX⁄hºlßOºLŸÍª≈Ç:ÈD∫ªû¡ª~k.;Ø◊;r∑;k≥Õ;ãØ◊;ﬁ<'I&<%π›;ª;…ªZ;Èàø;ê]Ø;±∫\∫Í:§§X<'ó<wÖ;;±“;/7ë∫"5E;¸€Ê<E’&;•@ªŒi2ªvˆÉ∫÷çZ:≥ç´9)3üªÃ>%ªôπ`ªWƒ‚ªä èª¶œd;g8;ôπ`;mö”<!;˜íG;¶œd;Œg∫∑[πª*·xªá;T¶R;a ì;EÇ;ÇT';…ªZ;±∫\;∞+;∆ú ;hï=π˘çªg8ªT¶R;†íD;»,ªÎº7}ªº_ﬂ,º^-ª¢!åª/7ëªü¸8«§;£∞‘;5t±∫	@ƒªÈàøª"ΩQ;Y´Í∏Óï:ªqÌ∫qÌ;Wƒ‚;g]≥∫∆E:;)≈<]Ø<	XÎ:3ç´πÆØÜªg8∫TG<<ÅU;∏ìB∫ªª}3§;ev≠ª:zI∫÷çZº8ø!ª$§Xªu}∫ô+º&¿;∑˜}<0+<O0÷<&¿<JÇ˛:ûg8;r∑ª¥ÿÏªŸT+ªì|?ªKJ¢ªqÌª†íDªáˇ9G§9«§;ä è;©ÌÙ;{Lû;(˙qª±∫\:ò*;Z„s<:[;ëGªëGª•@ºw{ªÉ„o9yç∫˛k.ª÷5öπG§;Ör∑ªH®º!YËªÕuÆ9ã˛∫:m«ªèj+ªqÌ∫qÌ;g8;*·x;á;Äƒﬂ<I;(˙qªò*ªZ„s<s¥<ëc<d⁄Á<9‘ß;ëGª´}<ºLŸÍª'¬Ëª◊ƒ‚º%—º:[∫ﬂ9çªç⁄„∫ßk;z<√<ROf<9‘ß<!<Ë±:Âv≠º<Û7ºO0÷ºw˘9‡òÜªó6îª~k.;Ø◊;H,:Ör∑;Á˘w<ŒÂ;ÀJ¢;x.:Ör∑ª~k.∫X¸l;É„o:~k.∫§§XªãØ◊∫–P9∫ΩòŸ;%€·ªò*ª4=(∫§§X;Ó6óªŒgªò≈‹ªáù√;©R0;g8∫“øLª{Lû;©ÌÙ;ˆˇ;T¶R:'k;û¡;íàª9ÜÇŒªø√Âª$§X<‰l<cKü<r∑;ç?9ªº$xxº?ùª”
-πÆØÜ    ;$§XπÜÇŒπÜÇŒ;Å∏b;Å∏b;˙∞ÿ<Ni2<¨ë;Ô≈ﬂ<o≈ﬂªì|?ºn˛;ºâXÎº*µòª8ìBª¡ÓÚªÊj/ªr∑:ev≠∫§§X:˛k.;T¶R<	XÎ<ˇ:qÌªàëGª…ªZ:ãØ◊    :ÒÌ;{Lû;¢!å:ò*<åÉ;æ–b:¯.ª;±“:ò*;H,;$§X;j|C;ª<(^¨;Êj/;‰⁄Á<Ë±<&œd;˛k.∫ÔÅ€;U›‹;a°ªæ4ùºC0Wªa ìª≥I§ªÀJ¢º !ºB∂ñºÅUºg1”ºw˘ªNi2∫ãØ◊ªH,:	@ƒ;=òŸ;zª"ΩQ<]0<ÑÁÛ<ç?<%—<0Ú∏<VÉ|ªÙs∑ºãØ◊ºú¡ˇºts∑ªñö–ªëGª£∞‘πG§;›;AÓÚ8G§;ˆˇ<.õÃ<+}<;áˇ9ÆØÜªî:‹ z<%S<Ni2<∞U<∞U<Ìu<'ó;Êj/;¢!åª>–bº:Ÿª´}<∫ëÏ˜9ÆØÜ;g8;íàª∫√’˘;KJ¢<yoq<ì !:'kªôπ`ªñö–ªWƒ‚º:úKº]à@ºé-¥ª∆ú º-‘(ºá…£ºéıXº:[º*µòª¶œdªÉ„oª¢!åº$xxªx.:√’˘9˘çªk≥Õ<7˜}<∏Ê=ÙŸ<•*<ãL<iàøºQá¬º•‡ŒºÆõÃºyÈ3ªõH®º´∫ﬂ9ç;H,;AÓÚ∫X¸l;g8;ŸT+;ª<-‘(;a ì;ò*ªÀÊfπ)3ü;…ï<rÀ;˜íG;Wƒ‚;õH®<?<*µò:ãØ◊ª¡ÓÚº5&œºNi2º!ªÉ„oªÀJ¢º!”©ºpçÉºNi2π‡òÜ< ƒﬂªëÏ˜ºÑ Oº¥ˇ›ªÚ‰oºˇº_ﬂ,ºZi∞∫ëÏ˜ªÉ„oº-Ñª^∫™·xª8ìBº≈]∫Íº„ÌºcKüºw˘ªd?#ª…ªZ∫Âv≠;ﬂëK<±Vä=»=3«<≤E<&¿º
-Ë3ºu;[ºï2xºfLª˘!èªŒgª>–b9G§;Ni2;´}<;ëÏ˜;⁄„s< Da;˜íG;ì|?∫∆EªC:ıæ˙<>†;¸@ ;”
-;Z„s;*;Œi2;…ªZ;ëGª£∞‘º(^¨º+}<ªãØ◊ª∆ú ºË±º|ΩºŒgª—á¬:ﬂ9ç;qÌª≥I§º0Ú∏ºA°ªˆˇº*µòº?ùª…ªZªH,ª©ÌÙª∞+ªê]Ø∫ãØ◊∫ﬂ9çπÍT”ªê˘sº1@õºEÇª£∞‘ªNi2ªQá¬∫ÒÌ;¡S-<®õå<·nt<™µò<∏E_<´@[ªáˇº
-Ë3º%—ª˙∞ÿºP¿ºëG∫ûg8;H,∫3ç´;*;ÒU';éŒg;*;mö”:÷çZ:–P9;˜íGª%€·ª5t±;*:±ò;ê]Ø<!:§§X:±ò∫ÒÌªT¶R∫§§X9G§ºXƒªŸT+ªzº ƒﬂªÓ6ó;$Äªˆˇº<+ì∫ÔÅ€ª!Ö»º…£ºc≈`ª˜íGª©ÌÙªWƒ‚ºo≈ﬂª´}<ªKJ¢ªAÓÚº$xx:™·xº!YËº ƒﬂªµt±∫ÃÇ,º&œdº !∫∆E< Da<O0÷<b6<<+ì;¢!å<´@[<ßZ'                                                                                                                                                                                                                                                                                                                                                                                                                                                                XTENSION= 'IMAGE   '           / Image extension                                BITPIX  =                  -32 / array data type                                NAXIS   =                    2 / number of array dimensions                     NAXIS1  =                   64                                                  NAXIS2  =                   32                                                  PCOUNT  =                    0 / number of parameters                           GCOUNT  =                    1 / number of groups                               EXTNAME = 'WCSDVARR'           / extension name                                 CRPIX1  =                  0.0 / Coordinate system reference pixel              CRPIX2  =                  0.0 / Coordinate system reference pixel              CRVAL1  =                  0.0 / Coordinate system value at reference pixel     CRVAL2  =                  0.0 / Coordinate system value at reference pixel     CDELT1  =                 64.0 / Coordinate increment along axis                CDELT2  =                 64.0 / Coordinate increment along axis                EXTVER  =                    4 / extension value                                END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             8;ªY8;ªY8;ªY:çk:k3ˇπÃÇª XπÃÇªYw˙ª“"©ª”öªíÔEª¥º)ºUØº-f◊º*wÍº8onº5ÄÅºƒØª÷öGªóf„ªÿæºº4º"f›º$öº!´"ª‹x"πÎΩœ;ƒﬁB<ò≥<Ï8=µπ=1DΩ="5«=5∑<¿Êˆ<+<B∫º @ªJÕWªÇÕ,ª¿âªÇÕ,ªYw˙πåÃÇª™wÍºLDŒº]+@º:¢†ºá3êºn≤ºƒ™ª÷âª’ñºôÙªÚxª’ñªéà·ªSö;ÇÕ,;ÂDÍ;á3ê;Úx<.ﬁN<e¯8;ªY8ªªY9ÃÇª
-"}∫òÕ ;«ﬁj<6˜¯;|Õèª\fÁª¸ºUª˘Õgª¯UÒªºª!ôËº@Ä{º™’«ºüs°º3MOªÿæªÿæº.+/ºM9ªˇº}º!´"ºÉàÁºû∑ÊºùûMºâ;≠Uû<≈DΩ=*u√=W¶Ù=hÌk=hëµ=D3¡= »È<|‘;|Õèªø¢ª‹x";MºE;B è    ªÓ≤ª≥D≤ª XªÊºaºy÷º}Ä¨ºn≤º]+@º:¢†ª’ñªπ"åº≥óº)º.ª
-"};ùDΩ;n"Ì;q⁄;t «ª_U’;© s<.ﬁN8;ªY9ÃÇ9;ªYªéà·∫§à÷;«ﬁj<Z¯;Ωö+ªh"ùª˚Dﬁª˘Õgºk∫∂"fπ”2¬ºR"©º´ëÉº∞Zºv+[ªîwıª∂D⁄ºNÄùº!´"º ô˙º1’ÿº≠k&ºßà¸º¶ÕAºMƒ‚;\Ds<Œs±=*”°=hÎD=z1ª=ÉAm=T/â=ËÏ<ç’¬<D¢ª€ ´º0^b;à´;√xπÃÇº^Fª_U’:_xIªº}ºù@oºêßº]+@º[≥…º9ÊÂª’ñªõºº +ºIU‡∫§à÷;∫´>:¬#;öU–;˘ﬁ¢ºoR;?¢<ôÙ; XªGﬁjª™wÍª´Ô`:Ã;ÿ É<<;ãôÙ∫vÔ¥ª XªVâπÃÇ;∫´>;'ö7ª˘Õgºcƒ÷ºã<∫¸Õèªq⁄ºD3¡ºîzªîwıº¢êºT^xº“Ñ’º‰‚æº¡¸@ºzëø;_U’<µ|2='µƒ=eûy=o∫>=`Mk=0∫=¸<àÁª6D⁄ºãª–ºl;e3Ø<~<h;ﬁ3ºE´8ºÊœª93«ºB èºõ=ºX	!º
-"}º¢äªá3ê∫™f∞∫º @ºNx ªÓ≤∫ˆÔ¥:¸Õèª‡ÕK;'ö7:_xIªÔE:_xI;™wÍ:òÕ ª
-"}ª X:òÕ ∫$Õø:™f∞;Yw˙ª6D⁄ºpªÅUµ; X;3ê;õÕG;ø¢πj™.º>MIªÿ É∫òÕ ª√xºCxºä‚áº=ö+º1º7≥≥ºë@º£⁄º¨M>ºkª$à÷<Uµ<√Ÿ=Y=
-ÇÇ=5¬<Á’˙<;^\ª¶ÜºeDÍº¢ˇºyﬁ¢ªÅUµ:íÔEª¿âºB èºéÎºP≥œºﬁYº<"¥ª√xª\fÁªä"}ªJÕWªk:0âsº-f◊ª¶Ü∫ÅUµ;§ö∫¡ﬁ:vÔ¥;º}:ÅUµ:vÔ¥ª\fÁ∫vÔ¥ªëwœª_U’ªVâ;ÕºE;
-"}∫¸Õèºª¶Üª?¢∫H ﬂ:ÅUµ;á3ê;¿âªä"}ºJúªP´2π§CÌº
-ﬁ8ºIU‡ºs¯)º^´TºÙªßà¸º."íºCoiº4 mª†"rª‚D¬ª∑´∏ªªY<Xƒ‹<Jú<Ü’≤<M3:∂"fºi´Nº¶ÕAº¨Øjº_gª™wÍª∂3üªÈ´NºƒØª˚VªYöo:ûf;".;¥º)<Êœ;§ö∫Ò⁄ª¿âª ÕWº9ÊÂªÑD¢πÃÇ;ÑD¢π§CÌ;B è;ÃDŒ;SöπÃÇ<+ªÖººÕ&ªˇ´Bªˆﬁz;P´2;B è;'ö7ª’ñªJÕW; X;ä"};JÕW;t «:ﬂxIªË3◊º˜·º+Ô`ª$à÷∫à8πÍ™.º9ÊÂª∂D⁄∫™´ô;kº-f◊ºUØºÇjˇº3äºÇ»›º`’Èº≤çEªÓ≤ºªB èª‹x"ºaöAºïàÒºå∑€ºó hºHö%:0âs∫Ãºkº ô˙ªëâ;vÕ@;yº-;yº-;∞Uƒ<WMe<jg	;≥D≤ªt «ª6D⁄ª¬ èª¿â:¸Õè;Ë3◊:0âs<oX<Üw‘<) s;ÅUµ;ÛÔçªJÕWºäÄ[º¶7ºJÕWª0fˇ:¸Õè;3UÏ:vÔ¥;Sö;≠f◊<.ﬁN;™wÍ;hEª'w√∫Ò⁄ªòﬁYº]Ê˚ª™˚;Ò⁄;ıx>ºk∫$Õø;‹fÁ;”öªÒ üºÇ»›ºÇ!ºB≥≠º3äºäÄ[º ÕWº≤Î#º¥bôº©^Qºy÷ºÑD¢ºÑ¢Äª„Õs:ˆÔ¥π§CÌ;ø¢<y÷;Uµª‹x"ªîwı<>MI;çk;ãôÙ;†3´<ã¸ <áëm<í7Ÿ;≥D≤;öDóªöU–8;ªY:á3ê;Êºaπ;ªY<Ü’≤<™<JÕW<’º<]+@ªÔâ)ºOÔwºqº[ª√xªÅUµª
-"}:k3ˇ;DÔ|;JÕW;JÕW<UØ;B è:öû∫Gw;ÇÕ,ªïÔlºÙª!ôË;ã´-;œDˆª!ôË∫_xI;÷â<<:k3ˇªÿ Éºaë§ª!ôË:Õﬁ∫ª_U’º~¯#ºà´º´Ô`º£|'º¢±ºWMe:á3ê;Êºa;Êºa<<ãûB<ªq⁄ª”´ZºWMeªÂDÍπÃÇ:ˆÔ¥ª‹fÁ;0fˇ<(D∏<@Ä{;∑´;öDó∫$Õø;ÃDŒ<<9+*<[≥…<ˆÑÍ<¯Z><^¢∑<Äï´;DÔ|º) sªÿ Éº XªÖº:º @∫Ò⁄;Öº;Gﬁj;3ê;D¢;JÕW:k3ˇ;º};˘ﬁ¢;«ﬁj:Ã∫∂gO:ˆÔ¥;êë∫ve„ªíÔEªÇÕ,:º @<
-"};º}ªˆﬁzºNx ;òﬁY;Ÿâ4∫¡ﬁº^FªÚxº]Ê˚ºâ‰º;È´N<Üw‘<àÁ<(D∏<lö;<¢ä∫Ò⁄ª_xIº.ÊÎºU3∫k3ˇ;Ò ü;È´Nªﬁ3π;ªY;ﬁ3;vÕ@ª∑ºPª6D⁄:òÕ <w‘<*wÍ<Hö%<Ö^;<Óoê=u≠<ãôÙ<q ü;Úxºëxº +º Ê…º*wÍ:Ã;òÕ ; X;ÆﬁN;|Õè∫∞DãªVâ; ÕW;t «;ﬂg;Ó≤;óU©;$à÷;á3ê<3MO;˚Vª“"©ºoX;≥D≤;¯UÒ∫k3ˇªÓ≤ºëx:_xI;õÕG:Ÿöoºq üªÑD¢∫çkªSö:Î3ˇ<hÔì<∑U’<†/\<’º:ÅUµ;ä"};-Uûº2ëîº§öºúÑ¥:òÕ <Kâ<k"≈ªﬁ3ªSö;´Ô`<à·ªùDΩªÇÕ,;«ﬁj;ﬂg<<&<T^x<$ö<óº#<–MT<`-;ÆﬁN<P´2ª–´2ºugºÉ&∫º´∫Ÿöo;öDó;ΩàÒ<c	<+πÃÇ∫_xI;ÛÔç<º;ÕºE;ãôÙ;ãôÙ;ıg<7≥≥<îoX<`ﬁÜªbD¬ªÑD¢;⁄Ôq∫VTªùDΩª‡ﬁÜª√x∫á3ê;¬ è;q⁄ª≥D≤∫íÔE< ^<+<6<<<Ö ^<çπ<Ä7Õ;”öªƒÔ|ª°´";¿wﬁº2ëîºVë™ªÂDÍ<áëm<|	6<πÊÂ;Î"≈:íÔE∫ÂV$;-UûªùDΩª°´"∏ªªY:ÂV$<p;ïÔl:_xI;ıg<É&∫;çk:§à÷<ƒ™ªÚxºcƒ÷ºe¯ªÖº;$à÷9Í™.;Ÿw˙<rx<8;ªY∫vÔ¥;à´<’º; ÕW;È´N;ƒÔ|<D¢<Ñ¢Ä<ú‚ë<˜Áª33xª’ñªÓ≤º*wÍºÊœª¶ÜªDÔ|;ÕºE<M3;√x;ÇÕ,<ëx<¢ä<Uµ<Ñ¢Ä<ï+<çsó<
-"}9”2¬ª-x∫Î3ˇª‹x"º4	
-ªÎ"≈ªbD¬;Öº<) s<_^r:™f∞ªûº4ª÷öG∫™´ô∫VT∫Ò⁄:çk<Uµ<#"ò;3UÏ:Sºî<."í<3D≤∫	;ºª†3´ªÚxª˘Õgºº8ªªY:∞Dã:∞Dã<≥ó<É‚v<º;ù3Ñ:∂"f;º<
-"}<´<9ÊÂ<oX<Hö%<êß<éÎ;$´Iªkäº>MIª±Õ;º`’ÈºQfÌºB≥≠:_xI<(D∏<'à¸:ˆÔ¥; X;Ïö;;†3´∫ÃÇ;t «<1’ÿ<!´"ª
-"}ªt «:ÃÇªº}ª„Õsª∆fÛª´Ô`∫§à÷:çk:«ªˆª'ö7ª”´ZºQoäºO¯πÎΩœ9ªªY:û™˚<M3<é/R<ù@o<gx;Úx<3D≤<çoH;\fÁ:™f∞ªD¢ªê Xªçkªä"}ª
-"};“"©<cƒ÷< +<•ØY<ã<<4 m∫Î3ˇ; ÕWπ§CÌ;Öº<*wÍ<(D∏;Úx<,´<Dù;éà·:íÔEªÔâ)ªSöº1Õ;º/ö	ªﬂU’;0fˇ:Î3ˇ;≠f◊;
-"}ª© s:ÅUµªëwœºR"©ºt´H∫¡ﬁªöªYw˙ºÄkª¿âª¶Ü:§à÷º3êº+Ô`ª© sªP´2º) sºWMeº2ëîº3MOª‚U˝∫¸Õè:òÕ ;’ñ<lö;<É+	<ãûB<Ü’≤<bM_;ıg<?	∫™f∞ªGﬁjªP´2ªYw˙ª Xª
-"};Öº<=ëé<í7Ÿ<´Ô`<ï&∆<ï&∆;˛3Ã:∞Dã∫ÅUµ:¸Õè;™wÍ;Ôâ);Î"≈;∞Uƒª<"¥;öDó< X<à·;ıg<.ﬁN:ÅUµ∫û™˚:ˆÔ¥:k3ˇªP´2∫Î3ˇª© sªÃDŒªÈ´Nº'à¸ººº÷ç[ºqº[º§Ûûºóº#ºü√º4ƒ∆ºJÕWª?¢º)º.ªœ3ªªãôÙªëwœºdÄëº-f◊ª ÕWªÎ"≈ºÊœª|Õè<	f¬;Î"≈<˜·;Ÿâ4<S¢Ω<´;ÛÔç;Sö:Ò⁄∫û™˚ª\fÁ∫_xIªéà·ªﬁ3ªﬁ3;™wÍ<;^\<¢¿l<Çjˇ<#˚;∑´;‹fÁ;¯UÒ;Yw˙;Î"≈<) s<|	6;«ﬁj;º}∫òÕ ;∞Uƒ;Õ <UØ;∞Uƒ<=ëé;ÅUµ8;ªY∏ªªY;™wÍ∫ÅUµªÂDÍºáÔKºlö;º5ÄÅºZ<Sº∫D√º√s∑ºªº9º™’«º∏ÕLºØûXºó^FºLDŒº) sªÔâ)º;^\ªıgºôÙª*f∞ª\fÁπÃÇªUµ;”ö<LDŒ<Ø@z<zëø;¬ è;∫´><Äk:«ªˆ;_U’∫_xIªsﬁRªéà·∫∂"fº*wÍª–´2ª≥D≤ª¥º)∫∞Dã:¸Õè<*wÍ<kª!º\∫Õﬁ∫;vÕ@<3D≤<ÄJ<?ƒ¿<Kâ<¶ÕA;ˇº}∫ÃÇªíÔE:SºîªMºE∫íÔEªDÔ|∏;ªY∫á3ê∏;ªYªD¢;
-"}∫¸Õèª«ﬁjºÄï´º¢béºjg	º+Ô`º`’Èº¨´ºLDŒºP´2º8onºi´NªÃDŒª≥D≤ª_U’ªÛÔçªÚxºk"≈º7≥≥ªJÕW:k3ˇ∫Î3ˇ:¡ﬁ<`-<¿Ñ <–Q£<fºa;-x;õÕG;†3´;ê X;ÔEªVâªöDóπ”2¬ªÕ ªœ3ªªÆﬁNº≥óº1Äº˜‹∫çk;Ôâ)9;ªYªßà¸;P´2<˜‹;‹fÁ;ıg<Ó<´<FfÛ;'ö7ºA˜ÚºìQrºDùº>MIº)º.º(D∏ªÓ≤ªßà¸9§CÌ;\fÁ;bD¬:òÕ ;P´2ª∞Uƒº>MIªÒ üªëwœº/ö	ºbM_ªÛÔçºÕ&º) sº(D∏ªYw˙;0fˇ;ÖºªGﬁjº+3•º6<<ª6D⁄; X;ä"};≠f◊;∞Uƒ<mU˜<éÎ<{Mz;ä"}ªP´2ª…U‡ª<"¥;≥D≤<àÁ∫à8ª‡ÕKªˆﬁzªê Xº&ÜªçkºÄeºO3ªª X;ÔE<M3;ãôÙ∫_xI;ﬁ3<	f¬;’ñ;e3Ø<ƒ™;È´N;ø¢ªŸw˙º?ƒ¿º¨´ºÇ!ºq üº&ÕAº ô˙:™f∞∫vÔ¥;Vâ;¸ºU;ëwœ∫$Õø<
-ﬁ8    ºÔKº^FªP´2ª≠f◊º< ºÓº<’“º=ëéº>MIª¶Ü∫á3ê∫k3ˇªº"¥º ô˙º#"ò∫$Õø<^F<Êœ;°´";«ﬁj<;^\<nÕm<\oÖ∫_xIª¿âº'à¸∫vÔ¥πåÃÇ;ÚâQ∫j™.º"^@ºê¿bº¢äªßà¸ºÔKªYw˙∫∞Dã;MºE<	f¬<MºE;Úx9§CÌ9;ªY;ê X;’ñ< X<M3<ÔK;ƒÔ|∫û™˚ªéà·º_^rº[≥…º;^\∫k3ˇ∫H ﬂ:§à÷ª
-"};Ïö;<k<˜‹;óU©<ôÙ;ä"}ªP´2º9ÊÂº'à¸º’ººLDŒºÄ7ÕºÄ7Õº9ÊÂºXƒ‹º|	6º5ÄÅªÿæº"f›ªø¢∫öû<."í<D3¡<îÕ6<gx<á3ê<éÎ<éç0<Xƒ‹<P´29j™.ªyﬁ¢8ªªY;≠f◊;˘ﬁ¢∫¡ﬁº0Uƒº%U ºGﬁjºÜ’≤ªÓ≤ªP´2πÃÇ;Ïö;;œ3ª;Î"≈;Ïö;;∞Uƒ;ÆﬁN;∞Uƒ;÷â;π"å;¯UÒ;±Õ;<	f¬;á3ê9ÃÇª√xªUµªÑD¢:á3ê<ôÙª XªP´2;£"ò<A<6<ôÙ;¯UÒ<-f◊;…U‡ª∂3üº^¢∑ºóº#ºê¿bºÅØDºÔKº’ºº9+*ºGﬁjª∆fÛºººHö%ºHö%ªßà¸∫k3ˇ;«ﬁj<p<"f›;Ïö;<à´<†ç:<ç—t<<’“<â‰;Î"≈;MºEª6D⁄∫SºîªYw˙º≥óº™ºÖ ^ºÜ˜ªJÕWª© sªJÕWªJÕW;
-"}ª X:ﬂxI;ùDΩ;¬ è;†3´;ÑD¢:òÕ ªB è;¥º)<oR;¥º);_U’;îfº;pÔe9§CÌ∫Sºî:¡ﬁ<
-ﬁ8:k3ˇºM âº+;∞Uƒ;ÛÔç∫ÅUµ<w‘;|Õèº.ﬁNº≠ƒµºö´º£Jº-f◊∫Ãªéà·º7≥≥º$öª© s;6D⁄ªﬁ3ªœ3ªπåÃÇ<v+[<Cx;n"Ì;º}<IU‡<]Ê˚<óº#<èHÎ<†Î<ê¿b<^F;ä"};ê Xª?¢ª∆fÛºººpD‰ºë@ºlö;ºƒ™ª X∫ÅUµª<"¥:ÅUµºM3ªçk;B è;ÂDÍπÃÇ∏ªªYªSöªUµ;“"©<MºE;ıg;ê X<
-ﬁ8;”ö:ŸUÜ:à8;õº;‹fÁ∫Î3ˇºáëmºYÄóªÅUµªk∏ªªY<&Üªçkºq üºΩ3∞º¨M>º_^r∫™f∞π§CÌªÚxªÛÔçº(D∏ª™wÍ∫¡ﬁ;bg7;ÇÕ,< ^<[≥…<<&;'ö7:Sºî;ê X<≥ﬁ<\oÖ<k"≈<óº#<Ã¢¨<^¢∑;≠f◊;Vâ9j™.º´º^¢∑ºM âºs3—º< πj™.ªP´2<ÔK<LDŒ;´Ô`ªãôÙº	f¬:k3ˇ:ˆÔ¥∫™f∞ªÛÔçª“"©:H ﬂ<6˜¯<) s<´;ãôÙ;º}πåÃÇ:∞Dã:Ã<!¢Ñ<Õ&ª<"¥º ^ª°´"ª3ê:Ò⁄;∆fÛ<9ÊÂ9§CÌºHö%º‰‚æº†/\ºD¢ªD¢ª≠f◊º+3•º8onº}Ä¨ºrxª¥º);Î"≈;Ïö;<´<è¶…<«"Æ<^K<$ö<JÕW<ê¿b<Gﬁj<êbÑ<\oÖ<∆«<*wÍªÊºaº^F∫	º=ëéºR"©º Ê…:	ªn xªà´∏ªªY<ƒ™<>MI<Ó:òÕ ºD¢ªº}:û™˚ªá3êº3êªVâªﬁ3;£"ò<&ÕA;ÛÔçªMºEªœ3ª∫∂"f∫íÔE:íÔE∫Sºî<˜‹∫_xIª© sªUµ<Äe;á3êπ;ªY;Ôâ)ª›ÔòºïàÒº„…%º†ç:ºy÷ºD¢ªD¢º´ºLDŒª´Ô`;?¢<Äk<&ÕA<MºE;œ3ª<Cx<NÄù;∂D⁄ªkä∫íÔE;Yw˙;‹fÁ<;^\<-f◊<≥ó:∂"fªÈ´NºÖ^;ºÜw‘ºàM)º?ƒ¿ºdÄëªkäπ”2¬∫º @;«ﬁj;¸ºU< Ê…;e3Øºº%U ªÅUµªkπÃÇ∏;ªY:<E)ªÿ ÉªÕ ;ƒÔ|∏;ªYªÅUµªÖº:_xI:ÅUµ;™wÍ;çk<Kâ<’º<7≥≥<MºE<~¯#;™wÍª_U’;P´2ºoXºß+º√—ïº´º¢äª£"òªﬁ3ºUØªãôÙ<w‘<YÄó<X	!<Ü’≤<â‰<*wÍ<eDÍ;˘ﬁ¢πªªYªÆﬁNªJÕWª-x;îfº;ıg;Ïö;    º*wÍºÜ’≤ºÜ’≤º°¶”º°¶”º?	º XºMªëwœºwœ<Ó< ë\<4º);∑´ª§öª|Õè∫ÂV$8ªªY;Gﬁj;™wÍ;UµªãôÙª¥º)ª™˚;D¢;ÔE:™f∞∫çk    ;ÑD¢;£"ò;<"¥ªMºE;ùDΩ;¬ è;DÔ|ªÇÕ,ªMºEπÃÇº*wÍº<º_^rª$à÷:ÂV$;6D⁄∫º @πÍ™.<Uµ<êß<é/R<{Mz<Äï´<Ç»›<	f¬<
-ﬁ8;Õ ª0fˇª€ ´º^Kª!º\;e3Ø; X:çk9ÃÇº9ÊÂºò’ººàM)ºHö%º´ëÉºÆÄpºÆﬁNº≥óºc	;$´I;ˆﬁz<çk<ñ@_<vﬁz<<’“:íÔE∫Ò⁄;á3ê<p:¸Õè∫á3êºUØº0UƒªŸw˙∫û™˚ªÏö;ºG"ÆºmU˜ºÅØDº Xª!ôËª!ôËº/ö	∫¡ﬁ:ÂV$;<"¥ªB èªõÕG;Yw˙;
-"}ªÏö;º´<X	!<)º.∫òÕ 9ºŒ˚;∞fˇ<w‘<^¢∑<<’“;≠f◊;óU©;›ﬁ^:ÍÔ∫H ﬂ<oR;‚D¬;|´:∂"f;∑´9j™.∫_xIª<"¥ª-xªƒÔ|º)º.º) sº&ÜºΩëéº⁄ÛøΩ@Sºñû=ºÑû1∫$CÌ<Sö<ßÑÆ<∞Uƒ<∂ïÀ<oâ)∫0âsªÈ´NπÃÇ:¸ÕèªÖºº´º>MIº_^rºoRº	f¬ºMºEºù¸*ºóº#ºªº9ºD+$º< ª≠f◊ºoâ)º.ﬁNª∑´∫çkª|Õèª*â$< X9”2¬∫_xI;Õ <Ç!<"^@< X<;ø¢<
-"}<ùô˛<ÜsÖ;’ñ;™˚<!¢Ñ;-Uû;
-"}∫_xI<à·;Ò ü;ÃDŒª§öºD3¡º(D∏º ô˙ª˘ﬁ¢;e3Ø<M3:™f∞ª«ﬁjºÄÛàºÎ|Tº¯≥œºä.ºôÓ:	;¯UÒ<É‚v<¶»Ú<îk<."í;P´2ªB èªá3êª XªYw˙º
-"}ºO3ªºbM_º< ºÓº8onºÜ˜ºòwﬂºâƒüºOÔwªıgªœ3ªªÕºEªê X∫™f∞∫íÔE∫Ò⁄;$à÷;Ÿw˙;çk∫H ﬂ:º @<QfÌ<P´2;”ö;È´N<D¢<
-ﬁ8<c	<cƒ÷<UØ;∑´;îfº:™f∞9ÃÇ;ﬁ3;“"©;Úx:çkªÈ´NºJúºhÔìª˛Eªk3ˇ∫Ò⁄; X;SöªÑD¢ºë|º‚´=º√oiº7´ªGªˆ<ö:û™˚;¯UÒ<≥ó<?	<B≥≠;íÔE;à´πÃÇªÎ"≈ªÕºEª≥D≤ª–´2ªÕºEºM âº\oÖºKâº< º7≥≥ª∆fÛªÕºEªÓ≤ªÚxπ”2¬ª™wÍªÓ≤ªÑD¢;ãôÙ;™wÍªá3êπÎΩœ<>MI<àM)ªø¢;_U’<éç0<UØ;⁄Ôq<êß<ëx;bD¬<v"ø<< ;ﬁ3;≠f◊<wœ;Yw˙:òÕ ∫¸Õèª-xªÃDŒª›Ôòªø¢ºFfÛº'à¸9Í™.ª0fˇº8onºbM_º Ê…ºTU€ª⁄Ôq;<"¥<ö<°MD                                                                                                                                                                                                                                                                                                                                                                                                                                                                XTENSION= 'IMAGE   '           / Image extension                                BITPIX  =                  -32 / array data type                                NAXIS   =                    2 / number of array dimensions                     NAXIS1  =                   64                                                  NAXIS2  =                   32                                                  PCOUNT  =                    0 / number of parameters                           GCOUNT  =                    1 / number of groups                               EXTNAME = 'D2IMARR '           / extension name                                 CRPIX1  =                  0.0 / Coordinate system reference pixel              CRPIX2  =                  0.0 / Coordinate system reference pixel              CRVAL1  =                  0.0 / Coordinate system value at reference pixel     CRVAL2  =                  0.0 / Coordinate system value at reference pixel     CDELT1  =                 64.0 / Coordinate increment along axis                CDELT2  =                 64.0 / Coordinate increment along axis                EXTVER  =                    3 / extension value                                END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ºÃÃÕº¥9Xº¨1<£◊
-=aGÆ=ù≤-=¥9X=∂E¢=° ¡=}Û∂=0 ≈<¨1ªoººjΩ#◊
-Ωix’Ωè\)ΩüæwΩ¨1Ω∫^5Ωƒõ¶ΩÃÃÕΩ‘˝ÙΩ–Â`Ω¿ÉΩ° ¡Ωy€#Ωæwºõ•„ªDõ¶<#◊
-<õ•„<¥9X<ƒõ¶<Ìëh=\)=49X=e`B=çOﬂ=üæw=ßÔû=£◊
-=ïÅ=Å%=T˝Ù=,1=o<ºj<u¬è;Â`B;oªDõ¶ªƒõ¶ªƒõ¶ªƒõ¶ªƒõ¶ºtººDõ¶ºìtººÃÃÕΩoΩ•„Ω#◊
-Ω#◊
-º¥9XºãCñºu¬è<ı¬è=Éo=∏QÏ=–Â`=ÃÃÕ=∞ ≈=á+=,1<£◊
-:Éoº¥9XΩ49XΩ}Û∂ΩïÅΩ° ¡Ω©˚ÁΩ≤-Ω¿ÉΩ“Ò™Ωﬂ;dΩ›/ΩŒŸΩÆ{Ω}Û∂ΩçPºe`B;£◊
-<u¬è<¨1<‘˝Ù<‘˝Ù<ÃÃÕ<Ìëh=#◊
-=e`B=ïÅ=∞ ≈=∫^5=∞ ≈=õ•„=Ö∏=]/=0 ≈=+<ƒõ¶<Éo<o:ÉoªÉoª£◊
-ªÉoªo∫ÉoªDõ¶ªÂ`Bºe`Bº¥9Xº˝Û∂ΩçPΩ•„Ω#◊
-º¨1ºu¬èºT˝Ù=+=ãCñ=¿É=€"—=“Ò™=∂E¢=â7L=,1<£◊
-:Éoº¨1Ω8QÏΩÅ%ΩóçPΩ£◊
-Ω©˚ÁΩ∞ ≈Ω¿ÉΩ“Ò™Ω·GÆΩ„S¯Ω‘˝ÙΩ≤-Ω}Û∂ΩtººDõ¶;Â`B<ãCñ<¥9X<›/<›/<ºj<‘˝Ù=æw=ix’=ôôö=∂E¢=æv…=¥9X=ù≤-=á+=]/=0 ≈=Cñ<ÃÃÕ<ãCñ<tº:ÉoªÉoª£◊
-ªDõ¶∫Éo:ÉoÄ   ª£◊
-ºT˝Ùº¥9Xºı¬èΩtºΩ•„Ωæwººjºõ•„ºìtº<ÃÃÕ=mëh=•„T=¬è\=æv…=ßÔû=Éo=49X<ƒõ¶;ƒõ¶ºe`BΩ\)ΩT˝ÙΩ}Û∂ΩçOﬂΩïÅΩõ•„Ω©˚ÁΩºjΩ ¿ÉΩŒŸΩ∆ßΩ©˚ÁΩÅ%Ω'Ôûº¨1ªo<tº<õ•„<›/<ı¬è<ı¬è=\)=<j=u¬è=óçP=Æ{=Æ{=üæw=â7L=e`B=49X=Cñ<ºj<T˝Ù;ÉoªÉoºDõ¶ºÉoºÉoºe`BºDõ¶ºtºªƒõ¶ªÂ`Bº49Xºu¬èºìtºº£◊
-º¨1ºƒõ¶ºÃÃÕººjº¥9X<ìtº=H¥9=ëhs=¨1=¨1=ù≤-=Å%=8QÏ<Â`B<49XªÂ`Bº‘˝ÙΩ'ÔûΩT˝ÙΩu¬èΩá+ΩçOﬂΩóçPΩ•„TΩ∂E¢Ω∫^5Ω¥9XΩù≤-Ω}Û∂Ω8QÏºÂ`BºDõ¶Ä   <T˝Ù<ÃÃÕ=+=tº=,1=PÂ`=}Û∂=ìtº=ù≤-=óçP=â7L=e`B=49X=Cñ<ƒõ¶<T˝Ù;oºoºãCñºÃÃÕºÌëhºÌëhºÂ`BºÃÃÕºõ•„ºÉoºT˝ÙºDõ¶º49Xº#◊
-ªÂ`BªÂ`Bº49Xº›/ºÃÃÕººj<T˝Ù=0 ≈=Éo=ù≤-=° ¡=ïÅ=}Û∂=Dõ¶=o<ÉoÄ   ºãCñΩoΩ8QÏΩaGÆΩy€#ΩÉoΩâ7LΩïÅΩüæwΩ•„TΩ° ¡ΩëhsΩix’Ω49Xº˝Û∂ºìtºªÂ`B<o<ºj=\)='Ôû=@É=aGÆ=Å%=çOﬂ=çOﬂ=Éo=e`B=<j=\)<ÃÃÕ<e`B;Dõ¶º#◊
-º¥9XΩoΩæwΩ,1Ω'ÔûΩæwΩtººı¬èººjºìtººe`Bº#◊
-ªDõ¶;£◊
-;Éo;Dõ¶º›/ºÃÃÕºƒõ¶<49X=æw=u¬è=ïÅ=õ•„=ëhs=}Û∂=PÂ`=tº<¨1;ƒõ¶ºtººÃÃÕΩæwΩH¥9Ωe`BΩu¬èΩÅ%ΩÖ∏Ωâ7LΩãCñΩãCñΩu¬èΩDõ¶Ω•„ºÌëhºõ•„º#◊
-;£◊
-<ºj=çP=49X=PÂ`=ix’=}Û∂=Éo=y€#=]/=<j=tº<‘˝Ù<u¬è;ÉoºtºººjΩtºΩ8QÏΩPÂ`ΩYáΩPÂ`Ω@ÉΩ0 ≈ΩçPºÂ`Bº¨1ºu¬èªÂ`B;Éo<u¬è<e`B<u¬èº‘˝Ùºƒõ¶ºƒõ¶<49X=çP=e`B=çOﬂ=ïÅ=ãCñ=q©¸=H¥9=çP<ºj<49XªDõ¶ºìtºº˝Û∂Ω,1ΩLÃÕΩaGÆΩix’Ωix’Ωe`BΩe`BΩaGÆΩ<jΩtººÌëhººjºu¬èºo;ƒõ¶<ƒõ¶=æw=8QÏ=PÂ`=aGÆ=ix’=e`B=PÂ`=,1=\)<›/<Éo;ÉoªÂ`Bº¨1ΩtºΩH¥9Ωe`BΩu¬èΩu¬èΩmëhΩT˝ÙΩ@ÉΩæwºı¬èº£◊
-ºT˝ÙªDõ¶<49X<ÃÃÕ<ÃÃÕ<ÃÃÕº‘˝Ùºƒõ¶ººj<tº=Cñ=T˝Ù=Éo=â7L=Å%=]/=8QÏ=Cñ<ƒõ¶<T˝Ù;Dõ¶ºtºº¥9XΩCñΩ0 ≈ΩH¥9ΩPÂ`ΩLÃÕΩ@ÉΩ49XΩæwº˝Û∂ººjºãCñºe`BªÂ`B∫Éo<#◊
-<‘˝Ù=#◊
-=8QÏ=Dõ¶=LÃÕ=LÃÕ=Dõ¶='Ôû=Cñ<›/<õ•„<oªDõ¶ºÉoº˝Û∂Ω<jΩmëhΩÅ%ΩÖ∏ΩÅ%Ωq©¸ΩT˝ÙΩ8QÏΩtºº›/ºÉoªÂ`B;ƒõ¶<¨1=tº=tº=tºº‘˝Ùººjº¥9X;ƒõ¶<ı¬è=<j=ix’=q©¸=aGÆ=@É=æw<ı¬è<¨1<T˝Ù;Â`BªoºT˝Ùº‘˝ÙΩtºΩ0 ≈Ω<jΩ49XΩæwΩ+ºÃÃÕºÉoºoªÉo∫Éo;Dõ¶;Â`B<ìtº<˝Û∂='Ôû=49X=<j=8QÏ=0 ≈='Ôû=\)<Â`B<¨1<Dõ¶;oº#◊
-ºÃÃÕΩ'ÔûΩ]/ΩÅ%Ωâ7LΩá+Ω}Û∂Ωe`BΩ@ÉΩæwºı¬èºõ•„ºo;Dõ¶<Éo=Cñ=H¥9=Dõ¶=@Éº›/ºƒõ¶ºƒõ¶;Dõ¶<ÃÃÕ='Ôû=H¥9=PÂ`=Dõ¶=,1=Cñ<ÃÃÕ<õ•„<u¬è<Dõ¶;Â`BªÉoºãCñºÂ`BΩtºΩ#◊
-Ω•„º˝Û∂º¥9Xºe`BªDõ¶;£◊
-<#◊
-<Dõ¶<u¬è<ìtº<ÃÃÕ=Cñ=,1=0 ≈=,1=æw=tº=o<‘˝Ù<£◊
-<T˝Ù;ÉoªÂ`Bº£◊
-ΩCñΩH¥9Ωu¬èΩãCñΩçOﬂΩá+ΩmëhΩPÂ`Ω#◊
-ºı¬èº£◊
-º#◊
-;o<e`B<Ìëh=<j=}Û∂=q©¸=e`BºÌëhº›/º›/Ä   <¥9X=tº=0 ≈=49X=,1=çP<Ìëh<ºj<õ•„<ìtº<ìtº<u¬è;ƒõ¶ªƒõ¶ºìtººÂ`BΩCñΩoºÃÃÕºÉoªÂ`B;£◊
-<u¬è<£◊
-<ƒõ¶<Â`B<ı¬è=+=#◊
-=49X=,1=çP=+<›/<¥9X<Éo<tº;oªƒõ¶ºãCñºı¬èΩ,1Ω]/ΩÖ∏Ωè\)ΩçOﬂΩÉoΩaGÆΩ8QÏΩoº£◊
-ºo;o<u¬è<‘˝Ù='Ôû=mëh=è\)=çOﬂ=Å%º˝Û∂º˝Û∂º˝Û∂ª£◊
-<ãCñ<ı¬è=çP=•„=çP=+<Â`B<ºj<¥9X<ºj<ƒõ¶<¨1<T˝Ù:Éoº49Xº¥9XºÂ`Bº›/º¨1ºDõ¶ªDõ¶<#◊
-<¥9X<Â`B=Cñ=•„=•„=#◊
-=49X=<j='Ôû=Cñ<‘˝Ù<ìtº<Dõ¶;£◊
-∫Éoº#◊
-ºìtººÂ`BΩæwΩH¥9Ωq©¸Ωâ7LΩìtºΩçOﬂΩ}Û∂ΩPÂ`Ω•„ººjºtº;Éo<Éo<Â`B=#◊
-=Yá=â7L=ù≤-=óçP=ãCñΩ\)ΩCñΩ+º49X<#◊
-<ƒõ¶<˝Û∂=+=o<Ìëh<›/<‘˝Ù<›/<Â`B<Â`B<ÃÃÕ<ãCñ;£◊
-ºoºìtººÃÃÕºƒõ¶º£◊
-º49X∫Éo<T˝Ù<‘˝Ù=tº=0 ≈=@É=<j=Dõ¶=LÃÕ=@É=æw<Â`B<ìtº<o    ªÂ`Bºe`Bº¥9XΩoΩ'ÔûΩH¥9ΩaGÆΩÅ%Ωè\)ΩïÅΩçOﬂΩu¬èΩ@ÉΩ+ºÉoÄ   <u¬è<Â`B=,1=T˝Ù=Å%=ïÅ=° ¡=õ•„=è\)ΩæwΩ•„Ω•„ºÉo;Dõ¶<Éo<ƒõ¶<‘˝Ù<›/<›/<Â`B<Ìëh=o=o<˝Û∂<›/<ìtº;ƒõ¶ªƒõ¶ºÉoºƒõ¶ºÃÃÕº£◊
-º49X:Éo<Éo<ı¬è=,1=PÂ`=]/=Yá=]/=Yá=@É=Cñ<õ•„;ƒõ¶ªƒõ¶ºu¬èº¥9XºÌëhΩtºΩ8QÏΩT˝ÙΩix’Ωu¬èΩÉoΩìtºΩõ•„ΩìtºΩu¬èΩ8QÏºÂ`Bº#◊
-;Â`B<ºj=çP=T˝Ù=y€#=ãCñ=óçP=ù≤-=ïÅ=â7LΩ49XΩ0 ≈Ω0 ≈ººjªÉo<o<e`B<ãCñ<£◊
-<ºj<›/=o=tº=çP=tº<Ìëh<ìtº;Â`Bªƒõ¶ºìtºº›/º›/º¥9XºDõ¶;o<õ•„=\)=Dõ¶=ix’=u¬è=q©¸=mëh=e`B=8QÏ<›/<tºªƒõ¶º£◊
-ºÌëhΩtºΩ0 ≈ΩH¥9Ωe`BΩy€#Ω}Û∂Ωy€#ΩÉoΩëhsΩù≤-ΩïÅΩu¬èΩ0 ≈ºÃÃÕªƒõ¶<Dõ¶<ı¬è=49X=ix’=Éo=ãCñ=è\)=ãCñ=á+=q©¸ΩLÃÕΩLÃÕΩLÃÕº˝Û∂ºe`BªDõ¶;£◊
-<tº<Dõ¶<ãCñ<ƒõ¶<˝Û∂=•„=#◊
-=çP<Ìëh<ìtº;£◊
-ºtºº¨1ºÂ`Bº›/º¨1º#◊
-;ƒõ¶<ÃÃÕ=,1=]/=}Û∂=Éo=}Û∂=y€#=aGÆ=,1<¥9X;oºÉoºı¬èΩæwΩ@ÉΩYáΩq©¸ΩÉoΩá+ΩÉoΩu¬èΩ}Û∂ΩãCñΩóçPΩè\)Ωix’Ωæwº£◊
-ªo<ãCñ=Cñ=Dõ¶=ix’=y€#=y€#=u¬è=aGÆ=]/=Dõ¶ΩaGÆΩix’ΩmëhΩ#◊
-ºƒõ¶ºT˝Ùª£◊
-    ;£◊
-<49X<£◊
-<Ìëh=\)=çP=Cñ<‘˝Ù<e`B    ºT˝ÙººjºÂ`Bº‘˝Ùºõ•„ªƒõ¶<49X<ı¬è=Dõ¶=q©¸=Éo=á+=}Û∂=u¬è=Yá=•„<ãCñªÉoº¨1ΩtºΩ<jΩYáΩq©¸ΩÉoΩãCñΩãCñΩÖ∏Ωu¬èΩq©¸ΩÅ%Ωâ7LΩy€#Ω@Éº˝Û∂ºe`B;Dõ¶<¨1=\)=@É=]/=]/=H¥9=49X=•„=•„=tºΩmëhΩ}Û∂ΩÉoΩDõ¶ΩCñº¥9Xºe`Bºtºªo;£◊
-<e`B<ºj<Ìëh<ı¬è<‘˝Ù<ìtº;Â`Bªƒõ¶ºãCñººjºÃÃÕº¥9Xºe`B∫Éo<ãCñ=tº=PÂ`=}Û∂=á+=Ö∏=u¬è=ix’=PÂ`=çP<e`Bªƒõ¶ººjΩçPΩ@ÉΩaGÆΩu¬èΩÖ∏Ωá+ΩÖ∏ΩÅ%Ωu¬èΩe`BΩix’ΩmëhΩPÂ`ΩçPº¥9Xªƒõ¶<#◊
-<ÃÃÕ=çP=8QÏ=H¥9=8QÏ=tº<Â`B<£◊
-<£◊
-<£◊
-Ωq©¸ΩÉoΩÖ∏ΩYáΩæwºÌëhººjºìtºº49Xªo;Â`B<u¬è<¥9X<ºj<õ•„<Dõ¶:Éoº#◊
-ºãCñº£◊
-ºõ•„ºe`Bª£◊
-;Â`B<ºj='Ôû=e`B=Å%=á+=Éo=mëh=Yá=@É=Cñ<e`Bª£◊
-º¨1ΩCñΩ49XΩPÂ`Ωe`BΩmëhΩq©¸ΩmëhΩix’Ω]/Ω]/ΩPÂ`ΩDõ¶Ω#◊
-ºÂ`BºDõ¶;Dõ¶<Éo<Â`B=çP='Ôû=#◊
-=+<¥9X<Dõ¶;Dõ¶;Dõ¶;ÉoΩe`BΩy€#ΩÅ%ΩYáΩ0 ≈ΩCñºÌëhº‘˝Ùºõ•„º#◊
-∫Éo<o<u¬è<ãCñ<e`B<oÄ   ªÂ`Bº49XºDõ¶ºtºªo;Â`B<õ•„=o=@É=q©¸=Ö∏=Ö∏=}Û∂=]/=H¥9=0 ≈=o<T˝ÙªÉoºìtººı¬èΩæwΩ8QÏΩH¥9ΩLÃÕΩPÂ`ΩLÃÕΩLÃÕΩH¥9ΩH¥9Ω8QÏΩ'ÔûΩoº£◊
-ªDõ¶<49X<¥9X=o=çP=çP<ı¬è<¨1<oªDõ¶ºe`BºT˝Ùº49XΩ@ÉΩYáΩaGÆΩDõ¶Ω#◊
-ΩCñΩoºı¬èºÃÃÕºãCñºo;Dõ¶<#◊
-<e`B<T˝Ù<o;Dõ¶ªoªÉoªo;Dõ¶<49X<£◊
-<ı¬è='Ôû=PÂ`=u¬è=Éo=}Û∂=ix’=Dõ¶=0 ≈=•„<Ìëh<Dõ¶ªoºe`BºÃÃÕΩoΩçPΩ#◊
-Ω,1Ω,1Ω,1Ω,1Ω0 ≈Ω,1Ω•„Ω+ºƒõ¶º49X;Éo<ãCñ<›/=Cñ=\)<ı¬è<¨1<#◊
-ª£◊
-ºìtººÌëhº›/º¥9XΩ\)Ω#◊
-Ω'ÔûΩ•„Ωoºı¬èº˝Û∂º˝Û∂ºÂ`Bº¥9Xºe`BªDõ¶;ƒõ¶<Dõ¶<T˝Ù<Dõ¶<tº;£◊
-;£◊
-<tº<e`B<¥9X<˝Û∂=çP=8QÏ=PÂ`=ix’=mëh=e`B=LÃÕ=#◊
-=\)=o<‘˝Ù<Dõ¶:ÉoºtººìtººÃÃÕºı¬èΩ+ΩCñΩCñΩCñΩ\)ΩCñΩ+ºı¬èºƒõ¶ºe`Bªo<T˝Ù<ƒõ¶=o=tº=Cñ<›/<e`B:Éoºe`Bº›/ΩæwΩçPº˝Û∂º£◊
-º¥9Xººjººjº¨1º¥9Xº‘˝ÙºÌëhºÂ`Bºƒõ¶ºãCñªƒõ¶;Éo<49X<u¬è<Éo<e`B<Dõ¶<e`B<ãCñ<¥9X<Ìëh=tº=#◊
-=0 ≈=@É=LÃÕ=LÃÕ=Dõ¶=,1<˝Û∂<‘˝Ù<‘˝Ù<¥9X<Dõ¶;ÉoªÉoº49XºÉoº¨1º‘˝Ùº›/º›/ºÂ`BºÂ`Bº›/ºÃÃÕº£◊
-ºT˝Ùªo<tº<ºj=+=•„=•„=+<ƒõ¶<#◊
-ª£◊
-º£◊
-ΩoΩ49XΩ0 ≈ΩçPªoªDõ¶ªÉoªÂ`BºtººT˝Ùºõ•„ºƒõ¶ºÃÃÕººjºìtººo;o<49X<Éo<ìtº<ìtº<ãCñ<ìtº<£◊
-<ƒõ¶<ı¬è=Cñ=tº=tº=•„=#◊
-=#◊
-=çP<ı¬è<¨1<ãCñ<ãCñ<u¬è<o;ÉoªoªÂ`Bº49Xºu¬èº£◊
-º¨1º¨1º¥9Xººjº£◊
-ºãCñºDõ¶ªÉo<tº<£◊
-=o=æw='Ôû=æw=o<£◊
-;£◊
-ºtºººjΩCñΩ8QÏΩ49XΩ,1<u¬è<u¬è<u¬è<o;oª£◊
-ºDõ¶ºìtºº¥9Xº¥9Xºõ•„º49X∫Éo<o<e`B<ãCñ<ãCñ<Éo<u¬è<u¬è<ìtº<¨1<ºj<ƒõ¶<ÃÃÕ<ƒõ¶<ÃÃÕ<ƒõ¶<¥9X<Éo<#◊
-<o<tº<o;Éo;oªoªƒõ¶ºtºº49XºT˝Ùºu¬èºe`Bºu¬èºu¬èºT˝ÙºtºªÉo;£◊
-<ìtº<Ìëh=•„=,1=,1=çP<Ìëh<Éo;Dõ¶ºDõ¶ºƒõ¶ΩCñΩ8QÏΩ49XΩ8QÏ<˝Û∂=o=o<¥9X<T˝Ù;Dõ¶ª£◊
-ºDõ¶ºãCñº¨1º£◊
-ºe`Bªƒõ¶;o;Â`B<49X<#◊
-;Â`B;Éo;Éo;Éo;ƒõ¶<o<o<tº<o;Â`B;£◊
-;Éo;oªoªDõ¶:Éo;o∫Éo∫Éoªoªƒõ¶ªÂ`BªÂ`BªÂ`BºoªÂ`Bªƒõ¶ªƒõ¶ªÉoÄ   ;Â`B<Éo<›/=tº=0 ≈=49X=,1=tº<›/<u¬è;oºDõ¶ºƒõ¶Ω+Ω49XΩ49XΩ<j=8QÏ=8QÏ=8QÏ=o<¥9X<49X;oª£◊
-º49XºãCñºõ•„ºÉoºtºªÉo    ;o∫Éoªƒõ¶º#◊
-ºDõ¶ºe`BºDõ¶º49Xº49Xº49Xº#◊
-º49XºT˝Ùºe`BºT˝Ùºe`Bº49XªÂ`BªDõ¶ªÉoªDõ¶ªoªDõ¶ªDõ¶∫Éo    :Éo;o;Dõ¶;Éo;Â`B<Dõ¶<£◊
-<Â`B=tº=0 ≈=@É=<j=,1=\)<›/<u¬è;Dõ¶º49XººjΩ+Ω49XΩ8QÏΩDõ¶=mëh=ix’=ix’='Ôû<Â`B<ìtº<o    ªƒõ¶ºDõ¶ºÉoºÉoºDõ¶ªÂ`Bªƒõ¶ºoºT˝Ùº£◊
-º‘˝Ùºı¬èΩoº˝Û∂ºı¬èºÌëhºı¬èºı¬èºÌëhºı¬èºı¬èºÂ`Bº‘˝Ùº¨1ºe`Bºtººoª£◊
-ªoÄ   ;o;£◊
-<o<#◊
-<49X<Dõ¶<u¬è<¨1<‘˝Ù=+=æw=<j=LÃÕ=PÂ`=@É=,1=tº<Â`B<ãCñ;Éoº#◊
-º¥9XΩCñΩ<jΩDõ¶ΩT˝Ù=çOﬂ=ãCñ=ãCñ=LÃÕ=\)<ºj<e`B;ÉoªDõ¶ºoºT˝Ùºu¬èºT˝Ùº#◊
-º49Xºe`Bº¥9Xº˝Û∂ΩæwΩ49XΩ@ÉΩ@ÉΩ8QÏΩ8QÏΩ<jΩ8QÏΩ0 ≈Ω,1Ω,1Ω#◊
-ΩtººÂ`Bºõ•„ºDõ¶ºtºªƒõ¶Ä   ;Dõ¶;Â`B<49X<ãCñ<õ•„<£◊
-<¥9X<›/=+=æw=8QÏ=H¥9=]/=e`B=]/=LÃÕ=49X=•„<ı¬è<õ•„;ƒõ¶ºtººƒõ¶ΩçPΩT˝ÙΩYáΩmëh=ìtº=çOﬂ=ãCñ=LÃÕ=tº<ƒõ¶<T˝Ù;£◊
-ªoºoºDõ¶ºe`BºDõ¶º#◊
-º49Xºu¬èº¥9Xºı¬èΩçPΩ0 ≈Ω8QÏΩ8QÏΩ8QÏΩ49XΩ49XΩ0 ≈Ω,1Ω'ÔûΩ'ÔûΩ•„Ω+º›/ºõ•„ºDõ¶ºtºª£◊
-Ä   ;Éo;Â`B<49X<u¬è<ìtº<£◊
-<ºj<›/=o=•„=49X=H¥9=T˝Ù=]/=Yá=Dõ¶=0 ≈=çP<Ìëh<ìtº;£◊
-º#◊
-ºƒõ¶Ω•„ΩYáΩaGÆΩix’=ïÅ=ìtº=ëhs=aGÆ=æw<ÃÃÕ<Éo;Â`B∫ÉoªÂ`BºoºtººDõ¶ºe`Bºe`Bºõ•„ººjºÌëhΩCñΩæwΩ'ÔûΩ49XΩ8QÏΩ49XΩ,1Ω,1Ω,1Ω#◊
-Ω\)Ω\)º˝Û∂ººjº£◊
-ºÉoªÂ`Bªo∫Éo;Éo<o<Dõ¶<T˝Ù<ãCñ<¨1<ƒõ¶<Â`B=o=•„=,1=@É=LÃÕ=LÃÕ=H¥9=Dõ¶=0 ≈=\)<ÃÃÕ<u¬è;Dõ¶ºtºººjΩ#◊
-Ωe`BΩix’Ωq©¸                                                                                                                                                                                                                                                                                                                                                                                                                                                                XTENSION= 'IMAGE   '           / Image extension                                BITPIX  =                  -32 / array data type                                NAXIS   =                    2 / number of array dimensions                     NAXIS1  =                   64                                                  NAXIS2  =                   32                                                  PCOUNT  =                    0 / number of parameters                           GCOUNT  =                    1 / number of groups                               EXTNAME = 'D2IMARR '           / extension name                                 CRPIX1  =                  0.0 / Coordinate system reference pixel              CRPIX2  =                  0.0 / Coordinate system reference pixel              CRVAL1  =                  0.0 / Coordinate system value at reference pixel     CRVAL2  =                  0.0 / Coordinate system value at reference pixel     CDELT1  =                 64.0 / Coordinate increment along axis                CDELT2  =                 64.0 / Coordinate increment along axis                EXTVER  =                    4 / extension value                                END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             =•„T=ßÔû=ßÔû<˝Û∂ºõ•„Ωu¬èΩ¥9XΩ◊
-=Ω·GÆΩ‘˝ÙΩºjΩôôöΩaGÆΩoºDõ¶<#◊
-<Ìëh=<j=y€#=óçP=≤-=∆ß=◊
-==ﬂ;d=ﬂ;d=–Â`=∫^5=õ•„=mëh=æw<¨1;Éoºtºº£◊
-º›/ΩoΩ•„Ω0 ≈ΩLÃÕΩix’ΩÉoΩè\)ΩìtºΩìtºΩãCñΩ}Û∂Ω]/Ω8QÏΩtºº›/ºìtºº#◊
-ªÉo;o;Â`B<#◊
-<T˝Ù<Éo<¨1<‘˝Ù<˝Û∂=•„='Ôû=49X=ßÔû=©˚Á=©˚Á<ºjºı¬èΩìtºΩ“Ò™ΩÛ∂FΩ˜ŒŸΩÁlãΩ∆ßΩù≤-Ωe`BΩCñº#◊
-<Dõ¶=o=Dõ¶=}Û∂=óçP=≤-=ÃÃÕ=„S¯=Ìëh=Èx’=€"—=¿É=õ•„=e`B=Cñ<T˝Ùªƒõ¶ºõ•„ºÌëhΩ\)Ω•„Ω#◊
-Ω49XΩPÂ`Ωq©¸Ωâ7LΩïÅΩõ•„Ωõ•„ΩïÅΩá+Ωix’ΩDõ¶Ω•„ºÌëhº£◊
-ºDõ¶ªÉo    ;Dõ¶;ƒõ¶<o<49X<u¬è<¨1<Â`B=\)=çP='Ôû=ßÔû=©˚Á=©˚Á<£◊
-Ω+Ωõ•„Ωﬂ;dΩ˝Û∂æ   ΩÌëhΩ ¿ÉΩüæwΩe`BΩ\)ºtº<T˝Ù=+=Dõ¶=Å%=óçP=≤-=ŒŸ=Álã=Û∂F=Ìëh=ﬂ;d=¿É=õ•„=aGÆ=+<#◊
-ºtºººjΩ+ΩçPΩ'ÔûΩ'ÔûΩ8QÏΩPÂ`Ωu¬èΩãCñΩóçPΩüæwΩüæwΩôôöΩâ7LΩmëhΩH¥9Ωæwºı¬èº¨1ºDõ¶ª£◊
-Ä   ;o;£◊
-;Â`B<#◊
-<T˝Ù<õ•„<›/=Cñ=\)=#◊
-=üæw=üæw=° ¡<õ•„º˝Û∂ΩëhsΩ–Â`ΩÒ©¸ΩÒ©¸Ω·GÆΩ¬è\ΩôôöΩaGÆΩtººDõ¶<#◊
-<Â`B=0 ≈=ix’=çOﬂ=° ¡=ºj=◊
-==·GÆ=ﬂ;d=‘˝Ù=ºj=óçP=]/=+<tºº#◊
-ººjΩoΩçPΩæwΩæwΩ0 ≈ΩH¥9ΩmëhΩÖ∏ΩïÅΩù≤-ΩüæwΩìtºΩÅ%ΩYáΩ,1Ωoº¨1º49XªDõ¶;Éo<o<#◊
-<Dõ¶<49X<49X<#◊
-<T˝Ù<ãCñ<ìtº<£◊
-<ÃÃÕ=ïÅ=ïÅ=óçP<õ•„ºÌëhΩá+Ω¿ÉΩ›/ΩÂ`BΩ◊
-=ΩºjΩóçPΩe`BΩ•„ºÉo;ƒõ¶<ºj=æw=Yá=Éo=ïÅ=¨1=¬è\=ÃÃÕ=–Â`=ÃÃÕ=∫^5=ù≤-=q©¸=æw<ÉoªDõ¶ºÉoºÃÃÕºÌëhΩoΩ+Ω•„Ω<jΩ]/Ω}Û∂Ωè\)ΩôôöΩìtºΩÖ∏Ωe`BΩ<jΩ\)ººjºT˝ÙªÉo;ƒõ¶<e`B<ìtº<¥9X<ºj<¨1<ãCñ<e`B<T˝Ù<49X<o<tº<49X=â7L=ãCñ=ãCñ<ìtººÃÃÕΩy€#Ω¥9XΩÃÃÕΩ‘˝ÙΩÃÃÕΩ∏QÏΩôôöΩix’Ω#◊
-ºõ•„:Éo<õ•„=\)=LÃÕ=y€#=çOﬂ=° ¡=¥9X=¬è\= ¿É= ¿É=ºj=ßÔû=â7L=LÃÕ<ı¬è<Dõ¶ªoº49XºãCñººjº‘˝ÙΩCñΩ0 ≈ΩT˝ÙΩu¬èΩá+ΩçOﬂΩÖ∏Ωix’Ω@ÉΩæwºÂ`BºÉoªƒõ¶;Éo<e`B<ºj<ı¬è=\)=tº=o<›/<£◊
-<u¬è<tº    :Éo:Éo=u¬è=q©¸=mëh<e`Bº‘˝ÙΩq©¸Ω¨1Ω∆ßΩŒŸΩ ¿ÉΩºjΩù≤-Ωq©¸Ω0 ≈ºƒõ¶ªDõ¶<u¬è<˝Û∂=Dõ¶=u¬è=çOﬂ=ù≤-=¨1=∏QÏ=æv…=¬è\=∫^5=¨1=óçP=y€#=49X<Ìëh<u¬è;Éoª£◊
-ºe`Bº£◊
-º˝Û∂Ω,1ΩYáΩu¬èΩÅ%ΩÅ%ΩmëhΩH¥9Ω#◊
-º˝Û∂º¨1ºo;Éo<u¬è<‘˝Ù=çP=49X=Dõ¶=H¥9=49X=\)<‘˝Ù<Éo;ƒõ¶ºoªÂ`Bºtº=T˝Ù=H¥9=Dõ¶;Â`Bºı¬èΩq©¸ΩßÔûΩ¿ÉΩ ¿ÉΩ»¥9ΩºjΩüæwΩ}Û∂Ω<jºÂ`Bºo<#◊
-<Ìëh=8QÏ=mëh=á+=óçP=üæw=©˚Á=Æ{=≤-=≤-=ßÔû=ïÅ=Éo=T˝Ù=•„<ÃÃÕ<T˝Ù;oºoºìtººı¬èΩ49XΩaGÆΩu¬èΩy€#ΩmëhΩLÃÕΩ#◊
-º˝Û∂º¥9Xº49X;Éo<ãCñ<Â`B=#◊
-=LÃÕ=ix’=q©¸=mëh=T˝Ù='Ôû<Â`B<u¬è:Éoºu¬èºÉoºãCñ=8QÏ=#◊
-=æw;Dõ¶ΩoΩq©¸Ω° ¡Ω∂E¢Ω¿ÉΩ¬è\Ω¥9XΩõ•„Ωu¬èΩ8QÏºÂ`Bº#◊
-<tº<›/=0 ≈=aGÆ=Éo=è\)=óçP=õ•„=° ¡=•„T=° ¡=ôôö=ãCñ=q©¸=LÃÕ=æw<‘˝Ù<Dõ¶    ºT˝ÙººjΩ•„ΩT˝ÙΩu¬èΩy€#Ωq©¸Ω]/Ω0 ≈Ωoº¥9XºT˝Ù∫Éo<u¬è<Ìëh='Ôû=Yá=}Û∂=â7L=á+=Éo=]/=0 ≈<›/<Dõ¶ªƒõ¶ºƒõ¶ºÃÃÕº›/=æw=Cñ=+ªoΩoΩaGÆΩóçPΩ©˚ÁΩ∞ ≈Ω∞ ≈Ω£◊
-Ωâ7LΩPÂ`Ω•„º‘˝Ùº#◊
-<o<ƒõ¶=#◊
-=Yá=}Û∂=ãCñ=ëhs=ëhs=ëhs=è\)=Ö∏=q©¸=T˝Ù=<j=•„<Ìëh<ãCñ;Dõ¶º49XºÃÃÕΩçPΩLÃÕΩ}Û∂Ωâ7LΩÉoΩq©¸ΩLÃÕΩ•„ºÃÃÕºe`BªDõ¶<#◊
-<‘˝Ù='Ôû=Yá=Éo=ëhs=óçP=è\)=Éo=Yá=æw<¨1;Dõ¶ºÉoΩ\)Ω\)ΩçP=tº<˝Û∂<ÌëhªDõ¶º˝Û∂ΩT˝ÙΩâ7LΩôôöΩù≤-ΩôôöΩãCñΩmëhΩ0 ≈Ωoººjº#◊
-;£◊
-<¨1=\)=Dõ¶=mëh=Éo=Ö∏=}Û∂=q©¸=]/=<j=•„<ı¬è<ºj<ãCñ<#◊
-∫Éoºe`BºÂ`BΩ'ÔûΩLÃÕΩu¬èΩâ7LΩãCñΩ}Û∂ΩaGÆΩ8QÏΩoºìtºªÂ`B;Â`B<¨1=çP=T˝Ù=Ö∏=óçP=üæw=õ•„=çOﬂ=u¬è=@É<˝Û∂<T˝Ùºoº›/ΩDõ¶Ω@ÉΩH¥9=Cñ<ı¬è<ÌëhªoºÌëhΩ@ÉΩu¬èΩÖ∏ΩÖ∏Ωy€#Ωe`BΩ<jΩtººÂ`Bº¥9XºDõ¶    <Éo<Â`B='Ôû=LÃÕ=e`B=e`B=aGÆ=Dõ¶=#◊
-<ı¬è<£◊
-<tº;oª£◊
-ºDõ¶º¨1Ω+Ω49XΩ]/Ωy€#ΩÖ∏Ωâ7LΩÅ%Ωe`BΩ@ÉΩ•„º‘˝ÙºDõ¶;o<u¬è<Ìëh=<j=u¬è=ëhs=üæw=üæw=ïÅ=Å%=PÂ`=çP<£◊
-    º£◊
-Ω'ÔûΩu¬èΩu¬èΩu¬è=+<˝Û∂<˝Û∂;oººjΩ#◊
-ΩPÂ`Ω]/ΩYáΩLÃÕΩ8QÏΩçPºÌëhº‘˝Ùº¥9Xºe`BªDõ¶<#◊
-<¥9X=Cñ=49X=LÃÕ=PÂ`=@É='Ôû=o<õ•„;Â`BªÉoºe`BººjºÌëhΩ•„ΩDõ¶Ωe`BΩÅ%Ωá+Ωâ7LΩÖ∏ΩmëhΩDõ¶Ω#◊
-º˝Û∂º£◊
-ªƒõ¶;Â`B<¥9X=çP=Yá=á+=ôôö=üæw=óçP=Ö∏=Yá=•„<¨1;ÉoºÉoΩ\)ΩaGÆΩóçPΩïÅΩëhs=Cñ=o<˝Û∂;£◊
-ºìtºΩCñΩ8QÏΩ@ÉΩ<jΩ49XΩ#◊
-Ωoº›/º‘˝Ùºƒõ¶ºãCñªÂ`B;Éo<Éo<Ìëh=æw=<j=@É=,1=\)<ÃÃÕ<#◊
-ªDõ¶ºu¬èºÃÃÕΩtºΩ49XΩLÃÕΩe`BΩy€#ΩÉoΩÅ%Ωu¬èΩe`BΩDõ¶Ωæwºı¬èº¨1º#◊
-;Éo<ãCñ=Cñ=LÃÕ=Ö∏=ôôö=£◊
-=üæw=è\)=ix’=#◊
-<¥9X;Dõ¶ºu¬èΩ\)ΩT˝ÙΩè\)Ω∞ ≈Ω¨1Ωù≤-=çP=Cñ=+<oºT˝Ùº›/ΩtºΩ'ÔûΩ,1Ω'ÔûΩ•„ΩCñº˝Û∂ºı¬èºÂ`Bº¨1ºDõ¶∫Éo<49X<ƒõ¶=tº=0 ≈=49X=#◊
-<˝Û∂<£◊
-;Éoº#◊
-º¥9XΩCñΩ@ÉΩaGÆΩq©¸Ωu¬èΩu¬èΩq©¸ΩYáΩ@ÉΩ#◊
-Ω+ºƒõ¶ºãCñªÂ`B;£◊
-<õ•„=+=LÃÕ=â7L=•„T=≤-=≤-=£◊
-=â7L=H¥9<Ìëh<oºDõ¶º˝Û∂ΩH¥9ΩÖ∏Ω£◊
-Ωæv…Ω∏QÏΩßÔû=#◊
-=çP=tº<e`Bª£◊
-ºìtººÂ`BΩoΩ+Ω\)ΩçPΩtºΩCñΩ\)Ω+º‘˝Ùºìtºªƒõ¶;Â`B<¨1=+=,1=49X='Ôû=o<£◊
-;oºe`Bº›/Ω'ÔûΩ]/Ω}Û∂ΩÅ%ΩÅ%ΩmëhΩPÂ`Ω,1Ω+ºƒõ¶ºÉoºo:Éo<#◊
-<¨1=Cñ=@É=u¬è=óçP=∞ ≈=ºj=∂E¢=£◊
-=Éo=49X<¨1∫Éoº¥9XΩ,1ΩmëhΩëhsΩßÔûΩºjΩ∏QÏΩ•„T=,1=,1=,1<¥9X;Dõ¶º#◊
-ºõ•„º¥9Xºƒõ¶ºÂ`BΩ+ΩCñΩtºΩ•„ΩçPºı¬èº¨1ºo<o<ºj=\)=0 ≈=8QÏ=,1=o<ãCñªDõ¶º£◊
-ΩtºΩH¥9Ωy€#ΩãCñΩãCñΩÖ∏Ωix’ΩDõ¶ΩCñº¥9Xº49X∫Éo<o<ãCñ<›/=tº=8QÏ=T˝Ù=}Û∂=ëhs=•„T=∞ ≈=∞ ≈=ù≤-=q©¸=æw<Éoºoºı¬èΩH¥9ΩÅ%ΩïÅΩ° ¡ΩÆ{Ω©˚ÁΩõ•„=@É=@É=@É<Ìëh<Dõ¶ªoº#◊
-ºT˝Ùºu¬èº£◊
-ºÃÃÕºı¬èΩ\)Ω•„ΩçPºı¬èº£◊
-ªƒõ¶<49X<›/=•„=<j=@É='Ôû<ı¬è<T˝ÙºtººÌëhΩ<jΩq©¸ΩëhsΩù≤-ΩôôöΩá+Ωe`BΩ8QÏºÌëhºT˝Ù:Éo<Dõ¶<¥9X=Cñ=0 ≈=PÂ`=ix’=u¬è=Éo=çOﬂ=õ•„=•„T=£◊
-=ëhs=]/=Cñ<#◊
-ºT˝ÙΩ\)ΩT˝ÙΩÉoΩçOﬂΩëhsΩïÅΩëhsΩá+=PÂ`=Yá=]/=çP<¨1<tº;oªoªDõ¶ºtººãCñºƒõ¶ºÌëhΩoº˝Û∂ºƒõ¶ºe`B:Éo<ãCñ<˝Û∂='Ôû=@É=@É=,1<Ìëh<49XºT˝ÙΩ\)ΩT˝ÙΩá+ΩüæwΩ©˚ÁΩ° ¡ΩçOﬂΩaGÆΩ#◊
-º¥9XªÉo<Dõ¶<ºj=Cñ=8QÏ=]/=}Û∂=â7L=è\)=ëhs=ìtº=õ•„=üæw=ôôö=Å%=@É<›/;£◊
-ºãCñΩtºΩLÃÕΩu¬èΩy€#Ωq©¸Ωe`BΩaGÆΩT˝Ù=Yá=ix’=mëh=8QÏ<ı¬è<õ•„<T˝Ù<#◊
-<o;Dõ¶ªƒõ¶ºu¬èº¨1ººjººjºÉoªÂ`B;ƒõ¶<£◊
-=o=æw=49X=0 ≈=çP<ƒõ¶;£◊
-º£◊
-Ω'ÔûΩix’Ωè\)Ω•„TΩÆ{Ω° ¡ΩãCñΩT˝ÙΩ\)ºÉo;Dõ¶<ìtº<ı¬è='Ôû=PÂ`=mëh=Ö∏=è\)=ìtº=ïÅ=ìtº=ïÅ=ìtº=á+=Yá=çP<õ•„:ÉoºìtºΩ+Ω49XΩLÃÕΩH¥9Ω,1ΩtºΩtºΩCñ=T˝Ù=ix’=mëh=H¥9=tº<ÃÃÕ<£◊
-<ìtº<Éo<#◊
-;oªƒõ¶ºT˝ÙºÉoºÉoº49Xªo<tº<¨1<ı¬è=\)=tº=+<ÃÃÕ<#◊
-ºtººı¬èΩDõ¶Ω}Û∂ΩïÅΩ£◊
-ΩßÔûΩõ•„ΩÉoΩDõ¶º˝Û∂º49X;ƒõ¶<£◊
-=o='Ôû=H¥9=aGÆ=y€#=Ö∏=á+=á+=Ö∏=Éo=y€#=aGÆ=0 ≈<‘˝Ù<49XªÉoºÉoºÂ`BΩCñΩtºº˝Û∂ººjºÉoºãCñºìtº=Dõ¶=Yá=aGÆ=@É=çP<Ìëh<ÃÃÕ<ºj<¥9X<ãCñ<#◊
-;oªÉoºtºº#◊
-ªƒõ¶:Éo<#◊
-<õ•„<ÃÃÕ<›/<‘˝Ù<õ•„;Â`BªÂ`BººjΩ'ÔûΩix’ΩãCñΩóçPΩüæwΩüæwΩëhsΩmëhΩ,1ºÃÃÕºo;Â`B<£◊
-<ı¬è=çP=0 ≈=Dõ¶=Yá=aGÆ=]/=]/=]/=T˝Ù=LÃÕ=0 ≈<˝Û∂<Éo;Dõ¶ºoºÉoº¨1ººjº¨1ºe`Bª£◊
-;o;oª£◊
-=•„=49X=@É='Ôû=+<Ìëh<‘˝Ù<‘˝Ù<›/<ÃÃÕ<£◊
-<T˝Ù;ƒõ¶:Éoªo∫Éo;Dõ¶<tº<u¬è<ìtº<ãCñ<T˝Ù;£◊
-ªÂ`Bº¨1ΩCñΩLÃÕΩ}Û∂ΩëhsΩóçPΩôôöΩìtºΩÉoΩYáΩ•„ºƒõ¶ºo;Éo<u¬è<ƒõ¶<˝Û∂=\)=æw=,1=,1='Ôû=æw=æw=#◊
-=•„<˝Û∂<£◊
-;Â`Bª£◊
-ºT˝ÙºãCñºìtººÉoº49Xªo<tº<ìtº<Éo<#◊
-<ƒõ¶<Ìëh<˝Û∂<Ìëh<ƒõ¶<¨1<¥9X<ÃÃÕ<Â`B<Ìëh<›/<¨1<T˝Ù;Â`B;o    :Éo;Éo;£◊
-;ƒõ¶;£◊
-Ä   º#◊
-º¥9XΩ+Ω0 ≈ΩaGÆΩÉoΩãCñΩçOﬂΩâ7LΩy€#ΩYáΩ8QÏΩ\)ºƒõ¶ºDõ¶ªo;Â`B<Éo<¥9X<‘˝Ù<Ìëh<˝Û∂<˝Û∂<Ìëh<›/<Ìëh<ı¬è<Â`B<¥9X<#◊
-∫Éoº49XºãCñºìtººu¬èºtºªo;Â`B<õ•„<Ìëh<‘˝Ù<ƒõ¶;Â`B<#◊
-<49X<e`B<T˝Ù<Dõ¶<u¬è<¨1<ÃÃÕ<Ìëh<Ìëh<ƒõ¶<Éo<o;o∫ÉoªDõ¶ªDõ¶ªoªDõ¶ª£◊
-º#◊
-ºìtººÌëhΩæwΩ<jΩYáΩmëhΩu¬èΩmëhΩ]/Ω@ÉΩ'ÔûΩtººÌëhº¨1ºDõ¶ª£◊
-:Éo<tº<u¬è<ìtº<õ•„<£◊
-<£◊
-<õ•„<£◊
-<¥9X<ºj<£◊
-<e`B;Dõ¶ªÂ`BºÉoºõ•„ºìtººDõ¶ª£◊
-;Éo<Éo<›/=çP=Cñ<˝Û∂ºT˝Ùº49Xº#◊
-ªÉoÄ   ;£◊
-<tº<u¬è<¥9X<Â`B<Â`B<ÃÃÕ<ìtº<tº;Dõ¶ªoª£◊
-ªÂ`Bªƒõ¶ºoºtººT˝Ùº£◊
-ºÂ`BΩ\)ΩæwΩ,1Ω49XΩ<jΩ49XΩæwΩ+ºÌëhºƒõ¶º£◊
-ºu¬èº#◊
-ª£◊
-∫Éo;o;ƒõ¶;Â`B<o<#◊
-<49X<Dõ¶<e`B<ãCñ<ìtº<e`B;ƒõ¶ªÉoºT˝Ùº£◊
-º¥9Xºìtºº49XªDõ¶;Â`B<£◊
-<˝Û∂='Ôû=#◊
-=\)Ω+Ω+Ω+ºƒõ¶ºe`Bªƒõ¶;o<#◊
-<ìtº<ƒõ¶<›/<‘˝Ù<¨1<u¬è<o;o∫ÉoªÉoª£◊
-ª£◊
-ªƒõ¶ºoºe`Bº¨1º‘˝Ùº›/ºÌëhºÌëhºÌëhºÂ`Bº‘˝Ùº¥9Xºõ•„ºãCñºT˝Ùº49XºtºªÂ`Bª£◊
-ªDõ¶ªo∫Éo    ;Dõ¶;£◊
-;Â`B<tº<Dõ¶<Dõ¶<o∫Éoº49Xº£◊
-ºÃÃÕº‘˝Ùº¥9Xºe`Bªƒõ¶;ƒõ¶<õ•„<˝Û∂='Ôû=,1=•„ΩPÂ`ΩYáΩYáΩ#◊
-ºÌëhºìtººo:Éo<#◊
-<ìtº<ºj<ƒõ¶<¥9X<ìtº<e`B<49X<o;ƒõ¶;£◊
-;£◊
-;£◊
-;Dõ¶ªoºtººDõ¶ºDõ¶ºDõ¶º49Xº49XºDõ¶ºDõ¶ºDõ¶ºDõ¶º49Xº49Xº49Xº#◊
-º#◊
-º#◊
-º#◊
-ºtººoªƒõ¶ªÉo∫Éo;Dõ¶;£◊
-;£◊
-;Éo∫Éoºtºº£◊
-º›/º˝Û∂ºı¬èºƒõ¶ºu¬èªƒõ¶;£◊
-<ãCñ<ı¬è=#◊
-='Ôû=,1ΩãCñΩçOﬂΩè\)ΩYáΩ•„º‘˝Ùºu¬èª£◊
-;Éo<Dõ¶<õ•„<¥9X<ºj<¥9X<¨1<£◊
-<£◊
-<¨1<¥9X<ºj<ºj<¥9X<ìtº<T˝Ù<tº<o<tº<#◊
-;Â`B;Dõ¶Ä   ªoªÉoª£◊
-ªÂ`Bºoº#◊
-º49XºT˝ÙºT˝Ùºe`BºT˝Ùº49Xºtºªƒõ¶ª£◊
-ªÉoª£◊
-ºoºe`Bº¥9Xº˝Û∂ΩtºΩ•„ΩCñº‘˝ÙºÉoªƒõ¶;ƒõ¶<ìtº<Ìëh='Ôû='Ôû=49XΩ•„TΩ©˚ÁΩ©˚ÁΩÅ%Ω8QÏº˝Û∂º£◊
-ºtº:Éo<#◊
-<ìtº<ºj<ÃÃÕ<‘˝Ù<Â`B<Ìëh=o=tº=#◊
-=0 ≈=49X=8QÏ=0 ≈=æw=\)=+=o<˝Û∂<‘˝Ù<¨1<u¬è<#◊
-;ƒõ¶;Dõ¶∫Éoª£◊
-ºtººDõ¶ºe`Bºu¬èºãCñºìtººãCñºu¬èºe`Bºu¬èºÉoºõ•„ººjºı¬èΩçPΩ49XΩ@ÉΩ<jΩ#◊
-ºı¬èºìtºªÂ`B;£◊
-<ìtº<˝Û∂=0 ≈=0 ≈=<jΩ¨1Ω©˚ÁΩ©˚ÁΩ}Û∂Ω8QÏº˝Û∂ºõ•„ºtº:Éo<#◊
-<ãCñ<¥9X<ÃÃÕ<‘˝Ù<›/<Ìëh=o=tº=æw='Ôû=0 ≈=49X=,1=•„=\)=+<˝Û∂<Ìëh<ÃÃÕ<£◊
-<e`B<#◊
-;£◊
-;o∫ÉoªÉoºtººDõ¶ºe`Bºu¬èºÉoºãCñºÉoºu¬èºu¬èºu¬èºÉoºõ•„ºƒõ¶ºı¬èΩçPΩ0 ≈Ω<jΩ49XΩ•„ºÌëhºìtºªÂ`B;£◊
-<ìtº<ı¬è=49X=49X=49XΩ¨1Ω¨1Ω¨1Ωá+ΩLÃÕΩCñº¨1º#◊
-Ä   <o<u¬è<£◊
-<ƒõ¶<‘˝Ù<Â`B<˝Û∂=o=Cñ=•„=#◊
-='Ôû=#◊
-=æw=•„=tº=o<ı¬è<‘˝Ù<ºj<£◊
-<Éo<#◊
-;ƒõ¶;Dõ¶ªoªÂ`Bºoº#◊
-ºe`BºÉoºu¬èºu¬èºÉoºÉoºÉoºÉoºìtºº¨1ºÃÃÕº˝Û∂Ω\)ΩæwΩ'ÔûΩæwΩCñºÂ`Bºìtºªƒõ¶;ƒõ¶<ìtº<˝Û∂=<j=49X=8QÏ                                                                                                                                                                                                                                                                                                                                                                                                                                                                
