@@ -7,7 +7,8 @@ Probleme : Spésification dans le HST donc problemes futurs !
 from astroquery.mast import Observations
 
 # Paramètres de recherche
-objet = "NGC 6362"
+# objet = "NGC 6362"
+objet = "NGC 7000"
 radius = "0.01 deg"  # Réduire le rayon de recherche
 filtres = ["F814W", "F658N", "F336W"]  # Filtres à tester
 fichiers_fits = []

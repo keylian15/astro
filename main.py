@@ -1,15 +1,11 @@
 from astropy.io import fits
 import matplotlib.pyplot as plt
 import numpy as np
-
+import sys
 # ====== Recupération ======
 image1 = "Tarantula_Nebula-halpha.fit"
 image2 = "Tarantula_Nebula-oiii.fit"
 image3 = "Tarantula_Nebula-sii.fit"
-
-img4 = "./test/red.fits"
-img5 = "./test/green.fits"
-img6 = "./test/blue.fits"
 # ====== Fin Recupération ======
 
 
@@ -23,7 +19,6 @@ def normaliser(data):
 
     return data_norm
 
-
 def afficher(
     fichiers, multi_r=1.0, multi_g=1.0, multi_b=1.0, titre: str = "Image Combinée"
 ):
@@ -32,10 +27,14 @@ def afficher(
     image2 = fichiers[1]
     image3 = fichiers[2]
 
-    data1 = fits.getdata(image1)
-    data2 = fits.getdata(image2)
-    data3 = fits.getdata(image3)
+    # data1 = fits.getdata(image1)
+    # data2 = fits.getdata(image2)
+    # data3 = fits.getdata(image3)
 
+    data1 = extraire_image(image1)
+    data2 = extraire_image(image2)
+    data3 = extraire_image(image3)
+    
     red = normaliser(data1) * multi_r
     green = normaliser(data2) * multi_g
     blue = normaliser(data3) * multi_b
@@ -51,6 +50,23 @@ def afficher(
     plt.title(titre)
     plt.show()
 
+def extraire_image(fichier_fits):
+    """
+    Fonction qui parcourt un fichier FITS et retourne les données de la première extension ImageHDU
+    contenant des données (si plusieurs extensions sont présentes).
+    """
+    with fits.open(fichier_fits) as hdul:
+        if len(hdul) == 1 : 
+            return fits.getdata(fichier_fits)
+        
+        # Parcours des extensions à partir de l'index 1 (ignorer le Primary HDU à l'index 0)
+        for i in range(1, len(hdul)):
+            hdu = hdul[i]
+            if isinstance(hdu, fits.ImageHDU) and hdu.data is not None:
+                return hdu.data  # Retourne les données de la première extension valide trouvée
+    
+    return None
+
 
 # # Normal
 # afficher([image1, image2, image3], 1, 1, 1)
@@ -61,10 +77,8 @@ def afficher(
 # # + de bleu
 # afficher([image1, image2, image3], 1, 1, 1.5, "Image Combinée avec + de Blue")
 
-# afficher([img4, img5, img6], 1, 1, 1, "test dl")
-# Il va me dire qu'il y a un probleme de taille sauf que ca renvoie que des nan :
-# print(f"Affichage premiere matrice : \n{fits.getdata(img4)}")
-# print(f"Affichage deuxieme matrice : \n{fits.getdata(img5)}")
-# print(f"Affichage troisieme matrice : \n{fits.getdata(img6)}")
-# Ca ne change rien toujours des nan.
-# img4 = np.nan_to_num(img4)
+dossier_test = sys.path[0] + "/Donnees/HST_NGC_6362_0.01_deg/"
+t1 = dossier_test + "red.fits" 
+t2 = dossier_test + "green.fits" 
+t3 = dossier_test + "blue.fits" 
+afficher([t1,t2,t3])

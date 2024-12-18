@@ -8,6 +8,7 @@ from astroquery.mast import Observations
 
 # Paramètres de recherche
 objet = "NGC 6362"
+# objet = "NGC 7000"
 radius = "0.01 deg"  # Réduire le rayon de recherche
 filtres = ["F814W", "F658N", "F336W"]  # Nouveaux filtres à tester
 # filtres = ['F606W', 'F555W', 'F658N;F625W', 'IRAC2', 'F439W', 'F336W', 'F658N', 'UVM2', 'F814W;F606W', 'F814W;F625W;F606W', 'F336W;F275W', 'F625W', 'F814W', 'detection', 'F275W', 'TESS', 'DETECTION', 'IRAC1', 'F438W', 'UVW2', 'G430M', 'MIRVIS', 'F785LP', 'F555W;F439W', 'UVW1']
