@@ -303,4 +303,5 @@ if __name__ == "__main__":
     fichiers_fits, errors = download(objet, telescope, radius, filtres)
     if errors:
         print(errors)        
+        
     # ====== Fin Test Telechargement ======
