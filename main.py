@@ -224,6 +224,12 @@ def rename_and_replace(objet: str, telescope: str, radius: str, fichiers_fits: l
             os.rename(fichiers_fits[id_fichier], dossier_nom + "/" + liste[id_fichier])
         os.chmod(dossier_nom, 0o777)
         shutil.rmtree(chemin + "/mastDownload/")
+    else : 
+        os.chmod(dossier_nom, 0o777)
+        shutil.rmtree(dossier_nom)
+        dossier_nom = chemin + "/mastDownload/"
+        os.chmod(dossier_nom, 0o777)
+        shutil.rmtree(dossier_nom)
 
 
 def verif_files_dl(objet: str, telescope: str, radius: str) -> bool:
@@ -288,12 +294,13 @@ if __name__ == "__main__":
     objet = "NGC 6362"
     telescope = "HST"
     radius = "0.01 deg"
-    filtres = ["F814W", "F658N", "F336W"]
+    # filtres = ["F814W", "F658N", "F336W"] # Filtre sans probleme.
+    filtres = ["F814X", "F658N", "F336W"] # Filtre avec.
     fichiers_fits = []
     errors = []
 
     # Si rien n'est renvoyé c'est car les fichiers sont déjà présents.
     fichiers_fits, errors = download(objet, telescope, radius, filtres)
     if errors:
-        print(errors)
+        print(errors)        
     # ====== Fin Test Telechargement ======
