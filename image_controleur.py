@@ -1,33 +1,65 @@
-from PyQt6.QtWidgets import QFileDialog
+import sys
+from PyQt6.QtWidgets import QApplication
+from image_model import FITSModel
+from image_view import FITSView
+import os
 
 class FITSController:
-    def __init__(self, model, view):
-        self.model = model
-        self.view = view
+    def __init__(self):
+        self.model = FITSModel()
+        self.view = FITSView()
 
-        self._connect_signals()
+        # Connecter les signaux et les slots
+        self.view.load_button.clicked.connect(self.handle_load_button)
 
-    def _connect_signals(self):
-        for i in range(3):
-            self.view.bind_file_button(i, lambda checked, idx=i: self.choose_file(idx))
-            self.view.bind_slider(i, lambda value, idx=i: self.update_coefficient(idx, value))
-        self.view.bind_afficher_button(self.display_image)
+        self.view.show()
 
-    def choose_file(self, idx):
-        fichier, _ = QFileDialog.getOpenFileName(self.view, "Choisir un fichier FITS", "", "FITS Files (*.fits *.fit)")
-        if fichier:
-            self.model.set_file(idx, fichier)
-            couleurs = ["Rouge", "Vert", "Bleu"]
-            self.view.update_file_label(idx, f"Fichier FITS {couleurs[idx]}: {fichier}")
+    def handle_load_button(self):
+        # Récupérer les données de la vue
+        objet = self.view.objet_input.text()
+        telescope = self.view.telescope_input.text()
+        radius = self.view.radius_input.text()
+        filtres = [f.strip() for f in self.view.filters_input.text().split(',')]
 
-    def update_coefficient(self, idx, value):
-        coef = value / 100
-        self.model.set_coefficient(idx, coef)
-        self.view.update_slider_label(idx, coef)
-
-    def display_image(self):
-        if not self.model.is_ready():
-            self.view.show_status_message("Veuillez choisir trois fichiers FITS pour RGB.")
+        if not (objet and telescope and radius and filtres):
+            self.view.afficher_message("Tous les champs doivent être remplis.")
             return
-        image = self.model.load_combined_image()
-        self.view.display_image(image)
+
+        self.view.afficher_message("Téléchargement en cours...")
+        fichiers_fits, errors = self.model.download(objet, telescope, radius, filtres)
+
+        if errors:
+            self.view.afficher_message("\n".join(errors))
+        elif fichiers_fits:
+            self.view.afficher_message("Affichage de l'image combinée...")
+            try:
+                image_path = self.creer_image_combinee(fichiers_fits)
+                self.view.afficher_image(image_path)
+            except Exception as e:
+                self.view.afficher_message(f"Erreur lors de la création de l'image : {e}")
+
+    def creer_image_combinee(self, fichiers):
+        import matplotlib.pyplot as plt
+        import numpy as np
+
+        data_r = self.model.extraire_image(fichiers[0])
+        data_g = self.model.extraire_image(fichiers[1])
+        data_b = self.model.extraire_image(fichiers[2])
+
+        min_height = min(data_r.shape[0], data_g.shape[0], data_b.shape[0])
+        min_width = min(data_r.shape[1], data_g.shape[1], data_b.shape[1])
+
+        data_r = self.model.normaliser(data_r[:min_height, :min_width])
+        data_g = self.model.normaliser(data_g[:min_height, :min_width])
+        data_b = self.model.normaliser(data_b[:min_height, :min_width])
+
+        image = np.stack([data_r, data_g, data_b], axis=-1)
+
+        output_path = os.path.join(self.model.download_dir, "image_combined.png")
+        plt.imsave(output_path, image)
+        return output_path
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    controller = FITSController()
+    sys.exit(app.exec())
