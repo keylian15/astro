@@ -1,0 +1,18 @@
+Notice : 
+
+Pour combiner une image vous avez plusieurs posibilités : 
+
+1 er : Si vous avez déjà des fichiers fits
+Importer 3 fichiers en local pour les combiner, le mieux est d'avoir 3 fichiers avec des filtres différents.
+
+2 eme : Si vous n'avez pas de fichiers fits
+Utiliser la recherche integrer, rentrer le nom d'un objet celeste, un telescope, un rayon d'observation, des filtres. 
+Lancer la recherche, cela va telecharger 3 fichiers et les placer sous le nom red.fits, green.fits, blue.fits dans le dossier Donnees.
+Il vu suffit ensuite de faire l'importation expliqué dans le 1er cas.
+A noter : Si vous rechercher un rayon large, un objet tres demandé cela peut prendre beaucoup de temps, on vous conseil d'avoir une bonne connection, de demandé des objets moyens avec un rayon faible (0.01 deg)
+
+Apres l'une de ces étapes vous devez cliquer sur le boutton de combinaison. Cela va prendre un certain temps a combiner, il faut s'assurer que les fichiers soient non vides uniquement. Apres ca, vous obtiendrez un affichage de l'image combiné avec le RGB.
+Vous avez la possibilité de regler l'intensité de chaque couleur avec les curseurs. Le changement se fait en temps réel.
+
+Probleme : 
+2 fenetres, plus la possibilité de juste import sans dl, les sliders en temps réel au lieu de valider.
