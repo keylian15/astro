@@ -1,80 +1,131 @@
 from astropy.io import fits
-from astroquery.mast import Observations
 import numpy as np
-import os, sys, shutil
 
-class FITSModel:
+class ImageModel:
     def __init__(self):
-        self.download_dir = os.path.join(sys.path[0], "Donnees")
-        os.makedirs(self.download_dir, exist_ok=True)
+        self.files = [None, None, None]
+        self.coefficients = [1.0, 1.0, 1.0]
+
+    def set_file(self, idx, filepath):
+        self.files[idx] = filepath
+
+    def set_coefficient(self, idx, value):
+        self.coefficients[idx] = value
+
+    def is_ready(self):
+        return None not in self.files
+
+    def load_combined_image(self):
+        if not self.is_ready():
+            return None
+        data1 = fits.getdata(self.files[0])
+        data2 = fits.getdata(self.files[1])
+        data3 = fits.getdata(self.files[2])
+
+        red = self._normalize(data1) * self.coefficients[0]
+        green = self._normalize(data2) * self.coefficients[1]
+        blue = self._normalize(data3) * self.coefficients[2]
+
+        image = np.stack([np.clip(red, 0, 1), np.clip(green, 0, 1), np.clip(blue, 0, 1)], axis=-1)
+        return image
 
     @staticmethod
-    def normaliser(data):
+    def _normalize(data):
         vmin, vmax = np.percentile(data, (1, 99))
         return np.clip((data - vmin) / (vmax - vmin), 0, 1)
 
-    @staticmethod
-    def extraire_image(fichier_fits):
-        with fits.open(fichier_fits) as hdul:
-            if len(hdul) == 1:
-                return fits.getdata(fichier_fits)
-            for hdu in hdul[1:]:
-                if isinstance(hdu, fits.ImageHDU) and hdu.data is not None:
-                    return hdu.data
-        return None
 
-    def verif_files_dl(self, objet, telescope, radius):
-        dossier_nom = f"{telescope.replace(' ', '_')}_{objet.replace(' ', '_')}_{radius.replace(' ', '_')}"
-        dossier_path = os.path.join(self.download_dir, dossier_nom)
-        if os.path.exists(dossier_path) and len(os.listdir(dossier_path)) == 3:
-            return dossier_path
-        return None
+# ====== Vue: fits_view.py ======
+from PyQt6.QtWidgets import (
+    QMainWindow, QPushButton, QLabel, QVBoxLayout, QWidget, QSlider, QFileDialog, 
+    QHBoxLayout, QGroupBox, QGridLayout
+)
+from PyQt6.QtCore import Qt
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 
-    def download(self, objet, telescope, radius, filtres):
-        dossier_path = self.verif_files_dl(objet, telescope, radius)
-        if dossier_path:
-            return [os.path.join(dossier_path, f) for f in ["red.fits", "green.fits", "blue.fits"]], []
+class FITSView(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Visualisation d'images FITS")
+        self.resize(800, 600)
 
-        errors = []
-        fichiers_fits = []
+        self.file_labels = [QLabel("Fichier FITS Rouge: Non sélectionné"),
+                            QLabel("Fichier FITS Vert: Non sélectionné"),
+                            QLabel("Fichier FITS Bleu: Non sélectionné")]
+        self.sliders = []
+        self.slider_labels = []
+        self.canvas = None
+        self.figure = None
+        self.ax = None
+        self._setup_ui()
 
-        try:
-            result_filtered = Observations.query_criteria(
-                objectname=objet, radius=radius, obs_collection=telescope, dataRights="PUBLIC"
-            )
-            for filtre in filtres:
-                filtered_result = result_filtered[result_filtered["filters"] == filtre]
+    def _setup_ui(self):
+        main_layout = QVBoxLayout()
 
-                if len(filtered_result) > 0:
-                    obs_id = filtered_result[0]["obsid"]
-                    products = Observations.get_product_list(obs_id)
-                    fits_files = Observations.filter_products(
-                        products, extension=["fits", "fit", "fz"], mrp_only=False
-                    )
+        # Fichier selection
+        self.file_buttons = [QPushButton("Choisir Rouge"), QPushButton("Choisir Vert"), QPushButton("Choisir Bleu")]
+        file_layout = QVBoxLayout()
+        for i in range(3):
+            row = QHBoxLayout()
+            row.addWidget(self.file_labels[i])
+            row.addWidget(self.file_buttons[i])
+            file_layout.addLayout(row)
+        main_layout.addLayout(file_layout)
 
-                    if len(fits_files) > 0:
-                        fits_files.sort("size", reverse=True)
-                        downloaded = Observations.download_products(
-                            fits_files[int(len(fits_files) / 2)], download_dir=sys.path[0], mrp_only=False
-                        )
-                        fichiers_fits.append(downloaded["Local Path"][0])
-                    else:
-                        errors.append(f"Aucun fichier FITS disponible pour le filtre {filtre}")
-                else:
-                    errors.append(f"Pas d'observation trouvée pour le filtre {filtre}")
+        # Sliders
+        sliders_layout = QGroupBox("Ajustement des coefficients RGB")
+        sliders_layout.setLayout(QGridLayout())
+        colors = ["Red", "Green", "Blue"]
 
-            self.rename_and_replace(objet, telescope, radius, fichiers_fits)
-        except Exception as e:
-            errors.append(f"Erreur lors de la requête : {e}")
+        for i, color in enumerate(colors):
+            label = QLabel(f"{color}: 1.0")
+            slider = QSlider(Qt.Orientation.Horizontal)
+            slider.setMinimum(1)
+            slider.setMaximum(300)
+            slider.setValue(100)
+            self.sliders.append(slider)
+            self.slider_labels.append(label)
+            sliders_layout.layout().addWidget(QLabel(f"{color}"), i, 0)
+            sliders_layout.layout().addWidget(slider, i, 1)
+            sliders_layout.layout().addWidget(label, i, 2)
 
-        return fichiers_fits, errors
+        main_layout.addWidget(sliders_layout)
 
-    def rename_and_replace(self, objet, telescope, radius, fichiers_fits):
-        dossier_nom = f"{telescope.replace(' ', '_')}_{objet.replace(' ', '_')}_{radius.replace(' ', '_')}"
-        dossier_path = os.path.join(self.download_dir, dossier_nom)
-        os.makedirs(dossier_path, exist_ok=True)
+        # Bouton Afficher
+        self.button_afficher = QPushButton("Afficher l'image combinée")
+        main_layout.addWidget(self.button_afficher)
 
-        if len(fichiers_fits) == 3:
-            for i, name in enumerate(["red.fits", "green.fits", "blue.fits"]):
-                os.rename(fichiers_fits[i], os.path.join(dossier_path, name))
-            shutil.rmtree(os.path.join(sys.path[0], "mastDownload"), ignore_errors=True)
+        # Canvas Matplotlib
+        self.figure, self.ax = plt.subplots()
+        self.canvas = FigureCanvas(self.figure)
+        main_layout.addWidget(self.canvas)
+
+        # Layout central
+        widget = QWidget()
+        widget.setLayout(main_layout)
+        self.setCentralWidget(widget)
+
+    def bind_file_button(self, idx, callback):
+        self.file_buttons[idx].clicked.connect(callback)
+
+    def bind_slider(self, idx, callback):
+        self.sliders[idx].valueChanged.connect(callback)
+
+    def bind_afficher_button(self, callback):
+        self.button_afficher.clicked.connect(callback)
+
+    def update_file_label(self, idx, text):
+        self.file_labels[idx].setText(text)
+
+    def update_slider_label(self, idx, value):
+        self.slider_labels[idx].setText(f"{['Red', 'Green', 'Blue'][idx]}: {value:.2f}")
+
+    def display_image(self, image):
+        self.ax.clear()
+        self.ax.imshow(image, origin='lower')
+        self.ax.set_title("Image Combinée FITS")
+        self.canvas.draw()
+
+    def show_status_message(self, message):
+        self.statusBar().showMessage(message)
