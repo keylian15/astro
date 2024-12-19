@@ -2,11 +2,13 @@ from PyQt6.QtWidgets import (
     QMainWindow, QPushButton, QLabel, QVBoxLayout, QWidget, QSlider, QFileDialog, 
     QHBoxLayout, QGroupBox, QGridLayout
 )
-from PyQt6.QtCore import Qt
+from PyQt6.QtCore import Qt, pyqtSignal, QObject
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 
 class FITSView(QMainWindow):
+    slider_changed = pyqtSignal()
+
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Visualisation d'images FITS")
@@ -46,6 +48,7 @@ class FITSView(QMainWindow):
             slider.setMinimum(1)
             slider.setMaximum(300)
             slider.setValue(100)
+            slider.valueChanged.connect(self.slider_changed.emit)
             self.sliders.append(slider)
             self.slider_labels.append(label)
             sliders_layout.layout().addWidget(QLabel(f"{color}"), i, 0)
@@ -53,10 +56,6 @@ class FITSView(QMainWindow):
             sliders_layout.layout().addWidget(label, i, 2)
 
         main_layout.addWidget(sliders_layout)
-
-        # Bouton Afficher
-        self.button_afficher = QPushButton("Afficher l'image combinée")
-        main_layout.addWidget(self.button_afficher)
 
         # Canvas Matplotlib
         self.figure, self.ax = plt.subplots()
@@ -73,9 +72,6 @@ class FITSView(QMainWindow):
 
     def bind_slider(self, idx, callback):
         self.sliders[idx].valueChanged.connect(callback)
-
-    def bind_afficher_button(self, callback):
-        self.button_afficher.clicked.connect(callback)
 
     def update_file_label(self, idx, text):
         self.file_labels[idx].setText(text)
