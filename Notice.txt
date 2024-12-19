@@ -15,4 +15,4 @@ Apres l'une de ces étapes vous devez cliquer sur le boutton de combinaison. Cel
 Vous avez la possibilité de regler l'intensité de chaque couleur avec les curseurs. Le changement se fait en temps réel.
 
 Probleme : 
-2 fenetres, plus la possibilité de juste import sans dl, les sliders en temps réel au lieu de valider.
+2 fenetres, plus la possibilité de juste import sans dl

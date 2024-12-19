@@ -3,7 +3,7 @@ from astroquery.mast import Observations
 import matplotlib.pyplot as plt
 import numpy as np
 import sys, os, shutil
-
+from reproject import reproject_adaptive
 
 def normaliser(data):
     """Fonction permettant de normaliser les données."""
@@ -222,7 +222,7 @@ def rename_and_replace(objet: str, telescope: str, radius: str, fichiers_fits: l
         for id_fichier in range(len(fichiers_fits)):
 
             os.rename(fichiers_fits[id_fichier], dossier_nom + "/" + liste[id_fichier])
-        os.chmod(dossier_nom, 0o777)
+        os.chmod(chemin + "/mastDownload/", 0o777)
         shutil.rmtree(chemin + "/mastDownload/")
     else : 
         os.chmod(dossier_nom, 0o777)
