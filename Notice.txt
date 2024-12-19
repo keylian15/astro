@@ -11,8 +11,5 @@ Lancer la recherche, cela va telecharger 3 fichiers et les placer sous le nom re
 Il vu suffit ensuite de faire l'importation expliqué dans le 1er cas.
 A noter : Si vous rechercher un rayon large, un objet tres demandé cela peut prendre beaucoup de temps, on vous conseil d'avoir une bonne connection, de demandé des objets moyens avec un rayon faible (0.01 deg)
 
-Apres l'une de ces étapes vous devez cliquer sur le boutton de combinaison. Cela va prendre un certain temps a combiner, il faut s'assurer que les fichiers soient non vides uniquement. Apres ca, vous obtiendrez un affichage de l'image combiné avec le RGB.
+Apres cela va prendre un certain temps a combiner, il faut s'assurer que les fichiers soient non vides uniquement. Apres ca, vous obtiendrez un affichage de l'image combiné avec le RGB.
 Vous avez la possibilité de regler l'intensité de chaque couleur avec les curseurs. Le changement se fait en temps réel.
-
-Probleme : 
-2 fenetres, plus la possibilité de juste import sans dl
