@@ -3,7 +3,8 @@ from astroquery.mast import Observations
 import matplotlib.pyplot as plt
 import numpy as np
 import sys, os, shutil
-from reproject import reproject_adaptive
+from reproject import reproject_interp
+
 
 def normaliser(data):
     """Fonction permettant de normaliser les données."""
@@ -41,6 +42,87 @@ def extraire_image(fichier_fits: str):
     return None
 
 
+def reproduct(image1, image2, image3, data2, data3):
+    """Gère la reprojection des données si nécessaire.
+
+    Args:
+        image1 (str): Chemin vers le fichier FITS de référence.
+        image2 (str): Chemin vers le deuxième fichier FITS.
+        image3 (str): Chemin vers le troisième fichier FITS.
+        data2 (ndarray): Données extraites du fichier 2.
+        data3 (ndarray): Données extraites du fichier 3.
+
+    Returns:
+        tuple: Les données reprojetées (ou originales si aucune reprojection n'est nécessaire).
+    """
+    with fits.open(image1) as hdul1, fits.open(image2) as hdul2, fits.open(
+        image3
+    ) as hdul3:
+        header_ref = hdul1[1].header if len(hdul1) > 1 else hdul1[0].header
+        header2 = hdul2[1].header if len(hdul2) > 1 else hdul2[0].header
+        header3 = hdul3[1].header if len(hdul3) > 1 else hdul3[0].header
+
+        # Vérifier la présence de 'NAXIS1' et 'NAXIS2' avant d'y accéder
+        if "NAXIS1" not in header_ref or "NAXIS2" not in header_ref:
+            raise KeyError(
+                "Keyword 'NAXIS1' or 'NAXIS2' not found in the reference header."
+            )
+
+        # Reprojection pour le fichier 2
+        if (
+            "NAXIS1" not in header2
+            or "NAXIS2" not in header2
+            or header2["NAXIS1"] != header_ref["NAXIS1"]
+            or header2["NAXIS2"] != header_ref["NAXIS2"]
+        ):
+            data2, _ = reproject_interp((data2, header2), header_ref)
+
+        # Reprojection pour le fichier 3
+        if (
+            "NAXIS1" not in header3
+            or "NAXIS2" not in header3
+            or header3["NAXIS1"] != header_ref["NAXIS1"]
+            or header3["NAXIS2"] != header_ref["NAXIS2"]
+        ):
+            data3, _ = reproject_interp((data3, header3), header_ref)
+
+    return data2, data3
+
+
+def verifier_objet_celeste_multiple(fichiers: list) -> bool:
+    """
+    Vérifie que les trois fichiers FITS pointent vers le même objet céleste.
+
+    Args:
+        fichiers (list): Liste de chemins vers les fichiers FITS.
+
+    Returns:
+        bool: True si tous les fichiers pointent vers le même objet céleste, False sinon.
+    """
+    # Extraire l'objet céleste du premier fichier
+    with fits.open(fichiers[0]) as hdul1:
+        if len(hdul1) == 1:
+            header1 = hdul1[0].header
+        else:
+            header1 = hdul1[1].header
+        objet1 = header1.get("OBJECT", None)
+
+    # Vérifier les autres fichiers
+    for fichier in fichiers[1:]:
+        with fits.open(fichier) as hdul:
+            if len(hdul) == 1:
+                header = hdul[0].header
+            else:
+                header = hdul[1].header
+            objet = header.get("OBJECT", None)
+
+            # Si l'objet n'est pas trouvé ou est différent, retourner False
+            if objet != objet1 or objet is None:
+                return False
+
+    return True
+
+
 def afficher(
     fichiers: list,
     multi_r: float = 1.0,
@@ -48,48 +130,43 @@ def afficher(
     multi_b: float = 1.0,
     titre: str = "Image Combinée",
 ):
-    """Fonction qui affiche une image combiné de 3 fichiers avec un coef de RGB possible.
+    """Fonction qui affiche une image combinée de 3 fichiers avec un coef de RGB possible.
 
     Args:
-        fichiers (list): La liste des fichiers a combinés
+        fichiers (list): La liste des fichiers à combiner.
         multi_r (float, optional): Le multiplicateur de rouge. Defaults to 1.0.
         multi_g (float, optional): Le multiplicateur de vert. Defaults to 1.0.
         multi_b (float, optional): Le multiplicateur de bleu. Defaults to 1.0.
         titre (str, optional): Le titre du graphique. Defaults to "Image Combinée".
     """
-    image1 = fichiers[0]
-    image2 = fichiers[1]
-    image3 = fichiers[2]
+
+    if not verifier_objet_celeste_multiple(fichiers):
+        print(
+            "Les fichiers ne proviennent pas du même objet céleste ou les coordonnées ne sont pas renseigné."
+        )
+
+    image1, image2, image3 = fichiers
 
     data1 = extraire_image(image1)
     data2 = extraire_image(image2)
     data3 = extraire_image(image3)
 
-    # Récupérer les dimensions de chaque image
-    red_height, red_width = data1.shape
-    green_height, green_width = data2.shape
-    blue_height, blue_width = data3.shape
+    data2, data3 = reproduct(image1, image2, image3, data2, data3)
 
-    # Trouver la plus petite hauteur et largeur parmi les trois images
-    min_height = min(red_height, green_height, blue_height)
-    min_width = min(red_width, green_width, blue_width)
-
-    # Recadrer les images à la taille la plus petite
-    data1 = data1[:min_height, :min_width]
-    data2 = data2[:min_height, :min_width]
-    data3 = data3[:min_height, :min_width]
-
-    # On normalise les données.
+    # Normalisation des données
     red = normaliser(data1) * multi_r
     green = normaliser(data2) * multi_g
     blue = normaliser(data3) * multi_b
 
+    # Limiter les valeurs à l'intervalle [0, 1]
     red = np.clip(red, 0, 1)
     green = np.clip(green, 0, 1)
     blue = np.clip(blue, 0, 1)
 
+    # Combinaison des canaux
     image = np.stack([red, green, blue], axis=-1)
 
+    # Affichage
     plt.imshow(image, origin="lower")
     plt.colorbar()
     plt.title(titre)
@@ -224,7 +301,7 @@ def rename_and_replace(objet: str, telescope: str, radius: str, fichiers_fits: l
             os.rename(fichiers_fits[id_fichier], dossier_nom + "/" + liste[id_fichier])
         os.chmod(chemin + "/mastDownload/", 0o777)
         shutil.rmtree(chemin + "/mastDownload/")
-    else : 
+    else:
         os.chmod(dossier_nom, 0o777)
         shutil.rmtree(dossier_nom)
         dossier_nom = chemin + "/mastDownload/"
@@ -263,44 +340,39 @@ def verif_files_dl(objet: str, telescope: str, radius: str) -> bool:
 
 
 if __name__ == "__main__":
-    # ====== Recupération ======
-    # Exemple fourni
-    image1 = sys.path[0] + "/Donnees/Exemple/Tarantula_Nebula-halpha.fit"
-    image2 = sys.path[0] + "/Donnees/Exemple/Tarantula_Nebula-oiii.fit"
-    image3 = sys.path[0] + "/Donnees/Exemple/Tarantula_Nebula-sii.fit"
 
-    # Exemple telecharger
-    # dossier_test = sys.path[0] + "/Donnees/HST_NGC_6362_0.01_deg/"
-    # t1 = dossier_test + "red.fits"
-    # t2 = dossier_test + "green.fits"
-    # t3 = dossier_test + "blue.fits"
-    # ====== Fin Recupération ======
-
-    # ====== Test Affichage ======
-    # # Normal
+    # ====== Test Affichage Normal  ======
+    # image1 = sys.path[0] + "/Donnees/Exemple/Tarantula_Nebula-halpha.fit"
+    # image2 = sys.path[0] + "/Donnees/Exemple/Tarantula_Nebula-oiii.fit"
+    # image3 = sys.path[0] + "/Donnees/Exemple/Tarantula_Nebula-sii.fit"
     # afficher([image1, image2, image3], 1, 1, 1)
-    # # + de rouge
-    # afficher([image1, image2, image3], 1.5, 1, 1, "Image Combinée avec + de Red")
-    # # + de vert
-    # afficher([image1, image2, image3], 1, 1.5, 1, "Image Combinée avec + de Green")
-    # # + de bleu
-    # afficher([image1, image2, image3], 1, 1, 1.5, "Image Combinée avec + de Blue")
-
     # ====== Fin Test Affichage ======
 
-    # ====== Test Telechargement ======
-    # Paramètres de recherche Hubble
+    # ====== Test Telechargement Hubble ======
     objet = "NGC 6362"
     telescope = "HST"
-    radius = "0.01 deg"
-    filtres = ["F814W", "F658N", "F336W"] # Filtre sans probleme.
-    # filtres = ["F814X", "F658N", "F336W"] # Filtre avec.
+    radius = "0.005 deg"
+    filtres = ["F814W", "F658N", "F336W"]
     fichiers_fits = []
     errors = []
-
-    # Si rien n'est renvoyé c'est car les fichiers sont déjà présents.
     fichiers_fits, errors = download(objet, telescope, radius, filtres)
     if errors:
-        print(errors)        
-        
-    # ====== Fin Test Telechargement ======
+        print(errors)
+    dossier_test = f"{sys.path[0]}/Donnees/{telescope}_{objet.replace(" ","_")}_{radius.replace(" ","_")}/"
+    t1 = dossier_test + "red.fits"
+    t2 = dossier_test + "green.fits"
+    t3 = dossier_test + "blue.fits"
+    afficher([t1, t2, t3])
+    # ====== Fin Test Telechargement Hubble ======
+
+    # ====== Test Données USB ======
+    # c = sys.path[0]
+    # afficher(
+    #     [
+    #         c + "/Donnees/data_jw01783/jw01783-o001_t001_nircam_clear-f115w/jw01783-o001_t001_nircam_clear-f115w_i2d.fits",
+    #         c + "/Donnees/data_jw01783/jw01783-o001_t001_nircam_clear-f115w/jw01783-o001_t001_nircam_clear-f115w_i2d.fits",
+    #         c + "/Donnees/data_jw01783/jw01783-o001_t001_nircam_clear-f115w/jw01783-o001_t001_nircam_clear-f115w_segm.fits",
+    #     ]
+    # )
+    # ====== Fin Test Données USB ======
+    print("")
